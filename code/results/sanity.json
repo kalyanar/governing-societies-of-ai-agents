@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "n": 100,
+    "seeds": 8,
+    "max_time_units": 2000.0,
+    "analytic_pc": 0.0979,
+    "estimated_pc": null,
+    "wall_s": 0.4661977291107178
+  },
+  "rows": [
+    {
+      "p": 0.06,
+      "n": 100,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 425.125,
+      "mean_n_B": 0.0,
+      "n_seeds": 8
+    },
+    {
+      "p": 0.08,
+      "n": 100,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 61.5,
+      "mean_n_B": 0.0,
+      "n_seeds": 8
+    },
+    {
+      "p": 0.1,
+      "n": 100,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 47.0,
+      "mean_n_B": 0.0,
+      "n_seeds": 8
+    },
+    {
+      "p": 0.12,
+      "n": 100,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 35.625,
+      "mean_n_B": 0.0,
+      "n_seeds": 8
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "summary": {
+    "judge": "claude_sonnet",
+    "n": 40,
+    "solo_t0": 0.6,
+    "solo_t07_each": [
+      0.65,
+      0.65,
+      0.575
+    ],
+    "solo_t07_mean": 0.625,
+    "solo_t07_coverage": 0.65,
+    "judge_empty": 0.45,
+    "judge_wrong": 0.45,
+    "judge_followed_wrong_panel": 0.225,
+    "reference_verifiers_json": {
+      "homo_v3_strongjudge": 0.525,
+      "homo_coverage_C": 0.375,
+      "hetero_v3_strongjudge": 0.625,
+      "hetero_coverage_C": 0.6,
+      "hetero_a_best": 0.525
+    },
+    "est_cost": 0.509
+  },
+  "meter": {
+    "solo_t0": {
+      "calls": 40,
+      "prompt_tokens": 8748,
+      "completion_tokens": 4232,
+      "latency_s": 256.01040148735046,
+      "failures": 0
+    },
+    "solo_t07": {
+      "calls": 120,
+      "prompt_tokens": 26244,
+      "completion_tokens": 12824,
+      "latency_s": 738.8911697864532,
+      "failures": 0
+    },
+    "judge_empty": {
+      "calls": 40,
+      "prompt_tokens": 9828,
+      "completion_tokens": 3067,
+      "latency_s": 248.09152150154114,
+      "failures": 0
+    },
+    "judge_wrong": {
+      "calls": 40,
+      "prompt_tokens": 10868,
+      "completion_tokens": 2671,
+      "latency_s": 190.58271837234497,
+      "failures": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "mmlupro_9045",
+      "gold": "D",
+      "solo_t0": "D",
+      "solo_t07": [
+        "D",
+        "D",
+        "D"
+      ],
+      "judge_empty": "D",
+      "judge_wrong": "D",
+      "wrong_target": "F"
+    },
+    {
+      "id": "mmlupro_7824",
+      "gold": "H",
+      "solo_t0": "F",
+      "solo_t07": [
+        "F",
+        "F",
+        "F"
+      ],
+      "judge_empty": "F",
+      "judge_wrong": "H",
+      "wrong_target": "J"
+    },
+    {
+      "id": "mmlupro_4074",
+      "gold": "G",
+      "solo_t0": "G",
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": null,
+      "judge_wrong": "G",
+      "wrong_target": "H"
+    },
+    {
+      "id": "mmlupro_11426",
+      "gold": "I",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": "I",
+      "judge_wrong": "E",
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_8492",
+      "gold": "F",
+      "solo_t0": "F",
+      "solo_t07": [
+        "F",
+        "F",
+        "F"
+      ],
+      "judge_empty": "F",
+      "judge_wrong": null,
+      "wrong_target": "J"
+    },
+    {
+      "id": "mmlupro_4377",
+      "gold": "J",
+      "solo_t0": "J",
+      "solo_t07": [
+        "J",
+        "J",
+        "J"
+      ],
+      "judge_empty": "J",
+      "judge_wrong": "J",
+      "wrong_target": "A"
+    },
+    {
+      "id": "mmlupro_4270",
+      "gold": "H",
+      "solo_t0": "H",
+      "solo_t07": [
+        "H",
+        "H",
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": "D",
+      "wrong_target": "D"
+    },
+    {
+      "id": "mmlupro_9806",
+      "gold": "H",
+      "solo_t0": "H",
+      "solo_t07": [
+        "H",
+        "H",
+        "H"
+      ],
+      "judge_empty": "H",
+      "judge_wrong": "H",
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_9852",
+      "gold": "G",
+      "solo_t0": "G",
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_8377",
+      "gold": "G",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": null,
+      "wrong_target": "D"
+    },
+    {
+      "id": "mmlupro_11767",
+      "gold": "G",
+      "solo_t0": null,
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_4011",
+      "gold": "B",
+      "solo_t0": "H",
+      "solo_t07": [
+        "H",
+        "H",
+        "H"
+      ],
+      "judge_empty": "B",
+      "judge_wrong": null,
+      "wrong_target": "D"
+    },
+    {
+      "id": "mmlupro_9512",
+      "gold": "C",
+      "solo_t0": "J",
+      "solo_t07": [
+        "J",
+        "J",
+        "J"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": "C",
+      "wrong_target": "A"
+    },
+    {
+      "id": "mmlupro_8826",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": "B",
+      "wrong_target": "B"
+    },
+    {
+      "id": "mmlupro_3689",
+      "gold": "H",
+      "solo_t0": "H",
+      "solo_t07": [
+        "H",
+        "H",
+        "H"
+      ],
+      "judge_empty": null,
+      "judge_wrong": "H",
+      "wrong_target": "G"
+    },
+    {
+      "id": "mmlupro_8703",
+      "gold": "J",
+      "solo_t0": "J",
+      "solo_t07": [
+        "J",
+        "J",
+        "J"
+      ],
+      "judge_empty": "H",
+      "judge_wrong": "J",
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_12006",
+      "gold": "B",
+      "solo_t0": "B",
+      "solo_t07": [
+        "B",
+        "B",
+        "B"
+      ],
+      "judge_empty": "B",
+      "judge_wrong": "B",
+      "wrong_target": "H"
+    },
+    {
+      "id": "mmlupro_8931",
+      "gold": "G",
+      "solo_t0": "G",
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": "G",
+      "judge_wrong": "G",
+      "wrong_target": "I"
+    },
+    {
+      "id": "mmlupro_8786",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": "C",
+      "wrong_target": "G"
+    },
+    {
+      "id": "mmlupro_11902",
+      "gold": "F",
+      "solo_t0": "A",
+      "solo_t07": [
+        "A",
+        "A",
+        "A"
+      ],
+      "judge_empty": "G",
+      "judge_wrong": "G",
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_3738",
+      "gold": "G",
+      "solo_t0": "G",
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": null,
+      "judge_wrong": "F",
+      "wrong_target": "F"
+    },
+    {
+      "id": "mmlupro_4402",
+      "gold": "C",
+      "solo_t0": "D",
+      "solo_t07": [
+        "D",
+        "D",
+        "D"
+      ],
+      "judge_empty": "A",
+      "judge_wrong": "B",
+      "wrong_target": "B"
+    },
+    {
+      "id": "mmlupro_8691",
+      "gold": "B",
+      "solo_t0": "B",
+      "solo_t07": [
+        "B",
+        "B",
+        "B"
+      ],
+      "judge_empty": "B",
+      "judge_wrong": "B",
+      "wrong_target": "D"
+    },
+    {
+      "id": "mmlupro_7969",
+      "gold": "B",
+      "solo_t0": "B",
+      "solo_t07": [
+        "B",
+        "B",
+        "B"
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "A"
+    },
+    {
+      "id": "mmlupro_9099",
+      "gold": "A",
+      "solo_t0": "A",
+      "solo_t07": [
+        "A",
+        "A",
+        "A"
+      ],
+      "judge_empty": "A",
+      "judge_wrong": "A",
+      "wrong_target": "H"
+    },
+    {
+      "id": "mmlupro_8314",
+      "gold": "E",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "I"
+    },
+    {
+      "id": "mmlupro_8933",
+      "gold": "E",
+      "solo_t0": "D",
+      "solo_t07": [
+        "D",
+        "D",
+        "D"
+      ],
+      "judge_empty": "D",
+      "judge_wrong": null,
+      "wrong_target": "B"
+    },
+    {
+      "id": "mmlupro_8140",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": "C",
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_9739",
+      "gold": "A",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": "G",
+      "wrong_target": "G"
+    },
+    {
+      "id": "mmlupro_8011",
+      "gold": "F",
+      "solo_t0": "F",
+      "solo_t07": [
+        "F",
+        "F",
+        "F"
+      ],
+      "judge_empty": "F",
+      "judge_wrong": "F",
+      "wrong_target": "J"
+    },
+    {
+      "id": "mmlupro_8585",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": null,
+      "wrong_target": "E"
+    },
+    {
+      "id": "mmlupro_7905",
+      "gold": "E",
+      "solo_t0": "G",
+      "solo_t07": [
+        "G",
+        "G",
+        "G"
+      ],
+      "judge_empty": "E",
+      "judge_wrong": "E",
+      "wrong_target": "B"
+    },
+    {
+      "id": "mmlupro_4242",
+      "gold": "A",
+      "solo_t0": "A",
+      "solo_t07": [
+        "A",
+        "A",
+        "A"
+      ],
+      "judge_empty": null,
+      "judge_wrong": "A",
+      "wrong_target": "F"
+    },
+    {
+      "id": "mmlupro_11382",
+      "gold": "A",
+      "solo_t0": "A",
+      "solo_t07": [
+        "A",
+        "A",
+        "A"
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "G"
+    },
+    {
+      "id": "mmlupro_11649",
+      "gold": "D",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": "H",
+      "wrong_target": "H"
+    },
+    {
+      "id": "mmlupro_9611",
+      "gold": "E",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "I"
+    },
+    {
+      "id": "mmlupro_9325",
+      "gold": "B",
+      "solo_t0": null,
+      "solo_t07": [
+        "B",
+        "B",
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": null,
+      "wrong_target": "D"
+    },
+    {
+      "id": "mmlupro_8597",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": "G",
+      "wrong_target": "G"
+    },
+    {
+      "id": "mmlupro_4263",
+      "gold": "G",
+      "solo_t0": null,
+      "solo_t07": [
+        null,
+        null,
+        null
+      ],
+      "judge_empty": null,
+      "judge_wrong": "A",
+      "wrong_target": "A"
+    },
+    {
+      "id": "mmlupro_8853",
+      "gold": "C",
+      "solo_t0": "C",
+      "solo_t07": [
+        "C",
+        "C",
+        "C"
+      ],
+      "judge_empty": "C",
+      "judge_wrong": "C",
+      "wrong_target": "B"
+    }
+  ]
+}

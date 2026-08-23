@@ -1,0 +1,3407 @@
+{
+  "meta": {
+    "composition": "homo:qwen72b",
+    "kind": "homogeneous",
+    "models": [
+      "qwen72b"
+    ],
+    "committed_model": "qwen72b",
+    "n": 64,
+    "seeds": 5,
+    "t_max_units": 30.0,
+    "wall_s": 1241.3532588481903,
+    "per_model_meter": {
+      "qwen72b": {
+        "calls": 55282,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 19420.742773532867,
+        "failures": 55282,
+        "served_by": {}
+      }
+    },
+    "est_api_cost": 0.0
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 23.3
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 23.5
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 23.4
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 3,
+      "episode_s": 23.4
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "maple",
+        "resist": "cedar"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 4,
+      "episode_s": 23.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.953125,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 0,
+      "episode_s": 255.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.953125,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 1,
+      "episode_s": 257.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.953125,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 2,
+      "episode_s": 261.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.953125,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 3,
+      "episode_s": 258.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.953125,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 4,
+      "episode_s": 259.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.9375,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 0,
+      "episode_s": 252.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "comet",
+        "resist": "glacier"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.9375,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 1,
+      "episode_s": 254.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.9375,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 2,
+      "episode_s": 255.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.9375,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 3,
+      "episode_s": 255.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.9375,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 4,
+      "episode_s": 256.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "cedar",
+        "resist": "maple"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.921875,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 0,
+      "episode_s": 250.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.921875,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 1,
+      "episode_s": 247.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.921875,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 2,
+      "episode_s": 251.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.921875,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 3,
+      "episode_s": 248.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.921875,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 4,
+      "episode_s": 249.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.90625,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 0,
+      "episode_s": 241.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.90625,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 1,
+      "episode_s": 246.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.90625,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 2,
+      "episode_s": 243.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "cedar",
+        "resist": "maple"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.90625,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 3,
+      "episode_s": 241.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "maple",
+        "resist": "cedar"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.90625,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 4,
+      "episode_s": 248.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.890625,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 0,
+      "episode_s": 238.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.890625,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 1,
+      "episode_s": 238.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.890625,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 2,
+      "episode_s": 238.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.890625,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 3,
+      "episode_s": 235.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.890625,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 4,
+      "episode_s": 243.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 0,
+      "episode_s": 238.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 1,
+      "episode_s": 236.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 2,
+      "episode_s": 236.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 3,
+      "episode_s": 230.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 4,
+      "episode_s": 237.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.84375,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 0,
+      "episode_s": 227.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.84375,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 1,
+      "episode_s": 227.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.84375,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 2,
+      "episode_s": 229.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.84375,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 3,
+      "episode_s": 220.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "maple",
+        "resist": "cedar"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.84375,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 4,
+      "episode_s": 231.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.8125,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 0,
+      "episode_s": 218.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.8125,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 1,
+      "episode_s": 223.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.8125,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 2,
+      "episode_s": 217.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "cedar",
+        "resist": "maple"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.8125,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 3,
+      "episode_s": 213.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.8125,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 4,
+      "episode_s": 224.2
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 22.3
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 22.3
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "maple",
+        "resist": "cedar"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 22.5
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 3,
+      "episode_s": 22.6
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "stop_reason": "consensus",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 64,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 64
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 4,
+      "episode_s": 22.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.046875,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 0,
+      "episode_s": 256.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.046875,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 1,
+      "episode_s": 257.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.046875,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 2,
+      "episode_s": 262.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.046875,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 3,
+      "episode_s": 258.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.953125,
+      "final_n_B": 0.046875,
+      "steps": 768,
+      "traj": [
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953,
+        0.953
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 61
+        },
+        "committed": {
+          "qwen72b": 3
+        }
+      },
+      "p": 0.0469,
+      "seed": 4,
+      "episode_s": 259.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.0625,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 0,
+      "episode_s": 253.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.0625,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 1,
+      "episode_s": 253.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.0625,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 2,
+      "episode_s": 255.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.0625,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 3,
+      "episode_s": 255.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.9375,
+      "final_n_B": 0.0625,
+      "steps": 768,
+      "traj": [
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938,
+        0.938
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 60
+        },
+        "committed": {
+          "qwen72b": 4
+        }
+      },
+      "p": 0.0625,
+      "seed": 4,
+      "episode_s": 255.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.078125,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 0,
+      "episode_s": 247.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.078125,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 1,
+      "episode_s": 246.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.078125,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 2,
+      "episode_s": 252.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.078125,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 3,
+      "episode_s": 250.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.921875,
+      "final_n_B": 0.078125,
+      "steps": 768,
+      "traj": [
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922,
+        0.922
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 59
+        },
+        "committed": {
+          "qwen72b": 5
+        }
+      },
+      "p": 0.0781,
+      "seed": 4,
+      "episode_s": 248.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.09375,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 0,
+      "episode_s": 241.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "comet",
+        "resist": "glacier"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.09375,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 1,
+      "episode_s": 247.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "cedar",
+        "resist": "maple"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.09375,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 2,
+      "episode_s": 245.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.09375,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 3,
+      "episode_s": 243.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 0.90625,
+      "final_n_B": 0.09375,
+      "steps": 768,
+      "traj": [
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906,
+        0.906
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 58
+        },
+        "committed": {
+          "qwen72b": 6
+        }
+      },
+      "p": 0.0938,
+      "seed": 4,
+      "episode_s": 248.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.109375,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 0,
+      "episode_s": 242.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.109375,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 1,
+      "episode_s": 242.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.109375,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 2,
+      "episode_s": 241.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "cedar",
+        "resist": "maple"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.109375,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 3,
+      "episode_s": 236.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.890625,
+      "final_n_B": 0.109375,
+      "steps": 768,
+      "traj": [
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891,
+        0.891
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 57
+        },
+        "committed": {
+          "qwen72b": 7
+        }
+      },
+      "p": 0.1094,
+      "seed": 4,
+      "episode_s": 239.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 0,
+      "episode_s": 236.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 1,
+      "episode_s": 236.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 2,
+      "episode_s": 233.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 3,
+      "episode_s": 228.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 768,
+      "traj": [
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 56
+        },
+        "committed": {
+          "qwen72b": 8
+        }
+      },
+      "p": 0.125,
+      "seed": 4,
+      "episode_s": 235.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.15625,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 0,
+      "episode_s": 225.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.15625,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 1,
+      "episode_s": 225.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "maple",
+        "resist": "cedar"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.15625,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 2,
+      "episode_s": 224.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.15625,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 3,
+      "episode_s": 214.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "silver",
+        "resist": "copper"
+      },
+      "final_n_resist": 0.84375,
+      "final_n_B": 0.15625,
+      "steps": 768,
+      "traj": [
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844,
+        0.844
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 54
+        },
+        "committed": {
+          "qwen72b": 10
+        }
+      },
+      "p": 0.1562,
+      "seed": 4,
+      "episode_s": 221.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.1875,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 0,
+      "episode_s": 210.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.1875,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 1,
+      "episode_s": 214.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.1875,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 2,
+      "episode_s": 210.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.1875,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 3,
+      "episode_s": 204.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "stop_reason": "settled",
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 0.8125,
+      "final_n_B": 0.1875,
+      "steps": 768,
+      "traj": [
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812,
+        0.812
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen72b": 52
+        },
+        "committed": {
+          "qwen72b": 12
+        }
+      },
+      "p": 0.1875,
+      "seed": 4,
+      "episode_s": 215.7
+    }
+  ]
+}

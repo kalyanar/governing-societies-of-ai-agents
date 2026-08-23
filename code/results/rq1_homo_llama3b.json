@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "composition": "homo:llama3b",
+    "kind": "homogeneous",
+    "models": [
+      "llama3b"
+    ],
+    "committed_model": "llama3b",
+    "n": 20,
+    "seeds": 4,
+    "t_max_units": 30.0,
+    "wall_s": 1181.9447548389435,
+    "per_model_meter": {
+      "llama3b": {
+        "calls": 7518,
+        "prompt_tokens": 812058,
+        "completion_tokens": 15036,
+        "latency_s": 1180.9812128543854,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.0
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 3.0,
+      "final_n_B": 1.0,
+      "steps": 60,
+      "traj": [
+        0.95,
+        0.95,
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 9.0
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.9,
+        0.95,
+        0.9,
+        0.8,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 21.6
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 2.9
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 3,
+      "episode_s": 3.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.85,
+      "steps": 600,
+      "traj": [
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.9,
+        0.85,
+        0.75,
+        0.8,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.8,
+        0.85,
+        0.8,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.85,
+        0.85,
+        0.85
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 82.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.8,
+      "steps": 600,
+      "traj": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.75,
+        0.85,
+        0.85,
+        0.9,
+        0.85,
+        0.85,
+        0.85,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.8,
+        0.8,
+        0.85,
+        0.8,
+        0.85,
+        0.75,
+        0.75,
+        0.85,
+        0.85,
+        0.85,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 83.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.85,
+      "steps": 600,
+      "traj": [
+        0.85,
+        0.85,
+        0.85,
+        0.9,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.8,
+        0.75,
+        0.7,
+        0.7,
+        0.85,
+        0.8,
+        0.9,
+        0.9,
+        0.85,
+        0.8,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.8,
+        0.85,
+        0.9,
+        0.9,
+        0.85,
+        0.85,
+        0.85
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 85.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.85,
+      "steps": 600,
+      "traj": [
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.8,
+        0.85,
+        0.9,
+        0.9,
+        0.85,
+        0.85,
+        0.9,
+        0.8,
+        0.85,
+        0.85,
+        0.85,
+        0.8,
+        0.9,
+        0.75,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.85,
+        0.9,
+        0.85,
+        0.8,
+        0.85
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 3,
+      "episode_s": 85.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.75,
+      "steps": 600,
+      "traj": [
+        0.65,
+        0.7,
+        0.75,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.75,
+        0.8,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.7,
+        0.7,
+        0.75,
+        0.75,
+        0.75,
+        0.65,
+        0.65,
+        0.7,
+        0.7,
+        0.65,
+        0.7,
+        0.6,
+        0.65,
+        0.6,
+        0.75,
+        0.65,
+        0.75
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 74.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.7,
+      "steps": 600,
+      "traj": [
+        0.8,
+        0.65,
+        0.65,
+        0.45,
+        0.5,
+        0.5,
+        0.7,
+        0.6,
+        0.55,
+        0.55,
+        0.7,
+        0.75,
+        0.7,
+        0.7,
+        0.7,
+        0.8,
+        0.6,
+        0.6,
+        0.65,
+        0.8,
+        0.75,
+        0.7,
+        0.7,
+        0.65,
+        0.7,
+        0.7,
+        0.65,
+        0.7,
+        0.75,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 76.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.7,
+      "steps": 600,
+      "traj": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.75,
+        0.6,
+        0.65,
+        0.8,
+        0.8,
+        0.65,
+        0.75,
+        0.7,
+        0.75,
+        0.8,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.7,
+        0.75,
+        0.7,
+        0.7,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.65,
+        0.55,
+        0.6,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 75.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.8,
+      "steps": 600,
+      "traj": [
+        0.7,
+        0.7,
+        0.65,
+        0.75,
+        0.7,
+        0.65,
+        0.7,
+        0.8,
+        0.75,
+        0.7,
+        0.65,
+        0.6,
+        0.55,
+        0.6,
+        0.55,
+        0.55,
+        0.65,
+        0.7,
+        0.75,
+        0.75,
+        0.7,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 3,
+      "episode_s": 76.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.65,
+      "steps": 600,
+      "traj": [
+        0.65,
+        0.6,
+        0.65,
+        0.6,
+        0.7,
+        0.65,
+        0.65,
+        0.65,
+        0.6,
+        0.5,
+        0.55,
+        0.5,
+        0.6,
+        0.6,
+        0.65,
+        0.65,
+        0.6,
+        0.6,
+        0.7,
+        0.65,
+        0.65,
+        0.6,
+        0.6,
+        0.6,
+        0.65,
+        0.5,
+        0.6,
+        0.55,
+        0.65,
+        0.65
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 65.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.5,
+      "steps": 600,
+      "traj": [
+        0.7,
+        0.65,
+        0.7,
+        0.7,
+        0.65,
+        0.65,
+        0.6,
+        0.55,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.45,
+        0.55,
+        0.65,
+        0.65,
+        0.6,
+        0.55,
+        0.5,
+        0.55,
+        0.5,
+        0.45,
+        0.55,
+        0.45,
+        0.6,
+        0.65,
+        0.6,
+        0.55,
+        0.55,
+        0.5
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 68.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.6,
+      "steps": 600,
+      "traj": [
+        0.65,
+        0.65,
+        0.55,
+        0.5,
+        0.6,
+        0.6,
+        0.55,
+        0.55,
+        0.5,
+        0.55,
+        0.65,
+        0.6,
+        0.6,
+        0.7,
+        0.6,
+        0.65,
+        0.5,
+        0.6,
+        0.5,
+        0.6,
+        0.65,
+        0.65,
+        0.6,
+        0.6,
+        0.6,
+        0.65,
+        0.7,
+        0.7,
+        0.65,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 67.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.6,
+      "steps": 600,
+      "traj": [
+        0.7,
+        0.55,
+        0.6,
+        0.65,
+        0.65,
+        0.7,
+        0.7,
+        0.7,
+        0.6,
+        0.65,
+        0.65,
+        0.7,
+        0.65,
+        0.55,
+        0.6,
+        0.6,
+        0.45,
+        0.5,
+        0.55,
+        0.45,
+        0.5,
+        0.4,
+        0.5,
+        0.4,
+        0.5,
+        0.5,
+        0.6,
+        0.55,
+        0.55,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 3,
+      "episode_s": 69.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.6,
+      "steps": 600,
+      "traj": [
+        0.55,
+        0.55,
+        0.5,
+        0.6,
+        0.5,
+        0.35,
+        0.35,
+        0.45,
+        0.4,
+        0.45,
+        0.45,
+        0.45,
+        0.3,
+        0.45,
+        0.45,
+        0.4,
+        0.35,
+        0.45,
+        0.6,
+        0.6,
+        0.55,
+        0.55,
+        0.45,
+        0.45,
+        0.4,
+        0.4,
+        0.5,
+        0.5,
+        0.6,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 55.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.45,
+      "steps": 600,
+      "traj": [
+        0.6,
+        0.55,
+        0.6,
+        0.6,
+        0.55,
+        0.55,
+        0.45,
+        0.4,
+        0.45,
+        0.4,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.55,
+        0.6,
+        0.45,
+        0.55,
+        0.55,
+        0.55,
+        0.55,
+        0.6,
+        0.45,
+        0.5,
+        0.55,
+        0.5,
+        0.5,
+        0.45,
+        0.45
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 58.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.45,
+      "steps": 600,
+      "traj": [
+        0.5,
+        0.45,
+        0.35,
+        0.45,
+        0.5,
+        0.55,
+        0.55,
+        0.6,
+        0.55,
+        0.55,
+        0.6,
+        0.55,
+        0.6,
+        0.55,
+        0.55,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.6,
+        0.55,
+        0.6,
+        0.6,
+        0.5,
+        0.55,
+        0.55,
+        0.5,
+        0.45,
+        0.4,
+        0.45
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 58.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.4,
+      "steps": 600,
+      "traj": [
+        0.55,
+        0.6,
+        0.45,
+        0.55,
+        0.6,
+        0.6,
+        0.5,
+        0.6,
+        0.55,
+        0.45,
+        0.45,
+        0.45,
+        0.55,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.55,
+        0.55,
+        0.55,
+        0.5,
+        0.55,
+        0.5,
+        0.5,
+        0.5,
+        0.45,
+        0.4,
+        0.45,
+        0.45,
+        0.4
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 3,
+      "episode_s": 60.9
+    }
+  ]
+}

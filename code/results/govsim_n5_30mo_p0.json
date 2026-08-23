@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "composition": "homo:or_claude_sonnet",
+    "kind": "homogeneous",
+    "adversary": "greedy",
+    "models": [
+      "or_claude_sonnet"
+    ],
+    "n": 5,
+    "seeds": 3,
+    "max_months": 30,
+    "discussion": true,
+    "wall_s": 630.8010876178741,
+    "per_model_meter": {
+      "or_claude_sonnet": {
+        "calls": 900,
+        "prompt_tokens": 170535,
+        "completion_tokens": 19929,
+        "latency_s": 1870.593304157257,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 900
+        }
+      }
+    },
+    "est_api_cost": 0.81054
+  },
+  "rows": [
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 625.8
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 630.8
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 614.1
+    }
+  ]
+}

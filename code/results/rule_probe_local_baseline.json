@@ -1,0 +1,2819 @@
+{
+  "meta": {
+    "trials": 30,
+    "temperature": 0.7,
+    "cases": [
+      "agree",
+      "add",
+      "collapse"
+    ],
+    "est_cost": 0.0
+  },
+  "models": [
+    {
+      "key": "llama3b",
+      "model": "llama3.2:3b",
+      "scale_b": 3,
+      "active_b": null,
+      "family": "llama",
+      "reasoning_model": null,
+      "overall_acc": 0.578,
+      "by_case": {
+        "agree": {
+          "n": 30,
+          "acc": 0.0,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "add": {
+          "n": 30,
+          "acc": 0.767,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "collapse": {
+          "n": 30,
+          "acc": 0.967,
+          "unparseable": 0.0,
+          "errors": 0
+        }
+      },
+      "frac_answered_both": 0.6,
+      "served_by": {},
+      "calls": 90,
+      "est_cost": 0.0,
+      "rows": [
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "copper",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "amber",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        }
+      ]
+    },
+    {
+      "key": "qwen25_3b",
+      "model": "qwen2.5:3b",
+      "scale_b": 3,
+      "active_b": null,
+      "family": "qwen",
+      "reasoning_model": null,
+      "overall_acc": 0.722,
+      "by_case": {
+        "agree": {
+          "n": 30,
+          "acc": 0.167,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "add": {
+          "n": 30,
+          "acc": 1.0,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "collapse": {
+          "n": 30,
+          "acc": 1.0,
+          "unparseable": 0.0,
+          "errors": 0
+        }
+      },
+      "frac_answered_both": 0.611,
+      "served_by": {},
+      "calls": 90,
+      "est_cost": 0.0,
+      "rows": [
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "violet, amber, both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "AB",
+          "correct": true,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "amber",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "copper",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "harbor",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "harbor",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "harbor",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        }
+      ]
+    },
+    {
+      "key": "gemma2_2b",
+      "model": "gemma2:2b",
+      "scale_b": 2,
+      "active_b": null,
+      "family": "gemma",
+      "reasoning_model": null,
+      "overall_acc": 0.478,
+      "by_case": {
+        "agree": {
+          "n": 30,
+          "acc": 0.833,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "add": {
+          "n": 30,
+          "acc": 0.0,
+          "unparseable": 0.0,
+          "errors": 0
+        },
+        "collapse": {
+          "n": 30,
+          "acc": 0.6,
+          "unparseable": 0.0,
+          "errors": 0
+        }
+      },
+      "frac_answered_both": 0.056,
+      "served_by": {},
+      "calls": 90,
+      "est_cost": 0.0,
+      "rows": [
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "copper",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "amber",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Both",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "silver",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "copper",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "mango",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "agree",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "harbor",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "maple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Square",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Silver",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "add",
+          "ok": true,
+          "parsed": "B",
+          "truth": "AB",
+          "correct": false,
+          "unparseable": false,
+          "reply": "mountain",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "copper",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "comet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "apple",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "glacier",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "AB",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "Both",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "square",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "river",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "meadow",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "violet",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "Mango",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "B",
+          "truth": "A",
+          "correct": false,
+          "unparseable": false,
+          "reply": "cedar",
+          "served_by": null
+        },
+        {
+          "case": "collapse",
+          "ok": true,
+          "parsed": "A",
+          "truth": "A",
+          "correct": true,
+          "unparseable": false,
+          "reply": "circle",
+          "served_by": null
+        }
+      ]
+    }
+  ]
+}

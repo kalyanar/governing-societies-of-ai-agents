@@ -1,0 +1,1336 @@
+{
+  "meta": {
+    "composition": "homo:or_claude_sonnet",
+    "kind": "homogeneous",
+    "adversary": "greedy",
+    "models": [
+      "or_claude_sonnet"
+    ],
+    "n": 5,
+    "seeds": 3,
+    "max_months": 30,
+    "discussion": true,
+    "wall_s": 1179.257818698883,
+    "per_model_meter": {
+      "or_claude_sonnet": {
+        "calls": 1794,
+        "prompt_tokens": 418833,
+        "completion_tokens": 42556,
+        "latency_s": 3466.40855383873,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 1794
+        }
+      }
+    },
+    "est_api_cost": 1.894839
+  },
+  "rows": [
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 585.0
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 591.7
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1500.0,
+      "efficiency": 1.0,
+      "gini": 0.0,
+      "per_agent_catch": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 3,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 4,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 5,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 50.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 584.2
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1249.9,
+      "efficiency": 0.8332666666666667,
+      "gini": 0.28091847347787824,
+      "per_agent_catch": [
+        176.0,
+        160.0,
+        166.0,
+        589.4,
+        158.5
+      ],
+      "final_stock": 100.0,
+      "n_committed": 1,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 84.0,
+          "caught": 58.0
+        },
+        {
+          "month": 2,
+          "stock": 82.4,
+          "caught": 42.8
+        },
+        {
+          "month": 3,
+          "stock": 87.8,
+          "caught": 38.5
+        },
+        {
+          "month": 4,
+          "stock": 92.4,
+          "caught": 41.6
+        },
+        {
+          "month": 5,
+          "stock": 99.8,
+          "caught": 42.5
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 40.5
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 36.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 36.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 36.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 40.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 40.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 46.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 460.6
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1302.4,
+      "efficiency": 0.8682666666666667,
+      "gini": 0.25393120393120405,
+      "per_agent_catch": [
+        186.0,
+        582.4,
+        182.0,
+        180.0,
+        172.0
+      ],
+      "final_stock": 100.0,
+      "n_committed": 1,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 80.0,
+          "caught": 60.0
+        },
+        {
+          "month": 2,
+          "stock": 80.0,
+          "caught": 40.0
+        },
+        {
+          "month": 3,
+          "stock": 80.0,
+          "caught": 40.0
+        },
+        {
+          "month": 4,
+          "stock": 80.0,
+          "caught": 40.0
+        },
+        {
+          "month": 5,
+          "stock": 96.0,
+          "caught": 32.0
+        },
+        {
+          "month": 6,
+          "stock": 100.0,
+          "caught": 43.2
+        },
+        {
+          "month": 7,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 8,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 9,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 11,
+          "stock": 100.0,
+          "caught": 40.0
+        },
+        {
+          "month": 12,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 13,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 14,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 15,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 16,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 17,
+          "stock": 100.0,
+          "caught": 48.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 19,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 20,
+          "stock": 96.0,
+          "caught": 52.0
+        },
+        {
+          "month": 21,
+          "stock": 100.0,
+          "caught": 39.2
+        },
+        {
+          "month": 22,
+          "stock": 100.0,
+          "caught": 42.0
+        },
+        {
+          "month": 23,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 24,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 25,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 26,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 27,
+          "stock": 100.0,
+          "caught": 38.0
+        },
+        {
+          "month": 28,
+          "stock": 100.0,
+          "caught": 44.0
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 48.0
+        },
+        {
+          "month": 30,
+          "stock": 100.0,
+          "caught": 44.0
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 454.6
+    },
+    {
+      "survival_months": 30,
+      "survived_full": true,
+      "collapsed": false,
+      "total_caught": 1146.2,
+      "efficiency": 0.7641333333333333,
+      "gini": 0.2210434479148491,
+      "per_agent_catch": [
+        462.2999999999999,
+        171.2,
+        186.0,
+        153.0,
+        173.7
+      ],
+      "final_stock": 97.0,
+      "n_committed": 1,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 80.0,
+          "caught": 60.0
+        },
+        {
+          "month": 2,
+          "stock": 64.0,
+          "caught": 48.0
+        },
+        {
+          "month": 3,
+          "stock": 54.4,
+          "caught": 36.8
+        },
+        {
+          "month": 4,
+          "stock": 53.0,
+          "caught": 27.9
+        },
+        {
+          "month": 5,
+          "stock": 58.8,
+          "caught": 23.6
+        },
+        {
+          "month": 6,
+          "stock": 64.0,
+          "caught": 26.8
+        },
+        {
+          "month": 7,
+          "stock": 68.4,
+          "caught": 29.8
+        },
+        {
+          "month": 8,
+          "stock": 77.4,
+          "caught": 29.7
+        },
+        {
+          "month": 9,
+          "stock": 99.8,
+          "caught": 27.5
+        },
+        {
+          "month": 10,
+          "stock": 100.0,
+          "caught": 49.7
+        },
+        {
+          "month": 11,
+          "stock": 84.0,
+          "caught": 58.0
+        },
+        {
+          "month": 12,
+          "stock": 70.4,
+          "caught": 48.8
+        },
+        {
+          "month": 13,
+          "stock": 56.6,
+          "caught": 42.1
+        },
+        {
+          "month": 14,
+          "stock": 50.6,
+          "caught": 31.3
+        },
+        {
+          "month": 15,
+          "stock": 53.0,
+          "caught": 24.1
+        },
+        {
+          "month": 16,
+          "stock": 64.8,
+          "caught": 20.6
+        },
+        {
+          "month": 17,
+          "stock": 83.6,
+          "caught": 23.0
+        },
+        {
+          "month": 18,
+          "stock": 100.0,
+          "caught": 27.7
+        },
+        {
+          "month": 19,
+          "stock": 92.0,
+          "caught": 54.0
+        },
+        {
+          "month": 20,
+          "stock": 100.0,
+          "caught": 39.4
+        },
+        {
+          "month": 21,
+          "stock": 92.0,
+          "caught": 54.0
+        },
+        {
+          "month": 22,
+          "stock": 79.2,
+          "caught": 52.4
+        },
+        {
+          "month": 23,
+          "stock": 66.8,
+          "caught": 45.8
+        },
+        {
+          "month": 24,
+          "stock": 82.8,
+          "caught": 25.4
+        },
+        {
+          "month": 25,
+          "stock": 81.0,
+          "caught": 42.3
+        },
+        {
+          "month": 26,
+          "stock": 69.6,
+          "caught": 46.2
+        },
+        {
+          "month": 27,
+          "stock": 79.4,
+          "caught": 29.9
+        },
+        {
+          "month": 28,
+          "stock": 85.0,
+          "caught": 36.9
+        },
+        {
+          "month": 29,
+          "stock": 100.0,
+          "caught": 33.0
+        },
+        {
+          "month": 30,
+          "stock": 97.0,
+          "caught": 51.5
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 150,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 463.2
+    },
+    {
+      "survival_months": 9,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 197.1,
+      "efficiency": 0.1314,
+      "gini": 0.2086250634195841,
+      "per_agent_catch": [
+        28.0,
+        25.099999999999998,
+        25.2,
+        59.39999999999999,
+        59.39999999999999
+      ],
+      "final_stock": 3.4000000000000536,
+      "n_committed": 2,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 60.0,
+          "caught": 70.0
+        },
+        {
+          "month": 2,
+          "stock": 40.0,
+          "caught": 40.0
+        },
+        {
+          "month": 3,
+          "stock": 28.0,
+          "caught": 26.0
+        },
+        {
+          "month": 4,
+          "stock": 21.6,
+          "caught": 17.2
+        },
+        {
+          "month": 5,
+          "stock": 18.2,
+          "caught": 12.5
+        },
+        {
+          "month": 6,
+          "stock": 14.2,
+          "caught": 11.1
+        },
+        {
+          "month": 7,
+          "stock": 9.2,
+          "caught": 9.6
+        },
+        {
+          "month": 8,
+          "stock": 6.4,
+          "caught": 6.0
+        },
+        {
+          "month": 9,
+          "stock": 3.4,
+          "caught": 4.7
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 45,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 102.6
+    },
+    {
+      "survival_months": 12,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 292.9,
+      "efficiency": 0.19526666666666664,
+      "gini": 0.269716626835097,
+      "per_agent_catch": [
+        97.69999999999999,
+        97.69999999999999,
+        32.0,
+        33.7,
+        31.8
+      ],
+      "final_stock": 2.6000000000001506,
+      "n_committed": 2,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 60.0,
+          "caught": 70.0
+        },
+        {
+          "month": 2,
+          "stock": 52.0,
+          "caught": 34.0
+        },
+        {
+          "month": 3,
+          "stock": 50.4,
+          "caught": 26.8
+        },
+        {
+          "month": 4,
+          "stock": 48.4,
+          "caught": 26.2
+        },
+        {
+          "month": 5,
+          "stock": 46.0,
+          "caught": 25.4
+        },
+        {
+          "month": 6,
+          "stock": 39.2,
+          "caught": 26.4
+        },
+        {
+          "month": 7,
+          "stock": 31.2,
+          "caught": 23.6
+        },
+        {
+          "month": 8,
+          "stock": 25.6,
+          "caught": 18.4
+        },
+        {
+          "month": 9,
+          "stock": 18.8,
+          "caught": 16.2
+        },
+        {
+          "month": 10,
+          "stock": 10.4,
+          "caught": 13.6
+        },
+        {
+          "month": 11,
+          "stock": 6.4,
+          "caught": 7.2
+        },
+        {
+          "month": 12,
+          "stock": 2.6,
+          "caught": 5.1
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 60,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 134.5
+    },
+    {
+      "survival_months": 8,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 207.0,
+      "efficiency": 0.138,
+      "gini": 0.22009661835748795,
+      "per_agent_catch": [
+        63.699999999999996,
+        25.6,
+        28.0,
+        26.0,
+        63.699999999999996
+      ],
+      "final_stock": 4.39999999999978,
+      "n_committed": 2,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 64.0,
+          "caught": 68.0
+        },
+        {
+          "month": 2,
+          "stock": 48.8,
+          "caught": 39.6
+        },
+        {
+          "month": 3,
+          "stock": 38.4,
+          "caught": 29.6
+        },
+        {
+          "month": 4,
+          "stock": 28.0,
+          "caught": 24.4
+        },
+        {
+          "month": 5,
+          "stock": 19.6,
+          "caught": 18.2
+        },
+        {
+          "month": 6,
+          "stock": 11.6,
+          "caught": 13.8
+        },
+        {
+          "month": 7,
+          "stock": 8.0,
+          "caught": 7.6
+        },
+        {
+          "month": 8,
+          "stock": 4.4,
+          "caught": 5.8
+        }
+      ],
+      "n_failed": 0,
+      "n_unparsed": 0,
+      "n_decisions": 40,
+      "monitoring": true,
+      "sanction": false,
+      "steward": true,
+      "total_reclaimed": 0.0,
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 90.3
+    }
+  ]
+}

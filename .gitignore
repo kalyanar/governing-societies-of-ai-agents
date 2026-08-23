@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# SECRETS -- never commit. Both files hold live API keys.
+# Use .env.example as the template instead.
+# ---------------------------------------------------------------------------
+.env
+**/.env
+*.key
+*.pem
+
+# ---- environments / caches ------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- large local artefacts not needed to reproduce ------------------------
+site/
+*.zip
+Theia_ACM_DTRAP*/
+
+# ---- LaTeX build products -------------------------------------------------
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+paper/*.submitted-backup
+
+# ---- scratch --------------------------------------------------------------
+/tmp/
+*_smoke*.json
+_smoke*
+_guard*
+.~lock.*
+
+# ---- not for a public paper repo ------------------------------------------
+# third-party copyrighted PDF (cite it instead of redistributing)
+1102.3931.pdf
+ICML_2026_Paper.pdf
+# private correspondence and personal photos
+proffcomments.*
+gopal.png
+vijay.png
+Pasted image.png
+# unrelated venue template
+ieee_tai_template/
+# internal working notes and drafts
+view1.md
+view2.md
+view3.md
+codefix.tex
+paper_tai.tex
+PROPOSAL_ONEPAGER.*
+*.docx
+
+# staging fragments already inlined into paper_dtrap.tex
+paper/methods_section.tex
+paper/methods_appendix.tex
+paper/section_coop*.tex

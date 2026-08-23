@@ -1,0 +1,5 @@
+Matched-decorrelated debate (hard40, p=0):
+  claude_sonnet solo: 81%
+  homo claude_sonnet x3: majority=86% judge=85%
+  hetero [sonnet+qwen235b+llama70b]: majority=80% judge=82%
+  => hetero did NOT beat strong monoculture; dilution > decorrelation; judge recovered 80->82

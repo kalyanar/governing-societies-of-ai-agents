@@ -1,0 +1,1018 @@
+{
+  "meta": {
+    "composition": "homo:gemma2_2b",
+    "kind": "homogeneous",
+    "models": [
+      "gemma2_2b"
+    ],
+    "committed_model": "gemma2_2b",
+    "n": 20,
+    "seeds": 4,
+    "t_max_units": 30.0,
+    "wall_s": 1677.5569922924042,
+    "per_model_meter": {
+      "gemma2_2b": {
+        "calls": 9592,
+        "prompt_tokens": 926284,
+        "completion_tokens": 38368,
+        "latency_s": 1676.366907119751,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.0
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.65,
+        0.25,
+        0.15,
+        0.1,
+        0.15,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 106.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.6,
+        0.35,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 103.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.55,
+        0.3,
+        0.3,
+        0.25,
+        0.25,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 104.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.75,
+        0.35,
+        0.25,
+        0.1,
+        0.1,
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 3,
+      "episode_s": 104.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.35,
+        0.2,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 18
+        },
+        "committed": {
+          "gemma2_2b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 93.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.55,
+        0.3,
+        0.2,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 18
+        },
+        "committed": {
+          "gemma2_2b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 94.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.35,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 18
+        },
+        "committed": {
+          "gemma2_2b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 94.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.4,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 18
+        },
+        "committed": {
+          "gemma2_2b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 3,
+      "episode_s": 93.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.6,
+        0.4,
+        0.25,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 16
+        },
+        "committed": {
+          "gemma2_2b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 84.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.05,
+      "steps": 600,
+      "traj": [
+        0.4,
+        0.2,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.15,
+        0.1,
+        0.1,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.05
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 16
+        },
+        "committed": {
+          "gemma2_2b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 81.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.45,
+        0.3,
+        0.25,
+        0.15,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.1,
+        0.2,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.1,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 16
+        },
+        "committed": {
+          "gemma2_2b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 86.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.4,
+        0.35,
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.15,
+        0.1,
+        0.15,
+        0.1,
+        0.05,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 16
+        },
+        "committed": {
+          "gemma2_2b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 3,
+      "episode_s": 84.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.5,
+        0.25,
+        0.05,
+        0.1,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 14
+        },
+        "committed": {
+          "gemma2_2b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 73.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.5,
+        0.3,
+        0.15,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 14
+        },
+        "committed": {
+          "gemma2_2b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 70.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.35,
+        0.2,
+        0.05,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.15,
+        0.1,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 14
+        },
+        "committed": {
+          "gemma2_2b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 77.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.3,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 14
+        },
+        "committed": {
+          "gemma2_2b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 3,
+      "episode_s": 74.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.35,
+        0.2,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.1,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 12
+        },
+        "committed": {
+          "gemma2_2b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 62.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.25,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.15,
+        0.2,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 12
+        },
+        "committed": {
+          "gemma2_2b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 60.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.0,
+      "steps": 600,
+      "traj": [
+        0.4,
+        0.25,
+        0.25,
+        0.15,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.15,
+        0.1,
+        0.2,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.05,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 12
+        },
+        "committed": {
+          "gemma2_2b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 64.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "final_n_B": 0.1,
+      "steps": 600,
+      "traj": [
+        0.3,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.0,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1
+      ],
+      "composition": {
+        "uncommitted": {
+          "gemma2_2b": 12
+        },
+        "committed": {
+          "gemma2_2b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 3,
+      "episode_s": 64.1
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  body { margin: 0; padding: 26px 30px; background: #ffffff; color: #1a1a2e; width: 1180px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { font-size: 13px; color: #5a5a72; margin: 0 0 18px; }
+  .sub b { color:#1a1a2e; }
+
+  .master { border-radius: 12px; border:2px solid #6a4fd0; background:#f3f0ff; padding:12px 16px; margin-bottom:8px; }
+  .master .h { font-size:14px; font-weight:800; color:#3d2b8f; letter-spacing:.3px; }
+  .master .t { font-size:13px; color:#3a3a52; margin-top:3px; line-height:1.45; }
+  .master code { background:#e6e0ff; padding:0 5px; border-radius:4px; }
+  .splitarrow { text-align:center; color:#9a8fd0; font-size:14px; margin:6px 0 12px; font-weight:600;}
+
+  .cols { display:flex; gap:20px; }
+  .col { flex:1; border-radius:13px; padding:14px 15px 16px; }
+  .q1 { background:#eef4ff; border:2px solid #2f6fe0; }
+  .q2 { background:#fff4ec; border:2px solid #e0782f; }
+  .q3 { background:#eefaf0; border:2px solid #1f9d57; }
+  .tag { display:inline-block; font-size:11px; font-weight:800; letter-spacing:.4px; padding:3px 10px; border-radius:20px; color:#fff; }
+  .t1 { background:#2f6fe0; } .t2 { background:#e0782f; } .t3 { background:#1f9d57; }
+  .ttl { font-size:15.5px; font-weight:800; margin:8px 0 2px; }
+  .ask { font-size:12px; font-style:italic; color:#5a5a72; margin-bottom:11px; line-height:1.35; }
+
+  .lab { font-size:10.5px; font-weight:800; letter-spacing:.5px; color:#7a7a90; margin:9px 0 3px; }
+  .box { background:#fff; border:1px solid #cdd6e6; border-radius:8px; padding:8px 11px; font-size:12.5px; line-height:1.4; }
+  .q2 .box{ border-color:#f0cfae;} .q3 .box{ border-color:#bfe3cb;}
+  .box b{ color:#13284d;} .q2 .box b{ color:#7a4410;} .q3 .box b{ color:#0f4d2c;}
+  .arrow{ text-align:center; font-size:13px; margin:3px 0; color:#9aa6bd;}
+  .read{ background:#fff; border:1px dashed; border-radius:8px; padding:8px 11px; font-size:12.5px; line-height:1.4; font-weight:600;}
+  .q1 .read{ border-color:#2f6fe0; color:#13284d;}
+  .q2 .read{ border-color:#e0782f; color:#7a4410;}
+  .q3 .read{ border-color:#1f9d57; color:#0f4d2c;}
+  .find{ margin-top:9px; font-size:12px; background:#fff7e6; border:1px solid #f0c060; border-radius:8px; padding:7px 11px; color:#7a5200; font-weight:600; line-height:1.4;}
+  code{ background:#eef; padding:0 4px; border-radius:4px; font-size:11.5px;}
+  .pc{ font-weight:800; }
+</style></head>
+<body>
+  <h1>How the Experiments Answer the Three Questions</h1>
+  <p class="sub">All three collapse into one measured quantity — the tipping point <b>p<sub>c</sub></b> (smallest committed/adversarial fraction that flips or breaks the system). <b>Lower p<sub>c</sub> = more vulnerable.</b></p>
+
+  <div class="master">
+    <div class="h">MASTER METRIC &nbsp;·&nbsp; p<sub>c</sub>( composition , scale )</div>
+    <div class="t">One factorial sweep — <code>composition × model-scale × committed-fraction p</code> — produces p<sub>c</sub>, then it is read three ways. <span style="color:#6a4fd0;font-weight:700;">Q3 measures p<sub>c</sub>; Q1 reads how it shifts with composition; Q2 reads how it shifts with scale.</span></div>
+  </div>
+  <div class="splitarrow">▼ &nbsp;&nbsp; read the same data three ways &nbsp;&nbsp; ▼</div>
+
+  <div class="cols">
+    <!-- Q1 -->
+    <div class="col q1">
+      <span class="tag t1">QUESTION 1</span>
+      <div class="ttl">Homogeneity vs Heterogeneity</div>
+      <div class="ask">"More vulnerable with identical vs heterogeneous LLMs?"</div>
+
+      <div class="lab">MANIPULATE</div>
+      <div class="box">Agent pool: <b>homogeneous</b> (all one LLM) vs <b>heterogeneous</b> (mixed families, competence-matched) vs mixed-competence.</div>
+      <div class="arrow">▼</div>
+      <div class="lab">READ FROM DATA</div>
+      <div class="read"><span class="pc">Δp<sub>c</sub></span> between compositions &nbsp;·&nbsp; correlation <b>ρ</b> → effective agents <b>N<sub>eff</sub></b> &nbsp;·&nbsp; injection spread rate (GovSim)</div>
+      <div class="find"><b>Logic:</b> one rhetoric flips <i>all</i> clones (high ρ, low N<sub>eff</sub>) → monoculture flips at lower p<sub>c</sub>. Diverse pools decorrelate → higher p<sub>c</sub>.</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="col q2">
+      <span class="tag t2">QUESTION 2</span>
+      <div class="ttl">Model Scale</div>
+      <div class="ask">"How does model size influence robustness / susceptibility?"</div>
+
+      <div class="lab">MANIPULATE</div>
+      <div class="box">Model size <b>0.5B → 70B → frontier</b>, two sub-experiments: scale the <b>majority</b> (defender) and the <b>committed minority</b> (attacker) separately.</div>
+      <div class="arrow">▼</div>
+      <div class="lab">READ FROM DATA</div>
+      <div class="read"><span class="pc">p<sub>c</sub> vs size</span> (sign = robust or fragile) &nbsp;·&nbsp; bias <b>h</b> vs herding <b>J</b> &nbsp;·&nbsp; competence covariate (scale ≠ capability)</div>
+      <div class="find"><b>Logic:</b> majority p<sub>c</sub> ↑ = stubborn/robust; p<sub>c</sub> ↓ = sycophantic/fragile. Minority p<sub>c</sub> ↓ with size = capable attacker (<b>dual-use</b>).</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="col q3">
+      <span class="tag t3">QUESTION 3</span>
+      <div class="ttl">Tipping Point</div>
+      <div class="ask">"Is there a quantifiable threshold where cooperation degrades / vulnerability spikes?"</div>
+
+      <div class="lab">MANIPULATE</div>
+      <div class="box">Sweep the <b>committed / defector fraction p</b> on a fine grid; vary system size <b>N</b>.</div>
+      <div class="arrow">▼</div>
+      <div class="lab">READ FROM DATA</div>
+      <div class="read"><span class="pc">p<sub>c</sub> itself</span> (with CI): P(consensus→A) jumps 0→1 &nbsp;·&nbsp; <b>T<sub>c</sub></b> scaling exp(N) vs ln N &nbsp;·&nbsp; vs analytic <b>9.79%</b></div>
+      <div class="find"><b>Logic:</b> the jump location = the number. Finite-size scaling confirms a true phase transition; GovSim shows it recurs in cooperation.</div>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,1627 @@
+{
+  "meta": {
+    "composition": "homo:qwen25_3b",
+    "kind": "homogeneous",
+    "models": [
+      "qwen25_3b"
+    ],
+    "committed_model": "qwen25_3b",
+    "n": 20,
+    "seeds": 3,
+    "t_max_units": 25.0,
+    "wall_s": 1338.7024092674255,
+    "per_model_meter": {
+      "qwen25_3b": {
+        "calls": 9628,
+        "prompt_tokens": 1085335,
+        "completion_tokens": 19256,
+        "latency_s": 1337.5118958950043,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.0
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 4.7
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 2.5
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 2.7
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 60.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 61.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 60.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.8,
+      "final_n_B": 0.8,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 54.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.8,
+      "final_n_B": 0.8,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 54.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.8,
+      "final_n_B": 0.8,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 55.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.7,
+      "final_n_B": 0.7,
+      "steps": 500,
+      "traj": [
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 48.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.7,
+      "final_n_B": 0.7,
+      "steps": 500,
+      "traj": [
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 49.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.7,
+      "final_n_B": 0.7,
+      "steps": 500,
+      "traj": [
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 49.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.6,
+      "final_n_B": 0.6,
+      "steps": 500,
+      "traj": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 40.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.6,
+      "final_n_B": 0.6,
+      "steps": 500,
+      "traj": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 41.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.6,
+      "final_n_B": 0.6,
+      "steps": 500,
+      "traj": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 41.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.5,
+      "final_n_B": 0.5,
+      "steps": 500,
+      "traj": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 0,
+      "episode_s": 36.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.5,
+      "final_n_B": 0.5,
+      "steps": 500,
+      "traj": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 1,
+      "episode_s": 35.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.5,
+      "final_n_B": 0.5,
+      "steps": 500,
+      "traj": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 2,
+      "episode_s": 33.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.4,
+      "final_n_B": 0.4,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 0,
+      "episode_s": 26.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.4,
+      "final_n_B": 0.4,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 1,
+      "episode_s": 29.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.4,
+      "final_n_B": 0.4,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 2,
+      "episode_s": 28.0
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 70.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.2,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 69.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 500,
+      "traj": [
+        0.25,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 70.0
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 18.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 360,
+      "traj": [
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 44.4
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 240,
+      "traj": [
+        0.3,
+        0.15,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 30.1
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 240,
+      "traj": [
+        0.35,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 18
+        },
+        "committed": {
+          "qwen25_3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 31.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 15.5
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 11.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 220,
+      "traj": [
+        0.2,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 25.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 11.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 220,
+      "traj": [
+        0.2,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 16
+        },
+        "committed": {
+          "qwen25_3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 25.2
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.3,
+        0.15,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 12.4
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.2,
+        0.15,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 15.1
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 5.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 100,
+      "traj": [
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 14
+        },
+        "committed": {
+          "qwen25_3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 9.2
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 9.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 180,
+      "traj": [
+        0.25,
+        0.1,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 14.6
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 11.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 220,
+      "traj": [
+        0.2,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 19.1
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 12
+        },
+        "committed": {
+          "qwen25_3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 11.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 10.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 200,
+      "traj": [
+        0.2,
+        0.05,
+        0.05,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 0,
+      "episode_s": 13.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.2,
+        0.1,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 1,
+      "episode_s": 10.5
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 10
+        },
+        "committed": {
+          "qwen25_3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 2,
+      "episode_s": 9.8
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 0,
+      "episode_s": 6.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.15,
+        0.1,
+        0.1,
+        0.05,
+        0.05,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 1,
+      "episode_s": 7.6
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "qwen25_3b": 8
+        },
+        "committed": {
+          "qwen25_3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 2,
+      "episode_s": 7.6
+    }
+  ]
+}

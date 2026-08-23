@@ -1,0 +1,1553 @@
+{
+  "meta": {
+    "composition": "homo:llama3b",
+    "kind": "homogeneous",
+    "models": [
+      "llama3b"
+    ],
+    "committed_model": "llama3b",
+    "n": 20,
+    "seeds": 3,
+    "t_max_units": 25.0,
+    "wall_s": 1286.5159940719604,
+    "per_model_meter": {
+      "llama3b": {
+        "calls": 8281,
+        "prompt_tokens": 894558,
+        "completion_tokens": 16562,
+        "latency_s": 1285.4644680023193,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.0
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 3.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 60,
+      "traj": [
+        0.95,
+        0.95,
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 10.5
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 2.9
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 20,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 3.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.9,
+        0.85,
+        0.85,
+        0.75,
+        0.8,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.75,
+        0.85,
+        0.9,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.75,
+        0.55,
+        0.7,
+        0.65,
+        0.7,
+        0.7,
+        0.8,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 69.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.85,
+        0.85,
+        0.8,
+        0.8,
+        0.75,
+        0.85,
+        0.85,
+        0.85,
+        0.9,
+        0.9,
+        0.9,
+        0.8,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.8,
+        0.75,
+        0.8,
+        0.85,
+        0.85,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 69.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.9,
+      "final_n_B": 0.9,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.85,
+        0.85,
+        0.8,
+        0.85,
+        0.8,
+        0.8,
+        0.85,
+        0.9,
+        0.9,
+        0.75,
+        0.85,
+        0.75,
+        0.8,
+        0.75,
+        0.85,
+        0.85,
+        0.9,
+        0.9,
+        0.85,
+        0.85,
+        0.9,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 69.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.8,
+      "final_n_B": 0.8,
+      "steps": 500,
+      "traj": [
+        0.7,
+        0.8,
+        0.75,
+        0.8,
+        0.7,
+        0.75,
+        0.75,
+        0.75,
+        0.7,
+        0.75,
+        0.75,
+        0.8,
+        0.75,
+        0.75,
+        0.65,
+        0.7,
+        0.7,
+        0.75,
+        0.75,
+        0.7,
+        0.7,
+        0.7,
+        0.65,
+        0.6,
+        0.8
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 62.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.65,
+      "final_n_B": 0.65,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.8,
+        0.75,
+        0.7,
+        0.7,
+        0.7,
+        0.65,
+        0.65,
+        0.75,
+        0.7,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.7,
+        0.55,
+        0.65,
+        0.75,
+        0.65,
+        0.5,
+        0.6,
+        0.55,
+        0.65,
+        0.65
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 61.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.45,
+      "final_n_B": 0.45,
+      "steps": 500,
+      "traj": [
+        0.8,
+        0.7,
+        0.65,
+        0.75,
+        0.8,
+        0.8,
+        0.8,
+        0.75,
+        0.75,
+        0.8,
+        0.8,
+        0.8,
+        0.75,
+        0.7,
+        0.7,
+        0.65,
+        0.7,
+        0.8,
+        0.75,
+        0.75,
+        0.6,
+        0.65,
+        0.65,
+        0.6,
+        0.45
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 62.9
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.65,
+      "final_n_B": 0.65,
+      "steps": 500,
+      "traj": [
+        0.55,
+        0.5,
+        0.55,
+        0.45,
+        0.6,
+        0.55,
+        0.6,
+        0.6,
+        0.5,
+        0.5,
+        0.5,
+        0.55,
+        0.45,
+        0.45,
+        0.5,
+        0.7,
+        0.65,
+        0.6,
+        0.65,
+        0.7,
+        0.65,
+        0.6,
+        0.6,
+        0.6,
+        0.65
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 54.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.7,
+      "final_n_B": 0.7,
+      "steps": 500,
+      "traj": [
+        0.65,
+        0.5,
+        0.6,
+        0.6,
+        0.6,
+        0.65,
+        0.6,
+        0.65,
+        0.6,
+        0.5,
+        0.65,
+        0.6,
+        0.55,
+        0.45,
+        0.4,
+        0.4,
+        0.4,
+        0.55,
+        0.55,
+        0.5,
+        0.55,
+        0.5,
+        0.6,
+        0.7,
+        0.7
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 56.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.6,
+      "final_n_B": 0.6,
+      "steps": 500,
+      "traj": [
+        0.6,
+        0.45,
+        0.4,
+        0.55,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.65,
+        0.7,
+        0.7,
+        0.6,
+        0.6,
+        0.65,
+        0.65,
+        0.65,
+        0.7,
+        0.7,
+        0.55,
+        0.6,
+        0.6
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 54.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.55,
+      "final_n_B": 0.55,
+      "steps": 500,
+      "traj": [
+        0.55,
+        0.5,
+        0.5,
+        0.45,
+        0.4,
+        0.5,
+        0.45,
+        0.5,
+        0.45,
+        0.55,
+        0.5,
+        0.5,
+        0.6,
+        0.6,
+        0.6,
+        0.5,
+        0.45,
+        0.45,
+        0.35,
+        0.4,
+        0.4,
+        0.45,
+        0.5,
+        0.5,
+        0.55
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 45.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.45,
+      "final_n_B": 0.45,
+      "steps": 500,
+      "traj": [
+        0.55,
+        0.45,
+        0.5,
+        0.55,
+        0.5,
+        0.5,
+        0.55,
+        0.45,
+        0.5,
+        0.35,
+        0.45,
+        0.45,
+        0.45,
+        0.5,
+        0.5,
+        0.4,
+        0.45,
+        0.5,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.4,
+        0.45
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 46.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.55,
+      "final_n_B": 0.55,
+      "steps": 500,
+      "traj": [
+        0.5,
+        0.45,
+        0.55,
+        0.5,
+        0.45,
+        0.55,
+        0.55,
+        0.45,
+        0.4,
+        0.4,
+        0.45,
+        0.45,
+        0.45,
+        0.5,
+        0.5,
+        0.4,
+        0.45,
+        0.4,
+        0.55,
+        0.5,
+        0.6,
+        0.45,
+        0.5,
+        0.6,
+        0.55
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 47.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.35,
+      "final_n_B": 0.35,
+      "steps": 500,
+      "traj": [
+        0.45,
+        0.45,
+        0.45,
+        0.45,
+        0.5,
+        0.5,
+        0.45,
+        0.5,
+        0.45,
+        0.5,
+        0.5,
+        0.45,
+        0.5,
+        0.45,
+        0.45,
+        0.4,
+        0.5,
+        0.45,
+        0.35,
+        0.4,
+        0.25,
+        0.25,
+        0.35,
+        0.4,
+        0.35
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 0,
+      "episode_s": 40.3
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.25,
+      "final_n_B": 0.25,
+      "steps": 500,
+      "traj": [
+        0.45,
+        0.5,
+        0.45,
+        0.4,
+        0.4,
+        0.4,
+        0.45,
+        0.4,
+        0.45,
+        0.45,
+        0.4,
+        0.45,
+        0.4,
+        0.4,
+        0.4,
+        0.35,
+        0.4,
+        0.35,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.45,
+        0.3,
+        0.25
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 1,
+      "episode_s": 39.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.4,
+      "final_n_B": 0.4,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.35,
+        0.35,
+        0.4,
+        0.45,
+        0.4,
+        0.35,
+        0.3,
+        0.3,
+        0.3,
+        0.4,
+        0.35,
+        0.45,
+        0.35,
+        0.4,
+        0.35,
+        0.35,
+        0.45,
+        0.4,
+        0.5,
+        0.45,
+        0.35,
+        0.3,
+        0.35,
+        0.4
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 2,
+      "episode_s": 38.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.25,
+      "final_n_B": 0.25,
+      "steps": 500,
+      "traj": [
+        0.4,
+        0.4,
+        0.35,
+        0.25,
+        0.3,
+        0.35,
+        0.25,
+        0.3,
+        0.2,
+        0.15,
+        0.2,
+        0.2,
+        0.25,
+        0.2,
+        0.25,
+        0.2,
+        0.25,
+        0.35,
+        0.3,
+        0.35,
+        0.35,
+        0.35,
+        0.3,
+        0.25,
+        0.25
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 0,
+      "episode_s": 30.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.3,
+      "final_n_B": 0.3,
+      "steps": 500,
+      "traj": [
+        0.3,
+        0.35,
+        0.35,
+        0.3,
+        0.35,
+        0.25,
+        0.35,
+        0.35,
+        0.2,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.35,
+        0.35,
+        0.25,
+        0.3,
+        0.35,
+        0.35,
+        0.35,
+        0.4,
+        0.35,
+        0.3,
+        0.3
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 1,
+      "episode_s": 32.1
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "final_n_resist": 0.35,
+      "final_n_B": 0.35,
+      "steps": 500,
+      "traj": [
+        0.3,
+        0.25,
+        0.2,
+        0.2,
+        0.3,
+        0.3,
+        0.35,
+        0.35,
+        0.35,
+        0.25,
+        0.25,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.35,
+        0.35,
+        0.3,
+        0.35,
+        0.2,
+        0.2,
+        0.25,
+        0.25,
+        0.3,
+        0.35
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 2,
+      "episode_s": 30.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 140,
+      "traj": [
+        0.5,
+        0.5,
+        0.35,
+        0.3,
+        0.25,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 21.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 8.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 160,
+      "traj": [
+        0.65,
+        0.35,
+        0.2,
+        0.1,
+        0.1,
+        0.05,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 24.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 11.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 220,
+      "traj": [
+        0.45,
+        0.3,
+        0.15,
+        0.15,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.15,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 20
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 33.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 5.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 100,
+      "traj": [
+        0.55,
+        0.35,
+        0.1,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 14.4
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 5.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 100,
+      "traj": [
+        0.6,
+        0.35,
+        0.25,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 14.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 15.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 300,
+      "traj": [
+        0.8,
+        0.45,
+        0.25,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.05,
+        0.1,
+        0.15,
+        0.1,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 18
+        },
+        "committed": {
+          "llama3b": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 41.1
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 13.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 260,
+      "traj": [
+        0.6,
+        0.45,
+        0.35,
+        0.25,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.15,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 31.6
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 240,
+      "traj": [
+        0.6,
+        0.15,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.05,
+        0.15,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 31.1
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.25,
+        0.1,
+        0.1,
+        0.05,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 16
+        },
+        "committed": {
+          "llama3b": 4
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 14.3
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 9.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 180,
+      "traj": [
+        0.3,
+        0.35,
+        0.2,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 18.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 4.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 80,
+      "traj": [
+        0.35,
+        0.2,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 9.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.35,
+        0.1,
+        0.0,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 14
+        },
+        "committed": {
+          "llama3b": 6
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 11.8
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 240,
+      "traj": [
+        0.4,
+        0.25,
+        0.25,
+        0.2,
+        0.05,
+        0.05,
+        0.1,
+        0.15,
+        0.1,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 21.0
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 5.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 100,
+      "traj": [
+        0.25,
+        0.2,
+        0.15,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 10.2
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 4.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 80,
+      "traj": [
+        0.3,
+        0.15,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 12
+        },
+        "committed": {
+          "llama3b": 8
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 7.4
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.25,
+        0.2,
+        0.15,
+        0.2,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 0,
+      "episode_s": 9.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.35,
+        0.3,
+        0.2,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 1,
+      "episode_s": 9.7
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.2,
+        0.15,
+        0.05,
+        0.05,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 10
+        },
+        "committed": {
+          "llama3b": 10
+        }
+      },
+      "p": 0.5,
+      "seed": 2,
+      "episode_s": 8.3
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 10.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 200,
+      "traj": [
+        0.15,
+        0.2,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 0,
+      "episode_s": 11.6
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 4.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 80,
+      "traj": [
+        0.2,
+        0.1,
+        0.05,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 1,
+      "episode_s": 6.3
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 6.0,
+      "committed_opinion": "B",
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 120,
+      "traj": [
+        0.25,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "llama3b": 8
+        },
+        "committed": {
+          "llama3b": 12
+        }
+      },
+      "p": 0.6,
+      "seed": 2,
+      "episode_s": 7.5
+    }
+  ]
+}

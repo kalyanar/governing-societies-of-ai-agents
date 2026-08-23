@@ -1,0 +1,54 @@
+{
+  "homo": {
+    "name": "homo",
+    "panel": [
+      "gpt4o_mini",
+      "gpt4o_mini",
+      "gpt4o_mini"
+    ],
+    "n": 40,
+    "a_best": 0.375,
+    "coverage_C": 0.375,
+    "levels": {
+      "v0_majority": 0.375,
+      "v1_selfverify": 0.325,
+      "v2_weakjudge": 0.4,
+      "v3_strongjudge": 0.525,
+      "oracle_C": 0.375
+    },
+    "v_hat": {
+      "v0_majority": null,
+      "v1_selfverify": null,
+      "v2_weakjudge": null,
+      "v3_strongjudge": null,
+      "oracle_C": null
+    },
+    "est_cost": 0.09
+  },
+  "hetero": {
+    "name": "hetero",
+    "panel": [
+      "gpt4o_mini",
+      "qwen72b",
+      "llama70b"
+    ],
+    "n": 40,
+    "a_best": 0.525,
+    "coverage_C": 0.6,
+    "levels": {
+      "v0_majority": 0.45,
+      "v1_selfverify": 0.425,
+      "v2_weakjudge": 0.375,
+      "v3_strongjudge": 0.625,
+      "oracle_C": 0.6
+    },
+    "v_hat": {
+      "v0_majority": -1.0,
+      "v1_selfverify": -1.33,
+      "v2_weakjudge": -2.0,
+      "v3_strongjudge": 1.33,
+      "oracle_C": 1.0
+    },
+    "est_cost": 0.104
+  }
+}

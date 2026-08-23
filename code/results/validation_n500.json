@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "n": 500,
+    "t_max_units": 80.0,
+    "seeds": 8,
+    "analytic_pc": 0.0979,
+    "estimated_pc": 0.07500000000000001,
+    "wall_s": 2.7117581367492676
+  },
+  "rows": [
+    {
+      "p": 0.04,
+      "n": 500,
+      "mean_n_B": 0.8859375,
+      "frac_consensus": 0.0,
+      "mean_t_consensus": Infinity
+    },
+    {
+      "p": 0.05,
+      "n": 500,
+      "mean_n_B": 0.8577086007702183,
+      "frac_consensus": 0.0,
+      "mean_t_consensus": Infinity
+    },
+    {
+      "p": 0.06,
+      "n": 500,
+      "mean_n_B": 0.81141670991178,
+      "frac_consensus": 0.0,
+      "mean_t_consensus": Infinity
+    },
+    {
+      "p": 0.07,
+      "n": 500,
+      "mean_n_B": 0.6422305271439811,
+      "frac_consensus": 0.125,
+      "mean_t_consensus": 68.0
+    },
+    {
+      "p": 0.08,
+      "n": 500,
+      "mean_n_B": 0.21660922587486747,
+      "frac_consensus": 0.75,
+      "mean_t_consensus": 63.5
+    },
+    {
+      "p": 0.09,
+      "n": 500,
+      "mean_n_B": 0.022004824443848832,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 52.875
+    },
+    {
+      "p": 0.1,
+      "n": 500,
+      "mean_n_B": 0.0029945799457994585,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 44.5
+    },
+    {
+      "p": 0.11,
+      "n": 500,
+      "mean_n_B": 0.0,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 36.125
+    },
+    {
+      "p": 0.12,
+      "n": 500,
+      "mean_n_B": 0.0,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 36.25
+    },
+    {
+      "p": 0.13,
+      "n": 500,
+      "mean_n_B": 0.0,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 32.625
+    },
+    {
+      "p": 0.14,
+      "n": 500,
+      "mean_n_B": 0.0,
+      "frac_consensus": 1.0,
+      "mean_t_consensus": 30.625
+    }
+  ]
+}

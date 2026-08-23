@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "composition": "hetero:gpt4o_mini+claude_haiku+qwen72b",
+    "kind": "heterogeneous",
+    "adversary": "greedy",
+    "models": [
+      "gpt4o_mini",
+      "claude_haiku",
+      "qwen72b"
+    ],
+    "n": 5,
+    "seeds": 2,
+    "max_months": 10,
+    "discussion": true,
+    "wall_s": 80.79719948768616,
+    "per_model_meter": {
+      "qwen72b": {
+        "calls": 30,
+        "prompt_tokens": 4550,
+        "completion_tokens": 372,
+        "latency_s": 42.21832299232483,
+        "failures": 0
+      },
+      "claude_haiku": {
+        "calls": 58,
+        "prompt_tokens": 9126,
+        "completion_tokens": 1218,
+        "latency_s": 73.53471279144287,
+        "failures": 0
+      },
+      "gpt4o_mini": {
+        "calls": 80,
+        "prompt_tokens": 11372,
+        "completion_tokens": 902,
+        "latency_s": 68.39273381233215,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.017484600000000003
+  },
+  "rows": [
+    {
+      "survival_months": 2,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 137.0,
+      "efficiency": 0.274,
+      "gini": 0.06423357664233587,
+      "per_agent_catch": [
+        25.0,
+        35.0,
+        25.0,
+        27.0,
+        25.0
+      ],
+      "final_stock": 2.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 76.0,
+          "caught": 62.0
+        },
+        {
+          "month": 2,
+          "stock": 2.0,
+          "caught": 75.0
+        }
+      ],
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 22.3
+    },
+    {
+      "survival_months": 7,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 268.0,
+      "efficiency": 0.536,
+      "gini": 0.03134328358208949,
+      "per_agent_catch": [
+        54.0,
+        58.0,
+        49.0,
+        52.0,
+        55.0
+      ],
+      "final_stock": 2.0,
+      "n_committed": 0,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 100.0,
+          "caught": 50.0
+        },
+        {
+          "month": 2,
+          "stock": 80.0,
+          "caught": 60.0
+        },
+        {
+          "month": 3,
+          "stock": 52.0,
+          "caught": 54.0
+        },
+        {
+          "month": 4,
+          "stock": 52.0,
+          "caught": 26.0
+        },
+        {
+          "month": 5,
+          "stock": 40.0,
+          "caught": 32.0
+        },
+        {
+          "month": 6,
+          "stock": 14.0,
+          "caught": 33.0
+        },
+        {
+          "month": 7,
+          "stock": 2.0,
+          "caught": 13.0
+        }
+      ],
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 80.8
+    },
+    {
+      "survival_months": 3,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 133.6,
+      "efficiency": 0.2672,
+      "gini": 0.13263473053892216,
+      "per_agent_catch": [
+        26.85,
+        33.8,
+        22.85,
+        33.25,
+        16.85
+      ],
+      "final_stock": 0.0,
+      "n_committed": 1,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 52.0,
+          "caught": 74.0
+        },
+        {
+          "month": 2,
+          "stock": 15.2,
+          "caught": 44.4
+        },
+        {
+          "month": 3,
+          "stock": 0.0,
+          "caught": 15.2
+        }
+      ],
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 25.5
+    },
+    {
+      "survival_months": 3,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 128.0,
+      "efficiency": 0.256,
+      "gini": 0.109375,
+      "per_agent_catch": [
+        19.8,
+        31.400000000000002,
+        19.8,
+        25.5,
+        31.5
+      ],
+      "final_stock": 0.7999999999999936,
+      "n_committed": 1,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 48.0,
+          "caught": 76.0
+        },
+        {
+          "month": 2,
+          "stock": 8.8,
+          "caught": 43.6
+        },
+        {
+          "month": 3,
+          "stock": 0.8,
+          "caught": 8.4
+        }
+      ],
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 25.7
+    },
+    {
+      "survival_months": 2,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 124.0,
+      "efficiency": 0.248,
+      "gini": 0.09549453479072256,
+      "per_agent_catch": [
+        25.520661157024794,
+        19.520661157024794,
+        19.917355371900825,
+        29.520661157024794,
+        29.520661157024794
+      ],
+      "final_stock": 0.0,
+      "n_committed": 2,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 48.0,
+          "caught": 76.0
+        },
+        {
+          "month": 2,
+          "stock": 0.0,
+          "caught": 48.0
+        }
+      ],
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 11.7
+    },
+    {
+      "survival_months": 3,
+      "survived_full": false,
+      "collapsed": true,
+      "total_caught": 134.0,
+      "efficiency": 0.268,
+      "gini": 0.10424283078987107,
+      "per_agent_catch": [
+        33.438202247191015,
+        33.438202247191015,
+        21.348314606741575,
+        23.078651685393258,
+        22.696629213483146
+      ],
+      "final_stock": 0.0,
+      "n_committed": 2,
+      "monthly": [
+        {
+          "month": 1,
+          "stock": 60.0,
+          "caught": 70.0
+        },
+        {
+          "month": 2,
+          "stock": 8.0,
+          "caught": 56.0
+        },
+        {
+          "month": 3,
+          "stock": 0.0,
+          "caught": 8.0
+        }
+      ],
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 18.2
+    }
+  ]
+}

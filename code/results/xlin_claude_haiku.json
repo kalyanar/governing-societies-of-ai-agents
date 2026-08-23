@@ -1,0 +1,1094 @@
+{
+  "meta": {
+    "composition": "homo:claude_haiku",
+    "kind": "homogeneous",
+    "models": [
+      "claude_haiku"
+    ],
+    "committed_model": "claude_haiku",
+    "n": 16,
+    "seeds": 3,
+    "t_max_units": 18.0,
+    "wall_s": 917.4544548988342,
+    "per_model_meter": {
+      "claude_haiku": {
+        "calls": 3809,
+        "prompt_tokens": 385374,
+        "completion_tokens": 15737,
+        "latency_s": 8250.88301539421,
+        "failures": 0
+      }
+    },
+    "est_api_cost": 0.3712472
+  },
+  "rows": [
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 49.7
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "square",
+        "resist": "circle"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 30.3
+    },
+    {
+      "reached": false,
+      "consensus": "B",
+      "t_consensus": 1.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 1.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 47.8
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "comet",
+        "resist": "glacier"
+      },
+      "final_n_resist": 0.1875,
+      "final_n_B": 0.1875,
+      "steps": 288,
+      "traj": [
+        0.75,
+        0.688,
+        0.75,
+        0.688,
+        0.688,
+        0.688,
+        0.688,
+        0.688,
+        0.688,
+        0.75,
+        0.375,
+        0.375,
+        0.375,
+        0.438,
+        0.25,
+        0.188,
+        0.25,
+        0.188
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 638.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.875,
+      "steps": 288,
+      "traj": [
+        0.875,
+        0.812,
+        0.875,
+        0.875,
+        0.812,
+        0.875,
+        0.75,
+        0.625,
+        0.625,
+        0.625,
+        0.75,
+        0.812,
+        0.75,
+        0.75,
+        0.875,
+        0.812,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 548.6
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.125,
+      "final_n_B": 0.125,
+      "steps": 288,
+      "traj": [
+        0.75,
+        0.75,
+        0.875,
+        0.625,
+        0.688,
+        0.688,
+        0.812,
+        0.625,
+        0.562,
+        0.312,
+        0.25,
+        0.375,
+        0.25,
+        0.312,
+        0.188,
+        0.188,
+        0.25,
+        0.125
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 539.5
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 0.25,
+      "final_n_B": 0.25,
+      "steps": 288,
+      "traj": [
+        0.75,
+        0.688,
+        0.75,
+        0.562,
+        0.562,
+        0.5,
+        0.5,
+        0.625,
+        0.625,
+        0.562,
+        0.375,
+        0.312,
+        0.25,
+        0.125,
+        0.312,
+        0.438,
+        0.375,
+        0.25
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 584.2
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 18.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "river",
+        "resist": "mountain"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 288,
+      "traj": [
+        0.812,
+        0.625,
+        0.812,
+        0.812,
+        0.75,
+        0.625,
+        0.5,
+        0.5,
+        0.562,
+        0.438,
+        0.438,
+        0.25,
+        0.25,
+        0.25,
+        0.125,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 515.5
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 16.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 256,
+      "traj": [
+        0.688,
+        0.625,
+        0.75,
+        0.438,
+        0.688,
+        0.625,
+        0.688,
+        0.625,
+        0.5,
+        0.312,
+        0.312,
+        0.25,
+        0.188,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 458.2
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 6.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 96,
+      "traj": [
+        0.562,
+        0.5,
+        0.25,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 168.2
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 11.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "apple",
+        "resist": "mango"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 176,
+      "traj": [
+        0.625,
+        0.5,
+        0.625,
+        0.562,
+        0.688,
+        0.625,
+        0.25,
+        0.125,
+        0.188,
+        0.062,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 270.5
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 8.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 128,
+      "traj": [
+        0.5,
+        0.438,
+        0.562,
+        0.188,
+        0.062,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 166.9
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 6.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 96,
+      "traj": [
+        0.562,
+        0.5,
+        0.312,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 124.1
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 9.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 144,
+      "traj": [
+        0.438,
+        0.5,
+        0.5,
+        0.438,
+        0.438,
+        0.375,
+        0.188,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 137.7
+    },
+    {
+      "reached": true,
+      "consensus": "A",
+      "t_consensus": 6.0,
+      "committed_opinion": "A",
+      "labels": {
+        "committed": "circle",
+        "resist": "square"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 0.0,
+      "steps": 96,
+      "traj": [
+        0.438,
+        0.375,
+        0.5,
+        0.125,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 129.4
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 0,
+      "episode_s": 22.1
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 1,
+      "episode_s": 30.2
+    },
+    {
+      "reached": false,
+      "consensus": "A",
+      "t_consensus": 1.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "glacier",
+        "resist": "comet"
+      },
+      "final_n_resist": 1.0,
+      "final_n_B": 0.0,
+      "steps": 16,
+      "traj": [
+        1.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 16
+        },
+        "committed": {}
+      },
+      "p": 0.0,
+      "seed": 2,
+      "episode_s": 81.2
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.5,
+      "final_n_B": 0.3125,
+      "steps": 288,
+      "traj": [
+        0.875,
+        0.625,
+        0.625,
+        0.875,
+        0.875,
+        0.812,
+        0.75,
+        0.75,
+        0.688,
+        0.75,
+        0.688,
+        0.812,
+        0.75,
+        0.438,
+        0.438,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 0,
+      "episode_s": 601.4
+    },
+    {
+      "reached": false,
+      "consensus": null,
+      "t_consensus": null,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "amber",
+        "resist": "violet"
+      },
+      "final_n_resist": 0.875,
+      "final_n_B": 0.125,
+      "steps": 288,
+      "traj": [
+        0.875,
+        0.688,
+        0.812,
+        0.875,
+        0.812,
+        0.75,
+        0.812,
+        0.625,
+        0.562,
+        0.688,
+        0.75,
+        0.812,
+        0.875,
+        0.812,
+        0.875,
+        0.812,
+        0.875,
+        0.875
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 1,
+      "episode_s": 475.0
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 13.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "harbor",
+        "resist": "meadow"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 208,
+      "traj": [
+        0.75,
+        0.625,
+        0.562,
+        0.5,
+        0.688,
+        0.625,
+        0.375,
+        0.375,
+        0.125,
+        0.062,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 14
+        },
+        "committed": {
+          "claude_haiku": 2
+        }
+      },
+      "p": 0.1,
+      "seed": 2,
+      "episode_s": 413.5
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 17.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mango",
+        "resist": "apple"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 272,
+      "traj": [
+        0.75,
+        0.688,
+        0.625,
+        0.688,
+        0.438,
+        0.562,
+        0.562,
+        0.5,
+        0.5,
+        0.25,
+        0.312,
+        0.188,
+        0.188,
+        0.188,
+        0.062,
+        0.062,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 0,
+      "episode_s": 467.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "mountain",
+        "resist": "river"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 192,
+      "traj": [
+        0.812,
+        0.625,
+        0.812,
+        0.812,
+        0.812,
+        0.562,
+        0.625,
+        0.375,
+        0.375,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 1,
+      "episode_s": 289.2
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "meadow",
+        "resist": "harbor"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 112,
+      "traj": [
+        0.75,
+        0.625,
+        0.312,
+        0.125,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 13
+        },
+        "committed": {
+          "claude_haiku": 3
+        }
+      },
+      "p": 0.2,
+      "seed": 2,
+      "episode_s": 217.4
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 12.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 192,
+      "traj": [
+        0.562,
+        0.438,
+        0.5,
+        0.375,
+        0.375,
+        0.438,
+        0.375,
+        0.188,
+        0.188,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 0,
+      "episode_s": 310.8
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 16.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 256,
+      "traj": [
+        0.5,
+        0.438,
+        0.5,
+        0.375,
+        0.438,
+        0.438,
+        0.375,
+        0.312,
+        0.188,
+        0.188,
+        0.312,
+        0.438,
+        0.25,
+        0.25,
+        0.062,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 1,
+      "episode_s": 368.9
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 8.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 128,
+      "traj": [
+        0.5,
+        0.438,
+        0.188,
+        0.062,
+        0.125,
+        0.188,
+        0.125,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 11
+        },
+        "committed": {
+          "claude_haiku": 5
+        }
+      },
+      "p": 0.3,
+      "seed": 2,
+      "episode_s": 154.0
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 9.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 144,
+      "traj": [
+        0.562,
+        0.312,
+        0.375,
+        0.125,
+        0.188,
+        0.062,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 0,
+      "episode_s": 188.5
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 7.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "copper",
+        "resist": "silver"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 112,
+      "traj": [
+        0.5,
+        0.312,
+        0.25,
+        0.125,
+        0.062,
+        0.0,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 1,
+      "episode_s": 117.0
+    },
+    {
+      "reached": true,
+      "consensus": "B",
+      "t_consensus": 5.0,
+      "committed_opinion": "B",
+      "labels": {
+        "committed": "violet",
+        "resist": "amber"
+      },
+      "final_n_resist": 0.0,
+      "final_n_B": 1.0,
+      "steps": 80,
+      "traj": [
+        0.438,
+        0.375,
+        0.188,
+        0.062,
+        0.0
+      ],
+      "composition": {
+        "uncommitted": {
+          "claude_haiku": 10
+        },
+        "committed": {
+          "claude_haiku": 6
+        }
+      },
+      "p": 0.4,
+      "seed": 2,
+      "episode_s": 107.6
+    }
+  ]
+}

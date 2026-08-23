@@ -1,0 +1,2995 @@
+{
+  "meta": {
+    "comp": "homo",
+    "models": [
+      "claude_opus"
+    ],
+    "adversary_model": "claude_opus",
+    "n": 1,
+    "rounds": 1,
+    "seeds": 2,
+    "n_questions": 40,
+    "wall_s": 71.03574180603027,
+    "est_cost": 0.7642800000000001,
+    "per_model_meter": {
+      "claude_opus": {
+        "calls": 80,
+        "prompt_tokens": 23962,
+        "completion_tokens": 5398,
+        "latency_s": 211.45746970176697,
+        "failures": 0
+      }
+    }
+  },
+  "summary": [
+    {
+      "p": 0.0,
+      "full_acc": 0.8125,
+      "honest_acc": 0.8125,
+      "judge_acc": null,
+      "n": 80
+    }
+  ],
+  "rows": [
+    {
+      "question_id": "mmlupro_4377",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "J",
+            "reason": "ANSWER: J By volume ratios, 50 L CO needs 25 L O\u2082 (2:1) and produces 50 L CO\u2082 (1:1)."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9045",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D The mutual eclipses/transits of Pluto and Charon in the late 1980s allowed astronomers to accurately determine Pluto's diameter from brightness change"
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8492",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F The positive divisors of 12 are 1, 2, 3, 4, 6, 12 (six total), and counting their negatives gives 12 integers that 12 is a multiple of."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9806",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Converting 120 mph to 176 ft/s, centripetal acceleration = v\u00b2/r = 176\u00b2/1000 \u2248 30.98 ft/s\u00b2."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7824",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H 185.9 \u00f7 14.3 = 13, so the building has 13 floors."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4270",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Using \u03bc \u2248 2.99 K/bar for refrigerant 123, \u0394T = \u03bc\u00b7\u0394P = 2.99\u00d7(-1.0) \u2248 -2.99 K."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4074",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Moles: C=51.9/12=4.325, H=4.86/1=4.86, Br=43.2/80=0.54; dividing by 0.54 gives ~8 C, ~9 H, 1 Br = C8H9Br... wait, recheck: 4.325/0.54\u22488, 4.86/0.54\u22489, "
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11426",
+      "correct_answer": "I",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E Using the Pigford correlation for laminar non-Newtonian power-law flow with the given parameters yields an outlet bulk temperature of approximately 13"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9852",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G Setting E(z) = (\u03c3/2\u03b5\u2080)(1 - z/\u221a(z\u00b2+R\u00b2)) equal to half the center field gives z = R/\u221a3 \u2248 0.346 m."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3689",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Sn is +4, F is -1 (SnF\u2084); P is -3, H is +1 (PH\u2083); Si is +4, O is -2 (SiO\u2082)."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_12006",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B EMF = N \u00d7 A \u00d7 (dB/dt) = 1 \u00d7 5 \u00d7 2 = 10 volts."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8931",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G The characteristic equation is \u03bb\u00b2\u22127\u03bb+6=0, giving eigenvalues 1 and 6."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4011",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B CaCN\u2082 molar mass \u2248 80 g/mol, so 200 kg = 2500 mol, producing 5000 mol NH\u2083 \u00d7 17 g/mol = 85 kg."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11767",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G q = 0.5(1+0.5sin t)\u00b2 = 0.5(1 + sin t + 0.25sin\u00b2t); i = dq/dt = 0.5cos t + 0.125 sin 2t."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8377",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Since f has period 20, f(x/5) has period 100, but we need the smallest a where f((x-a)/5)=f(x/5), giving a/5=20, so a=100... wait, let me verify: f((x"
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9512",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Work = 330 \u00d7 15 = 4950 ft\u00b7lb over 5 s = 990 ft\u00b7lb/s \u00f7 550 = 1.8 hp."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11902",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B (a) With H\u2082=I\u2082=0.5, Kp=870 gives x\u00b2/((0.5\u2212x)\u00b2)=870, so x\u22480.468, HI=2x\u22480.936; (b) starting with HI=1.5, H\u2082=0.5, solving for back-reaction yields I\u2082\u22480.0"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7969",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Perimeter = AB+BC+CD+DE+EA = 8+8+4+6+4 = 30."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8826",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C x\u22613, y\u2261-3 (mod 7), so x\u00b2+xy+y\u00b2\u22619-9+9=9\u22612, needing n=5 to make it 0 mod 7."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4402",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D Using Clausius-Clapeyron, B's smaller temperature span (40\u2192140\u00b0C) relative to its higher vapor pressure yields a heat of vaporization close to A's ~11"
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8703",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "J",
+            "reason": "ANSWER: J A complete graph with n vertices has n(n-1)/2 edges, so 10\u00b79/2 = 45."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8314",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E  Integrating: \u222b\u2080\u00b3\u222b\u208b\u2085\u2074 (2x\u22124y\u00b3) dx dy = \u222b\u2080\u00b3 [x\u00b2\u22124y\u00b3x]\u208b\u2085\u2074 dy = \u222b\u2080\u00b3 (\u22129 \u2212 36y\u00b3) dy = \u221227 \u2212 9\u00b781 = \u2212756."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8691",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Since 4 \u00d7 12 = m (m = 48), the related division fact m \u00f7 4 = 12 is another correct way to express it."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3738",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G \u0394H = \u0394Hf(Ag\u207a) + \u0394Hf(Cl\u207b) \u2212 \u0394Hf(AgCl) = 105.58 + (\u2212167.16) \u2212 (\u2212127.07) \u2248 +65.49 kJ/mol."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8140",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C 56 equals 7 times 8, making it a multiple of 7."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8786",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C 6 \u00d7 500 = 6 \u00d7 5 \u00d7 100 = (6 \u00d7 5) \u00d7 10\u00b2, which equals 3000."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7905",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E Mean = 32+44 = 76, and \u03c3 = \u221a(25+144) = \u221a169 = 13."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9099",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A The harmonic mean for equal distances: 2\u00b7(10\u00b740)/(10+40) = 800/50 = 16 mi/hr."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8933",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D All three\u2014sum, max, and min of stopping times\u2014are themselves stopping times with respect to the filtration F."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4242",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A Mercury column = 760 mm \u00d7 (13.6/6.09) \u2248 1697 mm Ga."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9325",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B The relativistic kinetic energy at v=1.8\u00d710\u2077 m/s (\u03b3\u22481.00181) gives KE\u2248924 eV, requiring ~924 V."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9611",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E The physical pendulum period T = 2\u03c0\u221a(I/(mgd)), with I = \u00bdmR\u00b2 + md\u00b2 = m(0.03125+0.04)=0.07125m, so T = 2\u03c0\u221a(0.07125/(\u03c0\u00b2\u00b70.2)) \u2248 1.193 s."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11649",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D Using the Chilton-Colburn analogy, h_D = h/(\u03c1\u00b7c_p\u00b7(Le)^(2/3)) yields approximately 758.3 ft/hr."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8597",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Since g(3)=6, h(3)=6\u00b2=36, giving point (3,36) with coordinate sum 39."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9739",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Number of protons: 31 kg / (1.67e-27) \u2248 1.86e28; decay rate = N\u00b7ln2/T = 1.86e28\u00d70.693/10^33 yr \u2248 1.29e-5/yr \u00f7365 \u2248 3.5e-8/day... but matching standard"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8011",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F Observational studies often reveal associations that motivate controlled experiments to establish causation."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8585",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C The terms are 2, \u22124, 8, \u221216, 32, so the 5th term is 32."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11382",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A Torque \u221d \u03c6\u00b7I\u2090; at 50A fl... \u03c6 unchanged baseline, at 100A flux increases by 15% (5\u00d73%), so ratio = (1.15\u00d7100)/(1.00\u00d750) \u2248 2.30 \u2248 2.26."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8853",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Factoring: (x-9)/(\u221ax-3) = (\u221ax-3)(\u221ax+3)/(\u221ax-3) = \u221ax+3, which approaches 3+3=6 as x\u21929."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4263",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "I",
+      "full_majority": "I",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "I",
+          "full_majority": "I"
+        }
+      ],
+      "final_answers": [
+        "I"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "I",
+            "reason": "ANSWER: I Energy per bond = \u00bdk(\u0394x)\u00b2; single: \u00bd(500)(0.0133e-9)\u00b2\u22484.42e-20 J, double: \u00bd(950)(0.0062e-9)\u00b2\u22481.83e-20 J, times 3 each times Avogadro \u2248 113 kJ/mol \u2248 27"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8492",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F 12 is a multiple of \u00b11, \u00b12, \u00b13, \u00b14, \u00b16, \u00b112, which gives 12 integers."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9806",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Centripetal acceleration = v\u00b2/r = (176 ft/s)\u00b2/1000 ft \u2248 30.98 ft/s\u00b2."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4377",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "J",
+            "reason": "ANSWER: J By Avogadro's law, volume ratios match mole ratios: 50 L CO needs 25 L O\u2082 (2:1) and produces 50 L CO\u2082 (2:2)."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9045",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D The mutual eclipses/transits of Pluto and Charon in the late 1980s allowed astronomers to derive accurate diameters from brightness variations."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11426",
+      "correct_answer": "I",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E Using the Pigford correlation for laminar non-Newtonian flow with the given parameters yields an outlet bulk temperature of approximately 137.5\u00b0F."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7824",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H 185.9 \u00f7 14.3 = 13, so the building has 13 floors."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4270",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Using \u03bc \u2248 1.96 K/bar for refrigerant 123, \u0394T = \u03bc\u0394p \u2248 (1.96)(\u22121.0) \u2248 \u22122.99 K."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4074",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Moles: C=51.9/12=4.325, H=4.86/1=4.86, Br=43.2/80=0.54; dividing by 0.54 gives C8H9Br."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3689",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Sn(IV) gives SnF\u2084, P(III) gives PH\u2083, and Si(IV) gives SiO\u2082 based on common valences."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9852",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G The field is E = (\u03c3/2\u03b5\u2080)[1 \u2212 z/\u221a(z\u00b2+R\u00b2)]; setting the bracket to 1/2 gives z/\u221a(z\u00b2+R\u00b2)=1/2, yielding z = R/\u221a3 \u2248 0.346 m."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_12006",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B EMF = N\u00b7A\u00b7(dB/dt) = 1 \u00d7 5 \u00d7 2 = 10 volts."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8931",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G The trace is 7 and determinant is 6, giving eigenvalues 1 and 6 (sum=7, product=6)."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4011",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B CaCN\u2082 molar mass = 80 g/mol; 200 kg gives 2500 mol, producing 5000 mol NH\u2083 (17 g/mol) = 85 kg."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11767",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G i = dq/dt = v\u00b7dv/dt = (1+0.5sin t)(0.5cos t) = 0.5cos t + 0.25 sin t cos t = 0.5cos t + 0.125 sin 2t."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8377",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Since f has period 20, f(x/5) has period 100, but we need the smallest a where shifting gives identical graph: f((x-a)/5)=f(x/5) requires a/5=20, so a"
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11902",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B (a) With initial 0.5 each, K=4x\u00b2/(0.5\u2212x)\u00b2=870 gives x\u22480.468, so HI\u22480.936; (b) starting from HI=1.5, H\u2082=0.5, equilibrium yields I\u2082\u22480.010 moles."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9512",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Work = 330 \u00d7 15 = 4950 ft\u00b7lb over 5 s = 990 ft\u00b7lb/s \u00f7 550 = 1.8 hp."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8826",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C x\u22613, y\u2261-3 (mod 7): x\u00b2+xy+y\u00b2 \u2261 9-9+9 = 9 \u2261 2, so n=5 makes it 7\u22610."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7969",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Perimeter = AB+BC+CD+DE+EA = 8+8+4+6+4 = 30."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4402",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A Using Clausius-Clapeyron for B (P from 40 to 760 mmHg, T from 313 to 413 K) gives roughly twice A's heat of vaporization, \u224822.6 kcal/mol."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8703",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "J",
+            "reason": "ANSWER: J A complete graph with n vertices has n(n-1)/2 edges, so 10\u00b79/2 = 45."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8691",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Since 4 \u00d7 12 = m (m = 48), the related division fact is m \u00f7 4 = 12."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3738",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G \u0394H = \u0394Hf(Ag\u207a) + \u0394Hf(Cl\u207b) \u2212 \u0394Hf(AgCl) = 105.58 \u2212 167.16 \u2212 (\u2212127.07) \u2248 +65.49 kJ/mol."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8314",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E Integrating: \u222b\u2080\u00b3\u222b\u208b\u2085\u2074(2x\u22124y\u00b3)dx dy = \u222b\u2080\u00b3(9\u00b7(\u22121)\u22129\u00b74y\u00b3... ) gives 9\u00b7(\u22121)\u221281\u00b79/... computing yields \u2212756."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8140",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C 56 equals 7 \u00d7 8, making it a multiple of 7."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8786",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C 6 \u00d7 500 = 6 \u00d7 5 \u00d7 100 = (6 \u00d7 5) \u00d7 10\u00b2, which equals 3000."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7905",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E Mean = 32+44 = 76, and \u03c3 = \u221a(25+144) = \u221a169 = 13."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9099",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A The harmonic mean for equal distances: 2\u00b7v\u2081\u00b7v\u2082/(v\u2081+v\u2082) = 2\u00b710\u00b740/50 = 16 mi/hr."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8933",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D All three\u2014sum, max, and min of stopping times\u2014are stopping times, as each event {T\u2264t} can be expressed using the measurable events of T_1 and T_2."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4242",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A Height = 760 mm \u00d7 (13.6/6.09) \u2248 1697 mm Ga."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9325",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Relativistically, eV = (\u03b3\u22121)mc\u00b2; with v=1.8\u00d710\u2077 m/s, \u03b2=0.06, \u03b3\u22481.0018, giving (\u03b3\u22121)\u00b7511keV \u2248 924 V."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11649",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D Using the Chilton-Colburn analogy, h_D = h/(\u03c1\u00b7c_p\u00b7(Le)^(2/3)) yields approximately 758.3 ft/hr."
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9739",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B Number of protons N = (31 kg)/(1.67e-27 kg) \u2248 1.86e28; decay rate \u03bbN = (ln2/10^33 yr)N \u2248 1.29e-5/yr, \u00d7(1/365) \u2248 3.5e-8/day... wait, per day gives ~3.5"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8597",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Since g(3)=6, h(3)=6\u00b2=36, giving point (3,36) with coordinate sum 39."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9611",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E The moment of inertia about pivot: I = \u00bdmR\u00b2 + md\u00b2 = m(0.03125 + 0.04) = 0.07125m; T = 2\u03c0\u221a(I/(mgd)) = 2\u03c0\u221a(0.07125/(\u03c0\u00b2\u00b70.2)) \u2248 1.193 s."
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8011",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F Observational studies can suggest relationships that controlled experiments are later designed to confirm causation."
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8585",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Terms: 2, \u22124, 8, \u221216, 32; the 5th term is 32."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11382",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A Torque \u221d flux \u00d7 current; flux increases ~15% from 50\u2192100A, so ratio \u2248 (100\u00d71.15)/(50\u00d71.0) \u2248 2.26."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8853",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C Factoring x-9 = (\u221ax-3)(\u221ax+3), the limit simplifies to \u221ax+3, which equals 3+3 = 6 at x=9."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4263",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "claude_opus",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G Energy = 3\u00b7\u00bd\u00b7500\u00b7(0.133e-9)\u00b2 + 3\u00b7\u00bd\u00b7950\u00b7(0.062e-9)\u00b2 per molecule \u2248 27 kcal/mol after multiplying by Avogadro's number."
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    }
+  ]
+}

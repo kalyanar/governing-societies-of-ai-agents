@@ -1,0 +1,2995 @@
+{
+  "meta": {
+    "comp": "homo",
+    "models": [
+      "deepseekv3"
+    ],
+    "adversary_model": "deepseekv3",
+    "n": 1,
+    "rounds": 1,
+    "seeds": 2,
+    "n_questions": 40,
+    "wall_s": 120.08591222763062,
+    "est_cost": 0.01427798,
+    "per_model_meter": {
+      "deepseekv3": {
+        "calls": 80,
+        "prompt_tokens": 16504,
+        "completion_tokens": 8929,
+        "latency_s": 354.39652824401855,
+        "failures": 0
+      }
+    }
+  },
+  "summary": [
+    {
+      "p": 0.0,
+      "full_acc": 0.5625,
+      "honest_acc": 0.5625,
+      "judge_acc": null,
+      "n": 80
+    }
+  ],
+  "rows": [
+    {
+      "question_id": "mmlupro_9045",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D   Brightness measurements during mutual eclipses of Pluto and Charon provided the first accurate diameter of Pluto by analyzing their light curves."
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9806",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H The car is in uniform circular motion, so it experiences centripetal acceleration given by a = v^2/r, which calculates to approximately 30.98 ft/s^2."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4377",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "J",
+            "reason": "To solve this, let's use the stoichiometry of the balanced reaction:   **2CO + O_2 \u2192 2CO_2**    Given:   - Volume of CO = 50 liters    From the reaction:   - **"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7824",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "To find the number of floors, divide the total height of the building by the height of each story:   185.9 feet \u00f7 14.3 feet/story \u2248 13 stories.  ANSWER: H"
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11426",
+      "correct_answer": "I",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "To calculate the outlet bulk fluid temperature for a non-Newtonian power-law fluid in laminar flow, we use the energy balance and heat transfer equations. Given"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4270",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To solve this problem, we need to compute the temperature change accompanying the adiabatic expansion of the refrigerant using the Joule-Thomson coefficient (\\("
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4074",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3689",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "To determine the correct formulas based on valence, we analyze the typical valences of the elements involved:  (a) **Sn and F**: Tin (Sn) commonly has a valence"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8492",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G  12 is a multiple of its positive divisors (1, 2, 3, 4, 6, 12) and their negative counterparts (-1, -2, -3, -4, -6, -12), totaling 12 integers, but th"
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9852",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "To solve this problem, we need to find the distance \\( z \\) along the central axis of a uniformly charged disk where the electric field \\( E \\) is half the fiel"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4011",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B  The balanced equation shows that 1 mole of CaCN2 produces 2 moles of NH3, and calculating the molar masses gives approximately 85 kg of ammonia from "
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_12006",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "To determine the emf induced in the loop, we use Faraday's Law of Induction:  \\[ emf = -\\frac{d\\Phi}{dt} \\]  where \\(\\Phi\\) is the magnetic flux, given by:  \\[ "
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8931",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "To find the eigenvalues of matrix \\( A = \\begin{bmatrix} 5 & 4 \\\\ 1 & 2 \\end{bmatrix} \\), we solve the characteristic equation \\( \\det(A - \\lambda I) = 0 \\):  \\"
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8377",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G  The original function $f(x)$ has a periodicity of 20 when shifted horizontally. For $y = f\\left(\\frac{x}{5}\\right)$, the horizontal scaling by 5 mean"
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11767",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G  The current through a capacitor is the derivative of the charge q(t) with respect to time, and differentiating q(t) = 0.5\u03bd\u00b2(t) with \u03bd(t) = 1 + 0.5 si"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11902",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "To solve this problem, we need to use the equilibrium constant \\( K_p \\) and the given initial conditions to find the moles of HI and I\u2082 at equilibrium.  ### Pa"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9512",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "First, let's calculate the work done and then the power in horsepower.  1. **Work Done (W)**:      Work = Force \u00d7 Distance      Force = 330 pounds      Distance"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8826",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8703",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "J",
+            "reason": "ANSWER: J  A complete graph with 10 vertices has 45 edges, calculated by the combination formula C(10, 2) = 10*9/2 = 45."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7969",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4402",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "To determine the heat of vaporization of liquid B, we use the Clausius-Clapeyron relation and the given data. The heat of vaporization of A is 11.3 kcal/mole, a"
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8691",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B This equation rearranges the original multiplication to show that the total months (m) divided by 4 years equals 12 months per year."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8314",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3738",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "To calculate the standard enthalpy of solution of \\(\\mathrm{AgCl}(\\mathrm{s})\\) in water, we use the following reaction and enthalpies of formation (\\(\\Delta_f "
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8786",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C (6 \u00d7 5) \u00d7 10^2 simplifies to 6 \u00d7 500, which matches the original expression."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7905",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E  The mean of X + Y is \u03bcx + \u03bcy = 32 + 44 = 76, and the standard deviation is \u221a(\u03c3x\u00b2 + \u03c3y\u00b2) = \u221a(25 + 144) = \u221a169 = 13."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8140",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To determine which number is a multiple of 7, we can divide each option by 7 and check for a whole number result.  - 56 \u00f7 7 = 8, which is a whole number, so 56 "
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9099",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "To find the average speed for the entire trip, we use the harmonic mean formula for two equal distances:  \\[ \\text{Average speed} = \\frac{2 \\cdot v_1 \\cdot v_2}"
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8933",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "F",
+            "reason": "To determine the correct answer, let's analyze each part of the question:  1. **Is \\( T_1 + T_2 \\) a stopping time?**      No, because \\( T_1 + T_2 \\) depends o"
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9611",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "I",
+      "full_majority": "I",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "I",
+          "full_majority": "I"
+        }
+      ],
+      "final_answers": [
+        "I"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "I",
+            "reason": "To determine the period of small oscillations of the uniform circular disk pivoted at a point 20 cm from its center, we analyze it as a physical pendulum. The p"
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4242",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A  The height of the gallium column can be calculated using the formula for hydrostatic pressure (P = \u03c1gh), and since the pressure is 1 atm (760 mmHg), "
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9739",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A  The number of proton decays per day is calculated using the decay rate formula: (number of protons) * (ln(2) / half-life), converting years to days, "
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9325",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11649",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D  The mass transfer coefficient \\( h_D \\) can be estimated using the heat-mass transfer analogy (Chilton-Colburn analogy), where \\( h_D = h \\cdot \\left"
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8597",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To find the point that must be on the graph of \\( y = h(x) = (g(x))^2 \\), we use the given point \\((3, 6)\\) on \\( y = g(x) \\). Substituting \\( x = 3 \\), we get "
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8011",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F   Controlled experiments are often conducted after observational studies suggest potential cause-and-effect relationships to rigorously test them.    "
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8585",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To find the 5th term in the series, let's compute each term step-by-step:  1. Term 1: 2   2. Term 2: -2 \u00d7 2 = -4   3. Term 3: -2 \u00d7 -4 = 8   4. Term 4: -2 \u00d7 8 = "
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11382",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "To solve this problem, let's analyze the torque ratio for the given armature currents in a cumulative compound motor.  1. **Torque Formula**: Torque (T) is prop"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4263",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "To calculate the energy needed to compress three carbon-carbon single bonds and stretch three carbon-carbon double bonds to the benzene bond length (1.397 \u00c5), w"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8853",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 0,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8492",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "F",
+            "reason": "To determine how many positive and negative integers 12 is a multiple of, we first find all the positive divisors of 12. The positive divisors of 12 are: 1, 2, "
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9045",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D  Brightness measurements during mutual eclipses of Pluto and Charon in the 1980s provided the first accurate diameter of Pluto by analyzing the light "
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4377",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9806",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7824",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "To find the number of floors, divide the total height of the building by the height of each story:   185.9 feet \u00f7 14.3 feet/story \u2248 13 stories.  ANSWER: H"
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11426",
+      "correct_answer": "I",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3689",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "ANSWER: H Sn typically forms +4 (SnF_4), P forms -3 (PH_3), and Si forms +4 (SiO_2) based on their common valences."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4270",
+      "correct_answer": "H",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4074",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9852",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "To solve this problem, we need to find the distance \\( z \\) along the central perpendicular axis of a uniformly charged disk where the electric field \\( E \\) is"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_12006",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "To determine the emf induced in the loop, we use Faraday's Law of Induction:  \\[ \\text{emf} = -\\frac{d\\Phi}{dt} \\]  where \\(\\Phi\\) is the magnetic flux, given b"
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8931",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "To find the eigenvalues of matrix \\( A = \\begin{bmatrix} 5 & 4 \\\\ 1 & 2 \\end{bmatrix} \\), we solve the characteristic equation \\( \\det(A - \\lambda I) = 0 \\):  \\"
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4011",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B  The balanced equation shows that 1 mole of CaCN2 produces 2 moles of NH3, and using molar masses (CaCN2 = 80 g/mol, NH3 = 17 g/mol), 200 kg of CaCN2 "
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11767",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "G",
+      "full_majority": "G",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "G",
+          "full_majority": "G"
+        }
+      ],
+      "final_answers": [
+        "G"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "G",
+            "reason": "ANSWER: G  The current through the capacitor is the derivative of the charge q(t) with respect to time, which after applying the chain rule and simplifying matc"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8377",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11902",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "To solve this problem, we need to use the equilibrium constant \\( K_p \\) and the given initial conditions to find the equilibrium concentrations of the products"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9512",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "First, let's calculate the work done and then the power in horsepower.  1. **Work Done (W)**:      Work = Force \u00d7 Distance      Force = 330 pounds      Distance"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8826",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7969",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B  Since the polygons are similar, the corresponding sides are proportional. First, find the ratio of corresponding sides QR/AB = 3/8, then use this rat"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4402",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D  The heat of vaporization of B is about the same as A (11.3 kcal/mole) because both liquids have similar boiling points and vapor pressures, suggestin"
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8703",
+      "correct_answer": "J",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "J",
+      "full_majority": "J",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "J",
+          "full_majority": "J"
+        }
+      ],
+      "final_answers": [
+        "J"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "J",
+            "reason": "To determine the number of edges in a complete graph with 10 vertices, we use the formula for the number of edges in a complete graph \\( K_n \\), which is \\( \\fr"
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8314",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8691",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "B",
+      "full_majority": "B",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "B",
+          "full_majority": "B"
+        }
+      ],
+      "final_answers": [
+        "B"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "B",
+            "reason": "ANSWER: B This equation rearranges the original multiplication (4 \u00d7 12 = m) into a division (m \u00f7 4 = 12), which is a valid alternative representation."
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_3738",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "H",
+      "full_majority": "H",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "H",
+          "full_majority": "H"
+        }
+      ],
+      "final_answers": [
+        "H"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "H",
+            "reason": "To calculate the standard enthalpy of solution of \\(\\mathrm{AgCl}(\\mathrm{s})\\) in water, we use the enthalpies of formation (\\(\\Delta_f H^\\circ\\)) of the solid"
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8140",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To determine which number is a multiple of 7, we divide each option by 7 and check for a whole number result.  - 56 \u00f7 7 = 8, which is a whole number.  Thus, 56 "
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8786",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "To determine the correct expression, let's analyze the given calculation and the options:  The original calculation is \\( 6 \\times 500 = 3000 \\). We need to fin"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_7905",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "ANSWER: E  The mean of X + Y is \u03bcx + \u03bcy = 32 + 44 = 76, and the standard deviation is \u221a(\u03c3x\u00b2 + \u03c3y\u00b2) = \u221a(25 + 144) = \u221a169 = 13."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8933",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "D",
+      "full_majority": "D",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "D",
+          "full_majority": "D"
+        }
+      ],
+      "final_answers": [
+        "D"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "D",
+            "reason": "ANSWER: D  The sum, maximum, and minimum of two stopping times are also stopping times with respect to the same filtration."
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9099",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A  The average speed is the total distance divided by the total time, which in this case is the harmonic mean of the two speeds because the distances ar"
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4242",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "ANSWER: A  The height of the gallium column can be calculated using the formula for hydrostatic pressure (P = \u03c1gh), and since the pressure is 1 atm (760 mmHg), "
+          }
+        ]
+      ],
+      "adversary_target": "F",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9611",
+      "correct_answer": "E",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "I",
+      "full_majority": "I",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "I",
+          "full_majority": "I"
+        }
+      ],
+      "final_answers": [
+        "I"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "I",
+            "reason": "To determine the period of small oscillations for a uniform circular disk pivoted at a point 20 cm from its center, we use the formula for the period \\( T \\) of"
+          }
+        ]
+      ],
+      "adversary_target": "I",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9325",
+      "correct_answer": "B",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "D",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_9739",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8597",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C  Since $(3,6)$ is on $y=g(x)$, then $h(3)=(g(3))^2=6^2=36$, so the point $(3,36)$ must be on $y=h(x)$. The sum of its coordinates is $3+36=39$."
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11649",
+      "correct_answer": "D",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "F",
+            "reason": "To determine the mass transfer coefficient \\( h_D \\), we can use the analogy between heat and mass transfer, specifically the Chilton-Colburn analogy. The given"
+          }
+        ]
+      ],
+      "adversary_target": "H",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8585",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "C",
+      "full_majority": "C",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "C",
+          "full_majority": "C"
+        }
+      ],
+      "final_answers": [
+        "C"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "C",
+            "reason": "ANSWER: C  The series alternates signs and doubles in magnitude each term: 2, -4, 8, -16, 32."
+          }
+        ]
+      ],
+      "adversary_target": "E",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8011",
+      "correct_answer": "F",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "F",
+      "full_majority": "F",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "F",
+          "full_majority": "F"
+        }
+      ],
+      "final_answers": [
+        "F"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "F",
+            "reason": "ANSWER: F   Controlled experiments are often conducted after observational studies suggest potential cause-and-effect relationships to rigorously test them.    "
+          }
+        ]
+      ],
+      "adversary_target": "J",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_11382",
+      "correct_answer": "A",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "A",
+      "full_majority": "A",
+      "honest_correct": true,
+      "full_correct": true,
+      "round_majorities": [
+        {
+          "honest_majority": "A",
+          "full_majority": "A"
+        }
+      ],
+      "final_answers": [
+        "A"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "A",
+            "reason": "To solve this problem, we need to find the ratio of torques developed for the two values of armature current (50 A and 100 A) in a cumulative compound motor, co"
+          }
+        ]
+      ],
+      "adversary_target": "G",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_8853",
+      "correct_answer": "C",
+      "trap": false,
+      "agent_failures": 1,
+      "valid": false,
+      "honest_majority": null,
+      "full_majority": null,
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": null,
+          "full_majority": null
+        }
+      ],
+      "final_answers": [
+        null
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": null,
+            "reason": ""
+          }
+        ]
+      ],
+      "adversary_target": "B",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    },
+    {
+      "question_id": "mmlupro_4263",
+      "correct_answer": "G",
+      "trap": false,
+      "agent_failures": 0,
+      "valid": true,
+      "honest_majority": "E",
+      "full_majority": "E",
+      "honest_correct": false,
+      "full_correct": false,
+      "round_majorities": [
+        {
+          "honest_majority": "E",
+          "full_majority": "E"
+        }
+      ],
+      "final_answers": [
+        "E"
+      ],
+      "transcript": [
+        [
+          {
+            "idx": 0,
+            "model": "deepseekv3",
+            "adversary": false,
+            "answer": "E",
+            "reason": "To calculate the energy needed to compress three carbon-carbon single bonds and stretch three carbon-carbon double bonds to the benzene bond length (1.397 \u00c5), w"
+          }
+        ]
+      ],
+      "adversary_target": "A",
+      "p": 0.0,
+      "seed": 1,
+      "n_adv": 0,
+      "source": "mmlupro",
+      "n_models": 1
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  body { margin: 0; padding: 28px 30px; background: #ffffff; color: #1a1a2e; width: 1180px; }
+  h1 { font-size: 23px; margin: 0 0 4px; }
+  .sub { font-size: 13px; color: #5a5a72; margin: 0 0 20px; }
+  .cols { display: flex; gap: 26px; }
+  .col { flex: 1; border-radius: 14px; padding: 16px 16px 18px; }
+  .A { background: #eef4ff; border: 2px solid #2f6fe0; }
+  .B { background: #eefaf0; border: 2px solid #1f9d57; }
+  .tag { display:inline-block; font-size: 11px; font-weight: 700; letter-spacing: .5px; padding: 3px 9px; border-radius: 20px; color:#fff; }
+  .tagA { background:#2f6fe0; } .tagB { background:#1f9d57; }
+  .title { font-size: 17px; font-weight: 700; margin: 8px 0 2px; }
+  .dom { font-size: 12.5px; color:#5a5a72; margin-bottom: 12px; font-style: italic;}
+  .box { background:#fff; border:1px solid #c9d4e8; border-radius:9px; padding:9px 12px; font-size:13px; line-height:1.4; }
+  .B .box { border-color:#bfe3cb; }
+  .box b { color:#13284d; } .B .box b { color:#0f4d2c; }
+  .small { font-size:11.5px; color:#5a5a72; }
+  .arrow { text-align:center; color:#9aa6bd; font-size:15px; margin:4px 0; }
+  .B .arrow { color:#9ccbad; }
+  .q { background:#fff7e6; border:1px solid #f0c060; border-radius:9px; padding:9px 12px; font-size:13px; font-weight:600; color:#7a5200; }
+  .loop { border-style:dashed; }
+  .footer { margin-top:20px; border-radius:12px; border:2px dashed #8a8aa0; background:#fafafe; padding:14px 18px; }
+  .footer .h { font-size:13px; font-weight:700; margin-bottom:6px; color:#1a1a2e; }
+  .footer .row { font-size:12.5px; line-height:1.7; }
+  .pill { display:inline-block; background:#ececf6; border-radius:6px; padding:1px 7px; margin:0 2px; font-size:11.5px; }
+  code { background:#eef; padding:0 4px; border-radius:4px; font-size:12px; }
+</style></head>
+<body>
+  <h1>Two Testbeds for the Committed-Minority Tipping Point in LLM Societies</h1>
+  <p class="sub">Testing the Xie–Szymanski (2011) framework: does a committed fraction <b>p&nbsp;&gt;&nbsp;p<sub>c</sub></b> flip an LLM population — and how do homogeneity &amp; scale move p<sub>c</sub>?</p>
+
+  <div class="cols">
+    <!-- PRIMARY -->
+    <div class="col A">
+      <span class="tag tagA">PRIMARY · faithful + cheap</span>
+      <div class="title">LLM Binary-Agreement / Naming Game</div>
+      <div class="dom">Domain: opinion consensus</div>
+
+      <div class="box"><b>① Population.</b> N LLM agents on a graph <span class="small">(complete / Erdős–Rényi / scale-free)</span>. Opinion states: <code>A</code> · <code>B</code> · <code>AB</code> (both).</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>② Committed minority (fraction p).</b> Permanently hold &amp; advocate <code>A</code>, immune to influence (zealots = the adversary).</div>
+      <div class="arrow">▼</div>
+      <div class="box loop"><b>③ Interaction loop.</b> Pick random <b>speaker</b> + neighbor <b>listener</b> → speaker voices one opinion → <b>listener LLM decides</b> its new stance → map to A/B/AB. <span class="small">(LLM stubbornness / herding drives the dynamics.)</span></div>
+      <div class="arrow">▼ &nbsp;repeat until&nbsp; ▼</div>
+      <div class="box"><b>④ Absorbing state.</b> Consensus (all A or all B), or time budget hit.</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>⑤ Measure.</b> Sweep p → P(consensus→A) → locate <b>p<sub>c</sub></b>; consensus time <b>T<sub>c</sub></b> (exp(N) below vs ln N above); order parameter n<sub>B</sub>.</div>
+      <div class="arrow">▼</div>
+      <div class="q">❓ Is LLM p<sub>c</sub> ≈ 10% (the analytic 9.79%)? Does a monoculture flip at a <i>lower</i> p<sub>c</sub>?</div>
+    </div>
+
+    <!-- SECONDARY -->
+    <div class="col B">
+      <span class="tag tagB">SECONDARY · generalization</span>
+      <div class="title">GovSim (commons cooperation)</div>
+      <div class="dom">Domain: cooperation collapse · prof's named platform</div>
+
+      <div class="box"><b>① Society.</b> 5 LLM agents share a renewable resource <span class="small">(fishery: 100-ton lake; also pasture / pollution)</span>.</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>② Committed-defector minority (fraction p).</b> Over-harvest, immune to appeals. Tiers: <b>greedy</b> · <b>persuasive saboteur</b> · <b>prompt-injected</b>.</div>
+      <div class="arrow">▼</div>
+      <div class="box loop"><b>③ Monthly loop.</b> Group <b>discussion</b> → each agent <b>decides a harvest</b> → remaining stock <b>regenerates</b> (≈ doubles).</div>
+      <div class="arrow">▼ &nbsp;up to 12 months&nbsp; ▼</div>
+      <div class="box"><b>④ Absorbing state.</b> Sustained commons vs. resource <b>collapse</b>.</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>⑤ Measure.</b> Sweep p → <b>collapse tipping fraction</b>; survival months, yield, efficiency, equality; contagion from saboteur/injection.</div>
+      <div class="arrow">▼</div>
+      <div class="q">❓ Does the committed-minority tipping point <i>generalize</i> from opinion → cooperation? Same homogeneity/scale effect?</div>
+    </div>
+  </div>
+
+  <!-- SHARED -->
+  <div class="footer">
+    <div class="h">Shared experimental axes (both testbeds)</div>
+    <div class="row">
+      <b>Composition:</b> <span class="pill">homogeneous</span> <span class="pill">heterogeneous-balanced</span> <span class="pill">mixed-competence</span> &nbsp;×&nbsp;
+      <b>Model scale:</b> <span class="pill">0.5B → 70B (local, free)</span> <span class="pill">frontier (API)</span> &nbsp;×&nbsp;
+      <b>Committed fraction p</b> (the tipping curve)
+    </div>
+    <div class="row" style="margin-top:6px;">
+      <b>Mechanism metrics:</b> error correlation <b>ρ</b> → effective independent agents <b>N<sub>eff</sub></b> → <b>p<sub>c</sub></b> &nbsp;·&nbsp; intrinsic bias <b>h</b> vs. conformity coupling <b>J</b> &nbsp;·&nbsp; capability covariate (scale ≠ competence)
+    </div>
+  </div>
+</body></html>
