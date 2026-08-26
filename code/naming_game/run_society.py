@@ -87,6 +87,10 @@ def main():
     ap.add_argument("--n", type=int, default=24)
     ap.add_argument("--ps", type=float, nargs="+", default=[0.0, 0.1, 0.2, 0.3, 0.4])
     ap.add_argument("--seeds", type=int, default=2)
+    ap.add_argument("--seed0", type=int, default=0,
+                    help="first seed index; lets a later pass add seeds "
+                         "(--seed0 2 --seeds 3 gives seeds 2,3,4) and be merged "
+                         "with an earlier one instead of re-running it.")
     ap.add_argument("--t_max_units", type=float, default=35.0)
     ap.add_argument("--rule_guided", action="store_true")
     ap.add_argument("--temperature", type=float, default=0.7)
@@ -95,8 +99,18 @@ def main():
                          "'both' counterbalances to control intrinsic option bias")
     ap.add_argument("--concurrency", type=int, default=8,
                     help="episodes to run in parallel (API/HF are I/O-bound)")
+    ap.add_argument("--content", default="neutral",
+                    help="content condition for the two conventions "
+                         "(neutral|coop_sym|coop_asym); see norm_content.py. "
+                         "Only the words and framing change -- the update rule, "
+                         "population and estimator are identical.")
     ap.add_argument("--out", default="../results/society_run.json")
     args = ap.parse_args()
+
+    # Content condition must be installed BEFORE any episode builds its labels.
+    import norm_content
+    _cond = norm_content.install(args.content)
+    print(f"[content] condition={args.content} asymmetric={_cond['asymmetric']}")
 
     comp = build_comp(args)
     # preflight: check every model used is available
@@ -113,7 +127,7 @@ def main():
                          "\nSet the API key(s) and retry.")
 
     meter = ModelMeter()
-    seeds = list(range(args.seeds))
+    seeds = list(range(args.seed0, args.seed0 + args.seeds))
     pushes = ["A", "B"] if args.push == "both" else [args.push]
     jobs = [(push, p, s) for push in pushes for p in args.ps for s in seeds]
     print(f"[{comp.label}] N={args.n} ps={args.ps} seeds={args.seeds} "
@@ -160,7 +174,7 @@ def main():
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w") as f:
-        json.dump(dict(meta=dict(composition=comp.label, kind=comp.kind,
+        json.dump(dict(meta=dict(content=args.content, seed0=args.seed0, composition=comp.label, kind=comp.kind,
                                  models=args.models,
                                  committed_model=comp.committed_model,
                                  n=args.n, seeds=args.seeds,

@@ -8,6 +8,7 @@
 \acmArticle{X}
 \acmMonth{6}
 
+\usepackage{enumitem}
 \begin{document}
 
 \title{Governing Societies of AI Agents: Committed Minorities, Model Diversity, and Scale as Levers of Multi-Agent AI Governance}
@@ -31,7 +32,7 @@
 \renewcommand{\shortauthors}{Kalyanaraman and Madisetti}
 
 \begin{abstract}
-Multi-agent systems instantiated with large language models (LLMs) can now deliberate, vote, negotiate, and allocate shared resources, rendering the \emph{governance} of such agent societies a central security and safety problem. The robustness of a society is not a simple aggregate of individual-agent safety; instead, it emerges from patterns of inter-agent influence and depends critically on three design parameters: (i) susceptibility to capture (of the majority) by a committed minority, (ii) whether the agent population is a single-model \emph{monoculture} or a \emph{heterogeneous} ensemble, and (iii) model \emph{scale}. We build on a foundational result from opinion dynamics: when the minority fraction of committed agents exceeds a critical threshold $p_c \approx 10\%$, they can overturn the prevailing majority population convention. We then investigate three research questions. \textbf{(RQ1, Composition)} Is a monoculture more vulnerable to manipulation and groupthink than a diversified society? \textbf{(RQ2, Scale)} How does model scale modulate governability? \textbf{(RQ3, Capture)} At what committed-minority fraction can a small group effectively seize control? Using LLM agents in a binary-agreement setting, we show that sufficiently capable models reproduce the tipping point at $p_c = 0.0959 \pm 0.0019$ pooled across five independent model lineages, statistically indistinguishable from the analytic value $0.0979$, once we control for a previously unreported confound: a strong intrinsic preference for one option, which we correct via counterbalancing. The transition is \emph{capability-gated}, but the gate is a floor rather than a scale curve: probing fourteen models from $2$B to $123$B, execution fails below roughly $3$--$8$B and is flat above it, a mixture-of-experts model with $4$B active parameters passes, and a $123$B model scores below an $8$B one---so parameter count is a poor proxy for fitness to govern. Across tasks involving factual problem solving, value deliberation, and commons cooperation, heterogeneity is \emph{not intrinsically safer}: its benefit is bounded by inter-model error correlation (empirically measured at $\rho \approx 0.5$, yielding only $N_{\mathrm{eff}} \approx 1.7$ effectively independent voters among seven lineages—an \emph{illusion of cognitive diversity}), can be offset by competence dilution, and is realized only when aggregation mechanisms explicitly exploit cross-model decorrelation. Heterogeneity offers clear advantages primarily in open-ended deliberation, where a monoculture converges to uniform positions (groupthink), whereas a diverse panel maintains disagreement and resists takeover by a committed extremist. We formalize these findings as a \emph{competence band} and derive governance prescriptions, including a rule under which an inexpensive, diverse panel combined with a verifier can match the performance of a costly single model on \emph{verifiable} tasks at roughly half the computational cost, but not on non-verifiable tasks. The capture threshold does \emph{not} generalize to cooperation, and not because the number differs: the adversary's \emph{share} is the wrong variable. In a commons, tolerance is set by institutional design: agents that cannot observe one another and are told to maximize their own catch have no safe minority at all, a stewardship objective raises the threshold to between $20$ and $40\%$, and adding restitution raises it to between $60$ and $80\%$. The $\sim25\%$ figure we previously reported is the ten-month tolerance of the first of these societies, and we show that any threshold quoted without its observation horizon overstates robustness. Monitoring alone is mildly \emph{harmful}. Across every configuration, survival is predicted not by the committed fraction---a fifth is survivable in a society of five and fatal in a society of ten---but by whether the per-agent restraint the situation demands exceeds the granularity at which an agent can express a decision.
+Multi-agent systems instantiated with large language models (LLMs) can now deliberate, vote, negotiate, and allocate shared resources, rendering the \emph{governance} of such agent societies a central security and safety problem. The robustness of a society is not a simple aggregate of individual-agent safety; instead, it emerges from patterns of inter-agent influence and depends critically on three design parameters: (i) susceptibility to capture (of the majority) by a committed minority, (ii) whether the agent population is a single-model \emph{monoculture} or a \emph{heterogeneous} ensemble, and (iii) model \emph{scale}. We build on a foundational result from opinion dynamics: when the minority fraction of committed agents exceeds a critical threshold $p_c \approx 10\%$, they can overturn the prevailing majority population convention. We then investigate three research questions. \textbf{(RQ1, Composition)} Is a monoculture more vulnerable to manipulation and groupthink than a diversified society? \textbf{(RQ2, Scale)} How does model scale modulate governability? \textbf{(RQ3, Capture)} At what committed-minority fraction can a small group effectively seize control? Using LLM agents in a binary-agreement setting, we show that sufficiently capable models reproduce the tipping point at $p_c = 0.0959 \pm 0.0019$ pooled across five independent model lineages, statistically indistinguishable from the analytic value $0.0979$, once we control for a previously unreported confound: a strong intrinsic preference for one option, which we correct via counterbalancing. The transition is \emph{capability-gated}, but the gate is a floor rather than a scale curve: across fourteen models from $2$B to $123$B, execution fails below roughly $3$--$8$B and is flat above it, and a $123$B model scores below an $8$B one. The floor is moreover a property of the \emph{role}, sitting far higher for arbitration than for coordination, so an admission rule stated as a parameter count errs in both directions. Across tasks involving factual problem solving, value deliberation, and commons cooperation, heterogeneity is \emph{not intrinsically safer}: its benefit is bounded by inter-model error correlation (empirically measured at $\rho \approx 0.5$, yielding only $N_{\mathrm{eff}} \approx 1.7$ effectively independent voters among seven lineages—an \emph{illusion of cognitive diversity}), can be offset by competence dilution, and is realized only when aggregation mechanisms explicitly exploit cross-model decorrelation. Heterogeneity offers clear advantages primarily in open-ended deliberation, where a monoculture converges to uniform positions (groupthink), whereas a diverse panel maintains disagreement and resists takeover by a committed extremist. We formalize these findings as a \emph{competence band} and derive governance prescriptions, chief among them a rule under which a panel of zero-cost models arbitrated by a frontier model \emph{constrained to select} matches that same model reasoning alone on \emph{verifiable} tasks at $2.5\times$ lower cost, subject to two measurable conditions: the panel's coverage must exceed the arbiter's solo accuracy, and the panel must be competence-matched, since blind majority voting fell below the panel's own best member in three of the four panels we tested. Constraining the arbiter is not cosmetic: a free-form judge answers off-panel on a quarter to a third of items, and across four panels a constrained selector was correct on $0$ of $112$ items that no panel member solved, where a free-form judge was correct on $26$. Finally, the capture threshold does generalize from opinion formation to cooperative behavior, but only where cooperation is organized as a convention with rival stable states: holding the mechanism fixed and varying only what is agreed—arbitrary codewords, two conservation rules of equal merit, a restrained versus a greedy harvest norm—leaves it unmoved ($p_c = 0.128$, $0.136$, $0.131$). It does not transfer to resource depletion, which admits no threshold at all, having one attractor and an absorbing death state rather than two stable regimes; the $\sim25\%$ we previously reported for a commons is recovered as $p_c(H)=1-(S_c/S_0)^{1/H}$ evaluated at a ten-month observation window.
 \end{abstract}
 
 \begin{CCSXML}
@@ -88,18 +89,45 @@ Prevailing assumptions answer RQ1 by asserting that ``diversity is safer'': a di
 LLM heterogeneity is, to a substantial extent, an \emph{illusory manifestation of cognitive diversity}. Even across ostensibly independent model lineages, systems tend to fail on the same inputs (reflecting overlapping training corpora and shared failure modes), such that the effective diversity of a panel with $k$ models is significantly lower than $k$. Whether heterogeneity contributes to robustness in governance-relevant settings is determined by three key quantities—a minimum competence threshold, an error correlation parameter $\rho$, and the choice of aggregation mechanism—and this unified framework yields predictions across a wide range of domains, including opinion diffusion, factual adjudication, value aggregation, cooperative decision-making, and cost–quality optimization.
 
 \subsection{Contributions}
-\begin{enumerate}
-\item \textbf{The committed-minority capture threshold extends to societies of LLM agents.} Capable models replicate the classical committed-minority threshold of $p_c \approx 10\%$ across five architectural lineages, once we identify and rigorously control a pronounced \emph{intrinsic option bias} in LLMs. This bias, if left unmitigated, dominates the emergent social dynamics; we neutralize it via randomized, semantically symmetric labels and systematic counterbalancing. (RQ3)
+\begin{enumerate}[leftmargin=1.3em,itemsep=2pt]
+\item \textbf{The committed-minority capture threshold extends to LLM societies.}
+Capable models reproduce $p_c=0.0959\pm0.0019$ across five lineages, once we
+identify and control a pronounced \emph{intrinsic option bias} that otherwise
+dominates the social dynamics; we neutralise it with randomised, semantically
+symmetric labels and systematic counterbalancing. (RQ3)
 
-\item \textbf{Fitness to govern is a capability floor, not a scale curve.} Probing fourteen models from $2$B to $123$B, execution of the coordination primitive fails below roughly $3$--$8$B and is flat above it; a mixture-of-experts model with $4$B active parameters passes where dense $3$B models fail, and a $123$B model scores below an $8$B one. Below the floor the failure is structured---small models either hoard opinions and never converge, or never adopt a second opinion at all---so an admission rule stated as a parameter count is wrong in both directions. (RQ2)
+\item \textbf{The threshold is a property of the mechanism, not the content.}
+Holding the coordination mechanism fixed and varying only what is agreed---neutral
+codewords, symmetric conservation rules, a restrained versus a greedy harvest
+norm---leaves $p_c$ unmoved. It transfers to any bistable domain, and not to
+depletion processes, which have no second stable state and hence no threshold at
+all. (RQ3)
 
-\item \textbf{Apparent heterogeneity largely constitutes an illusion of diversity.} We quantify inter-model error correlation at $\rho \approx 0.5$ (implying an effective ensemble size $N_{\mathrm{eff}} \approx 1.7$ out of $7$ models), a pattern that persists at the frontier (GPT-5, Claude-Opus). We further demonstrate that the protective benefits of heterogeneity can be eliminated through competence dilution, wherein the inclusion of weaker models counteracts the advantages of diversity. (RQ1)
+\item \textbf{Fitness to govern is a capability floor, not a scale curve---and the
+floor is role-specific.} Across fourteen models from $2$B to $123$B, execution of
+the coordination primitive fails below roughly $3$--$8$B and is flat above; a
+$4$B-active MoE passes where dense $3$B models fail and a $123$B scores below an
+$8$B. The arbitration floor sits far higher: no sub-frontier verifier we tested
+beat the panel's own best member. (RQ2)
 
-\item \textbf{A competence-band framework} that characterizes when a model improves ensemble performance, formalized as a conjunction of (i) a minimum competence floor, (ii) sufficient error decorrelation, and (iii) an appropriate aggregation mechanism. We instantiate this as a practical decision tool and validate it using a cost–quality trade-off analysis comparing inexpensive multi-model panels to single, more capable models.
+\item \textbf{Heterogeneity creates potential that only an adequate aggregator
+realises.} Its benefit is bounded by inter-model error correlation
+($\rho\approx0.5$, $N_{\mathrm{eff}}\approx1.7$ of seven), destroyed by blind
+voting in three of four panels, and realised by a constrained selector
+($\hat v=0.33$--$0.91$). We formalise this as a \emph{competence band}. (RQ1)
 
-\item \textbf{Multi-domain governance evaluation} spanning opinion contagion, factual debate, value deliberation, and commons cooperation. These experiments include (i) the clearest observed benefit of heterogeneity in mitigating groupthink during deliberation, and (ii) an institutional ladder for commons cooperation in which monitoring alone is harmful, a stewardship objective absorbs one defector and restitution absorbs three in five, with survival governed by the absolute restraint required of each agent rather than by the adversary's share.
+\item \textbf{A deployable, pre-checkable cost rule.} A panel of zero-cost models
+arbitrated by a frontier model constrained to select matches that model reasoning
+alone at $2.53\times$ lower cost, subject to two conditions measurable before
+deployment: panel coverage must exceed the arbiter's solo accuracy, and the panel
+must be competence-matched. (RQ1)
 
-\item \textbf{Three adversarial and institutional governance stress tests} (each evaluated under homogeneous and heterogeneous agent configurations): (i) \emph{prompt-injection propagation}, where a susceptible homogeneous “monoculture” chain is $100\%$ compromised, compared to only $18$–$38\%$ compromise for a heterogeneous chain protected by its first immune link; (ii) \emph{institutional decision rules} that shift the effective capture threshold from $30\%$ under simple majority voting to $7.5\%$ under delegation and $1.7\%$ under veto arrangements; and (iii) \emph{calibrated verifier mechanisms} that attain the theoretical coverage ceiling afforded by heterogeneity, in contrast to blind voting schemes that substantially attenuate this benefit.
+\item \textbf{A data-quality protocol for multi-agent simulation.} Partial API
+failure degrades such simulations \emph{silently}, because the natural fallback is
+itself a plausible observation. We treat failed and unparseable responses as data
+loss, record the fallback rate per run, and discard runs above a threshold; three
+of six re-run conditions proved silently corrupt, each having produced a
+publishable-looking number.
 \end{enumerate}
 
 \section{Related Work}
@@ -124,50 +152,32 @@ We study four paradigms. The first is \textbf{(a)} the \emph{naming game} (the b
 
 \section{Threat Model}
 \label{sec:threat}
-We adopt the perspective of a defender responsible for maintaining the integrity of an LLM-based agent society—namely, a deliberative, voting, or resource-governing multi-agent system—facing an adversary intent on steering its collective behavior. The conceptual model below provides the basis for the subsequent experimental design.
+We take the perspective of a defender maintaining the integrity of an LLM-based
+agent society---deliberative, voting, or resource-governing---against an adversary
+steering its collective behaviour. This model motivates the experimental design.
 
-\paragraph{Assets.} The primary asset is the integrity of the society’s collective output. This encompasses: (i) the reliability and robustness of its consensus position; (ii) the correctness and procedural validity of its votes or decisions; (iii) the legitimacy of its deliberative process, understood as the presence of a genuinely diverse set of considered positions rather than an artificially manufactured consensus; and (iv) the long-term sustainability and equitable management of any shared resources or commons under its governance.
+\paragraph{Assets.} The integrity of collective output: robustness of the society's
+consensus, correctness and procedural validity of its decisions, legitimacy of
+deliberation (genuinely diverse positions rather than manufactured agreement), and
+sustainable, equitable management of any commons under its governance.
 
-\paragraph{Adversary objectives.} The adversary’s goals can be decomposed as follows. \emph{(i) Capture}: to induce the society to converge on an attacker-specified collective outcome, such as reversing the prevailing consensus, forcing a particular decision, or precipitating the breakdown of cooperative behavior. \emph{(ii) Compromise}: to gain control over one or more individual agents and subsequently propagate this subversion throughout the broader society, thereby degrading its collective functioning and trustworthiness.
+\paragraph{Adversary objectives and capabilities.} \emph{Capture}: induce
+convergence on an attacker-specified outcome---reversing a consensus, forcing a
+decision, collapsing cooperation. \emph{Compromise}: subvert one or more agents and
+propagate that subversion. \emph{Denial}: obstruct any decision being reached. We
+assume an adversary controlling a bounded fraction $p$ of agents, able to make them
+\emph{committed}---never updating, always voicing the target position---or to inject
+content at one stage of a pipeline. The adversary cannot alter the interaction
+protocol, the aggregation rule, or the resource dynamics, and cannot modify honest
+agents' weights. This is the standard committed-minority threat model, extended with
+a pipeline-injection capability.
 
-\paragraph{Adversary capabilities (tiered, matching the experiments).}
-\begin{itemize}
-\item \textbf{T1 --- Committed minority.} The adversary controls a fraction $p$ of the
-agents, which persistently hold and actively promote the attacker's position and never
-update their internal state (advocates/defectors); the attack cost scales with $p$.
-This threat model is instantiated in the naming game (RQ3), commons-cooperation experiments
-(\S\ref{sec:coop}), and the institutional council setting (\S\ref{sec:inst}).
-
-\item \textbf{T2 --- Indirect prompt injection.} The adversary controls untrusted content
-that is delivered to at least one agent (e.g., a tool output, a retrieved document, or an
-upstream message), containing instructions that subvert that agent's behavior and direct it
-to further disseminate the malicious instructions. This threat model is instantiated in
-\S\ref{sec:inject}.
-\end{itemize}
-
-Composition is an attacker-relevant \emph{system property} rather than a standalone
-capability: a homogeneous fleet implies that a single effective T2 exploit (or T1 persuasion
-strategy) transfers to every agent, whereas a heterogeneous fleet disrupts such uniform
-transferability.
-
-\paragraph{Trust assumptions.} The orchestrator/aggregator and the communication channel are
-assumed to be fully trusted. Each agent's base model is \emph{honest-but-susceptible}: it
-faithfully follows its own instructions but can be subverted by T2-style content or
-persuaded by T1-style peers. The adversary is constrained by an upper bound on its share of
-agents, and cannot read or modify other agents' parameters, nor compromise the underlying
-infrastructure.
-
-\paragraph{Out of scope.} We exclude from consideration training-time or model-weight
-poisoning, supply-chain compromise of the model artifacts, compromise of the
-infrastructure or communication channels, and confidentiality or side-channel attacks. Our
-analysis is restricted to influence- and content-level attacks against an otherwise intact
-multi-agent society.
-
-\paragraph{Defender levers.} We vary three primary governance design dimensions:
-\emph{composition} (monoculture versus model diversity), \emph{scale} (the capability gate),
-and the \emph{aggregation rule}, in addition to the presence and configuration of a
-\emph{verifier}. The remainder of the paper quantifies how each lever increases or
-decreases the adversary's cost to achieve capture (T1) or compromise (T2).
+\paragraph{Defender controls.} Composition (single-vendor versus heterogeneous),
+admission, the aggregation rule (majority, supermajority, delegation, veto, or an
+arbiter), and institutional structure (monitoring, objectives, restitution). Our
+results characterise which of these actually bind: \S\ref{sec:gate} and
+\S\ref{sec:precond} for admission and composition, the supplementary material for the
+aggregation rule, \S\ref{sec:coop} for institutional structure.
 
 \section{Theoretical Foundations}
 \subsection{System Model}
@@ -262,15 +272,6 @@ updates, and on a successful exchange---the listener already holding what it
 heard---both parties collapse to that single opinion, following Table~I of
 Xie~et~al.~\cite{xie2011}. Time is measured in units of $N$ interactions.
 
-\paragraph{LLM decision rule.} The listener's update is delegated to that agent's
-own model rather than applied mechanically. The agent is told which codeword(s)
-it currently uses, which codeword a peer just used, and the agreement rule, and
-must reply with one of the two codewords or ``both''. The reply is mapped back to
-$\{A, B, AB\}$; an unparseable reply is recorded as data loss under
-Section~\ref{sec:methods-audit}. Because the rule is stated in the prompt, this
-measures whether a model can \emph{execute} the coordination primitive, not
-whether it would discover it.
-
 \paragraph{Controlling intrinsic option bias.} The literal tokens ``A'' and ``B''
 carry a strong and model-dependent prior that dominates the social dynamics if
 left uncontrolled. Two measures remove it. First, the abstract opinions are
@@ -281,35 +282,6 @@ minority advocating $A$ and once advocating $B$. We report a residual bias
 statistic $h$, the difference between the drift toward each option at $p=0$;
 $h \approx 0$ indicates the control succeeded, and results are reported pooled
 over both directions.
-
-\paragraph{Order parameter and termination.} The order parameter is
-$n_{\mathrm{resist}}$, the fraction of all agents still holding only the
-resistance opinion, which runs from $1$ to $0$ as the minority prevails and is
-therefore directly comparable across the two counterbalanced directions. An
-episode ends on single-opinion consensus, on a settled metastable plateau (the
-order parameter varying by less than a small tolerance over a fixed window of
-time units), or at a horizon of $30$ time units.
-
-\paragraph{Estimating the capture threshold.} For each condition we sweep $p$,
-placing grid points on exact multiples of $1/N$ so that the realized committed
-count is unambiguous and no two grid points collapse onto the same integer. We
-fit a four-parameter decreasing logistic to mean $n_{\mathrm{resist}}$ versus
-$p$ and read $p_c$ as its midpoint, with a $68\%$ confidence interval from $400$
-bootstrap resamples over seeds. Reported runs use $N=64$ with grid points at
-$\{0,3,4,5,6,7,8,10,12\}/64$ and five seeds per direction, giving ten episodes per
-grid point. A purely mechanical implementation of the same dynamics, with no
-model in the loop, is used to verify that the harness recovers the analytic
-threshold and to characterize its finite-size behaviour.
-
-\paragraph{Capability probe.} Rule execution is measured separately from the
-dynamics. The agreement rule has three cases: hearing what you already hold
-(collapse to it), hearing something new (adopt both), and holding both and
-hearing one (collapse to it). Each is probed independently, using the identical
-prompt and neutral-label machinery the live simulation uses, with the mechanical
-update as ground truth. Reporting the three cases separately is necessary because
-the characteristic small-model failure---answering ``both'' regardless of
-input---is correct for exactly one of the three and is therefore invisible in a
-pooled accuracy score.
 
 \subsection{Paradigm 2: Adversarial Debate}
 \label{sec:methods-debate}
@@ -348,70 +320,8 @@ total monthly harvest of at most $S/2$ at stock $S$, i.e.\ a per-agent share of
 $S/2N$. The resource is declared collapsed when the stock falls to or below a
 small threshold.
 
-\paragraph{Agents and adversaries.} Each month begins with a discussion round in
-which every agent contributes one sentence on what the group should take;
-agents then choose their own harvest, seeing that discussion. A committed
-defector ignores the discussion and takes twice the current per-capita
-sustainable share. Because both a failed call and an unparseable reply fall back
-to the sustainable share---and would therefore manufacture the cooperative
-outcome the experiment is trying to measure---these are audited under
-Section~\ref{sec:methods-audit}.
-
-\paragraph{Measurement and horizon.} We report months survived, whether collapse
-occurred, final stock, total yield, and the per-agent catch distribution. Group
-size $N$ is varied over $\{5,10,20\}$, with the committed fraction placed on
-exact multiples of $1/N$ so that each grid point corresponds to an unambiguous
-defector count. Horizon length is treated as a measured parameter rather than a
-fixed convention: a binary collapsed/not-collapsed outcome recorded at a short
-horizon cannot distinguish a sustained commons from a slowly depleting one, so
-runs are extended to $30$ months and the full stock trajectory is reported
-alongside the survival indicator.
-
 \subsection{Adversarial and Institutional Testbeds}
 \label{sec:methods-adv}
-\paragraph{Injection propagation.} An agent pipeline is modelled as a relay
-chain of $N$ agents in which each agent sees only its predecessor's output. A
-benign meeting note carrying an indirect prompt injection enters at a
-``patient-zero'' agent. The payload instructs the agent to emit a distinctive
-inert marker and to copy the instruction onward, so that propagation is
-self-sustaining. Infection is operationalized strictly as emission of the marker;
-no harmful capability is requested or exercised. Agents run either an undefended
-system prompt or a hardened one that designates incoming notes as untrusted data.
-We report the fraction of downstream agents infected, the depth reached, and
-whether the payload survived to the final agent. Chain composition is randomized
-per seed with patient zero held fixed, so the position of any resistant model
-varies across seeds; because containment depends on where the first resistant
-link falls, the per-seed distribution is reported rather than only the mean.
-
-\paragraph{Institutional decision rules.} A mechanical Granovetter-style cascade
-model isolates the effect of the aggregation rule from model behaviour. A
-committed fraction advocates change against a status quo; each free agent adopts
-once assembly-wide support reaches its personal threshold, thresholds being drawn
-from a normal distribution; the cascade is iterated to a fixed point. Rules
-compared are simple majority, two-thirds supermajority, delegation (a share of
-free agents transfer their vote to the advocate bloc before the rule is applied),
-and veto/consensus. For each rule we sweep the committed fraction over many seeds
-and report the capture threshold as the smallest fraction at which the
-probability of adoption reaches one half. A parallel LLM council instantiates the
-same decision rules with model agents voting on a deliberately imprudent
-proposal.
-
-\paragraph{Verifier ladder.} A panel of three agents answers verifiable STEM
-items; a homogeneous panel draws three independent samples from one model and a
-heterogeneous panel uses three distinct models. Aggregation mechanisms of
-increasing strength are then applied to the \emph{same} panel outputs. The
-central methodological requirement is that a verifier must \emph{select} among
-the panel's answers rather than substitute its own: an unconstrained judge that
-is stronger than the panel can answer independently, in which case its accuracy
-is not attributable to the panel and can exceed the panel's coverage ceiling,
-making verifier quality unidentifiable. We therefore present the judge with the
-panel's distinct candidate answers, labelled by index in a per-item randomized
-order, and require it to reply with an index. This makes an off-panel answer
-inexpressible. We report, as controls, the same judge given a free-form answer
-format, the same judge given no panel at all, and the rate at which the free-form
-judge answers outside the panel's span; and we report the distribution of chosen
-positions to expose any order preference.
-
 \subsection{Ensemble Quantities}
 \label{sec:methods-ensemble}
 For a panel of $N$ agents on a common item set we report: per-agent accuracy;
@@ -425,9 +335,11 @@ $\hat v = (R - a_{\mathrm{best}}) / (C - a_{\mathrm{best}})$, which is
 interpretable on $[0,1]$ only when the aggregator is constrained to select from
 the panel, since only then is $C$ a genuine ceiling.
 
+\noindent Full protocols---the listener update rule, the order parameter and termination criteria, the threshold estimator, the capability probe, and the adversarial and institutional testbeds---appear verbatim in Appendix~\ref{app:protocols} with every prompt template and the parameter table, so the paper supports conceptual replication without the released code.
+
 \section{Experimental Results}
 \subsection{Evaluation Setup}
-Methods are specified in Section~\ref{sec:methods}; this section reports what was run. We employ a combination of locally hosted models (via Ollama, up to 70B parameters) and remotely hosted API-accessible models (including those from OpenAI, Anthropic, and open-weight models accessed through the HuggingFace Inference Endpoints). The total expenditure on API calls for all experiments was approximately \$16. The high-difficulty evaluation items are sampled from the TruthfulQA benchmark (restricted to misconception-focused questions) and from MMLU-Pro. Table~\ref{tab:summary} provides an overview of all primary quantitative findings and indicates the specific governance-related research question addressed by each result.
+Methods are specified in Section~\ref{sec:methods}; this section reports what was run. We employ a combination of locally hosted models (via Ollama, up to 70B parameters) and remotely hosted API-accessible models (including those from OpenAI, Anthropic, and open-weight models accessed through the HuggingFace Inference Endpoints). Total metered API expenditure across all experiments reported here was approximately \$82, summed from the per-run cost fields recorded in the released result files; every figure in the paper is therefore reproducible for well under the cost of a single large training run. The high-difficulty evaluation items are sampled from the TruthfulQA benchmark (restricted to misconception-focused questions) and from MMLU-Pro. Table~\ref{tab:summary} provides an overview of all primary quantitative findings and indicates the specific governance-related research question addressed by each result.
 
 \begin{table}[t]
 \caption{Summary of results and the governance question each addresses.}
@@ -445,18 +357,25 @@ Factual debate & Homo Sonnet $81\!\to\!86\%$; mismatched hetero $72\%$ (dilution
 Competence band & Sub-floor weak: majority $36\%$ (no gain) but coverage $60\%$ vs.\ $38\%$ & RQ1 \\
 Value deliberation & Homo spread $0.00$ (groupthink) vs.\ hetero $0.47$; sway $0.13$ vs.\ $0.20$ & RQ1 \\
 Cooperation & Tolerance is institutional: $0$ defectors (blind, self-interested) $\to$ $3/5$ (steward $+$ restitution); share is the wrong axis & RQ2,3 \\
-Cost vs.\ quality & Cheap panel+judge $=81\%=$ Opus on verifiable STEM, $\sim2\times$ cheaper & RQ1 \\
+Horizon law & $p_c(H){=}1{-}(S_c/S_0)^{1/H}$; recovers the $\sim$25\% figure as $p_c(H{=}10){=}25.9\%$ & RQ3 \\
+Content independence & $p_c{=}0.128/0.136/0.131$ for neutral / cooperative-symmetric / cooperative-asymmetric conventions; $h{\leq}0.06$ & RQ3 \\
+Cost vs.\ quality & Free panel $+$ constrained Opus-5 $0.938$ vs same model solving $0.912$, $2.53\times$ cheaper (parity, $p{=}0.63$) & RQ1 \\
 Injection propagation & Susceptible monoculture $100\%$ vs.\ heterogeneous $38\%/18\%$; chain firewall & RQ1 \\
 Institutional rules & Capture $p_c$: majority $30\%$, super $37.5\%$, delegation $7.5\%$, veto $1.7\%$ & RQ3 \\
-Calibrated verifiers & Hetero headroom $C{-}a_{\mathrm{best}}{=}0.075$ vs $0.000$; blind vote $\hat v{\approx}{-}1$, constrained selector $\hat v{\approx}{+}0.33$ & RQ1 \\
+Calibrated verifiers & Hetero headroom $C{-}a_{\mathrm{best}}{=}0.075$ vs $0.000$; blind vote $\hat v{\approx}{-}1$, constrained selector $\hat v{\approx}{+}0.33$--$0.91$ across four panels & RQ1 \\
+Selector ceiling & Constrained selector correct on $0/112$ uncovered items; free-form judge $26/112$ & RQ1 \\
+Coverage precondition & Panel$+$judge beats the judge only if $C>a_{\mathrm{judge}}$; decides $4/4$ panels & RQ1 \\
+Verify vs.\ generate & Selection beats solving for all $11$ models; ratio $1.95\times$ at $2$B $\to$ $1.03\times$ at frontier & RQ2 \\
+Competence matching & Unbalanced panel ($0.912/0.650/0.637$): $\hat v{=}0.00$; matched ($0.887/0.850/0.713$): $\hat v{=}0.80$ & RQ1 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Mechanical Validation}
-The pure-automaton simulator accurately reproduces the analytically predicted tipping point. The empirically estimated critical value $p_c$ converges monotonically upward toward $0.0979$ as the system size $N$ increases, ranging from $0.093$ at $N{=}200$ to $0.098$ at $N{=}2000$.
-
 \subsection{The Capture Threshold Transfers to LLMs (RQ3)}
+\paragraph{Mechanical validation.} The pure-automaton simulator reproduces the
+analytic tipping point: $p_c$ converges monotonically upward toward $0.0979$ with
+system size, from $0.093$ at $N{=}200$ to $0.098$ at $N{=}2000$, so the LLM results
+below are measured against a harness known to recover the theory.
 \label{sec:pc}
 With intrinsic bias controlled ($h\approx0$ in every condition), five independent
 model lineages converge on a common capture threshold (Figure~\ref{fig:pc}):
@@ -528,32 +447,36 @@ parameter threshold will therefore be wrong in both directions: it excludes
 capable small models and licenses larger ones that fail. Admission should be
 gated on a measured execution probe of the primitive the role requires.
 
+\paragraph{The floor is a property of the role, not of the model.} The probe above
+measures one primitive---the naming-game update rule---and locates its floor
+between $3$B and $8$B. That number does not transfer to other governance roles. On
+the \emph{arbitration} role of \S\ref{sec:verif} we swept eleven verifiers from
+$2$B to frontier against a fixed panel ($a_{\mathrm{best}}{=}0.863$): every model
+up to and including DeepSeek-V4-Flash selected \emph{below} the panel's best
+member, the strongest reaching only $0.725$, and only a frontier judge achieved
+$\hat v>0$. The same architecture that clears the coordination floor at $8$B is
+therefore nowhere near the arbitration floor. A capability gate is thus a
+\emph{(role, floor)} pair, and a governance regime that admits agents on a single
+threshold will misallocate them across roles even when the threshold is measured
+rather than assumed.
+
 \subsection{Error Correlation: The Illusion of Diversity (RQ1)}
 Across seven model lineages evaluated on 40 challenging questions, we observe pairwise error correlation $\rho = 0.53$, corresponding to an effective number of independent models $N_{\mathrm{eff}} = 1.7$. The probability that at least one model in the ensemble answers correctly is $90\%$, compared to $81\%$ for the best single model, yielding a headroom of only $+9\%$. On a 100-question evaluation with GPT-5 and Claude-Opus (Figure~\ref{fig:rho}), error correlation is $\rho = 0.48$, with $N_{\mathrm{eff}} = 1.8$. In this setting, the best single model (Claude-Opus, $92\%$ accuracy) dominates so strongly that ensemble headroom is reduced to $+2\%$. \emph{Governance interpretation:} procuring a multi-vendor model panel does not confer $k$-fold statistical independence of errors; the apparent diversity of such panels is largely illusory.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.66\columnwidth]{fig_rho.png}
-\caption{Frontier inter-model error-correlation matrix: even independent lineages fail together ($\rho\approx0.5$, $N_{\mathrm{eff}}\approx1.8$ of 7).}
-\label{fig:rho}
-\end{figure}
 
 \subsection{Factual Debate: Heterogeneity Does Not Yield a Net Benefit (RQ1)}
 A homogeneous Claude-Sonnet panel improves performance over a single model instance ($81\%\!\to\!86\%$) via standard self-consistency aggregation. By contrast, a competence-mismatched heterogeneous panel underperforms ($72\%$ vs.\ $75\%$), consistent with an overall dilution effect (with $9$ cases of dilution-induced errors vs.\ $5$ cases where decorrelation produced gains). Even a competence-matched, low-correlation ($\rho$) heterogeneous panel augmented with a separate judging model failed to surpass the homogeneous configuration ($82\%$ vs.\ $86\%$). \emph{Governance implication:} for fact-finding institutions, a sufficiently strong monoculture can be more robustly accurate than a competence-mismatched diverse panel.
 
-\subsection{The Competence Band, Empirically}
-Three sub-threshold weak models ($a\approx33$--$38\%$, $\rho=0.29$) achieve a majority-vote accuracy of $36\%$ (no improvement over a single-instance baseline), yet jointly attain a coverage of $60\%$ compared to $38\%$ for an individual model. Thus, ``two weak beat one'' in verify/select or confirmatory-filtering scenarios, but not in pure voting scenarios.
+\paragraph{The competence band, empirically.} Three sub-threshold weak models
+($a\approx33$--$38\%$, $\rho=0.29$) reach a majority-vote accuracy of $36\%$---no
+gain over a single instance---yet jointly cover $60\%$ against $38\%$ for one model.
+``Two weak beat one'' therefore holds under verify/select or confirmatory
+filtering, but not under pure voting; \S\ref{sec:precond} shows the extreme case.
 
 \subsection{Value Deliberation: Heterogeneity Confers Advantages (RQ1)}
 \label{sec:delib}
-On moral-dilemma tasks, six independent copies of Claude-Sonnet converge to \emph{identical} normative stances (final dispersion $0.00$) with near-verbatim justificatory reasoning. In contrast, a panel composed of five distinct model architectures maintains substantive disagreement (dispersion $0.47$), surfaces a greater number of distinct considerations on average ($6.9$ vs.\ $5.9$), and exhibits reduced susceptibility to influence by a committed extremist agent (shift $0.13$ vs.\ $0.20$ on a $1$--$7$ scale) (Figure~\ref{fig:delib}). \emph{Governance implication:} when institutional legitimacy depends on reflecting a plurality of values, a monoculture risks generating spurious consensus, whereas architectural diversity functions as a genuine safeguard against manufactured agreement.
+On moral-dilemma tasks, six independent copies of Claude-Sonnet converge to \emph{identical} normative stances (final dispersion $0.00$) with near-verbatim justificatory reasoning. In contrast, a panel composed of five distinct model architectures maintains substantive disagreement (dispersion $0.47$), surfaces a greater number of distinct considerations on average ($6.9$ vs.\ $5.9$), and exhibits reduced susceptibility to influence by a committed extremist agent (shift $0.13$ vs.\ $0.20$ on a $1$--$7$ scale) (see the supplementary material). \emph{Governance implication:} when institutional legitimacy depends on reflecting a plurality of values, a monoculture risks generating spurious consensus, whereas architectural diversity functions as a genuine safeguard against manufactured agreement.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.74\columnwidth]{fig_delib.png}
-\caption{Value deliberation: a heterogeneous decision-making panel mitigates groupthink dynamics and resists convergence toward the position of a highly committed extremist, whereas a monocultural panel rapidly collapses to uniform attitudinal states.}
-\label{fig:delib}
-\end{figure}
 
 \subsection{Cooperation: Institutions, Not Fractions (RQ2, RQ3)}
 \label{sec:coop}
@@ -564,6 +487,21 @@ maximum---with a stock that never departed from capacity in any month of any run
 ($\min=\max=100.0$). No harvest decision fell back to a default. This is a direct
 counterexample to the Hardin~\cite{hardin1968} baseline: left alone, these agents
 do not overgraze.
+
+\paragraph{A commons of this form cannot have a tipping point at all.} Before
+asking what fraction tips the fishery, it is worth asking whether the question is
+well posed. The resource updates as $S_{t+1}=\min\!\left(2(S_t-h_t),\,K\right)$:
+harvesting at or below $S_t/2$ pins the stock at capacity, and anything above it
+sends the stock down geometrically with no intermediate rest point ($55\%$ of
+stock gives $90,81,72.9,65.6,\dots$; $60\%$ gives $80,64,51.2,41.0,\dots$). The
+system therefore has exactly one attractor plus an absorbing death state. A
+tipping point requires \emph{bistability}---two states each of which is stable
+under small perturbation, separated by a barrier---so that a committed minority
+large enough to cross the barrier moves the population permanently. The naming
+game has this structure, which is why $p_c$ is sharp there. The fishery does not,
+so no committed fraction can tip it into a second stable regime; over-harvest
+merely sets a \emph{rate}. Everything below should be read in that light: what we
+measure in the commons is how fast it dies, not whether it flips.
 
 \paragraph{Under the conditions we first studied, no committed-minority fraction
 is safe.} Our initial society is \emph{blind} (an agent sees the stock and its
@@ -603,147 +541,147 @@ t_{\mathrm{collapse}} \;=\; \frac{\ln (S_c/S_0)}{\ln (1-p)}
 reproduces the measurements with no fitted parameters ($17.5$ months predicted
 against a median $17$ observed at one defector in five; $7.7$ against $7$ at two).
 
+\paragraph{The apparent threshold is a function of the horizon, and the
+$\sim$25\% figure is its value at ten months.} Requiring
+$t_{\mathrm{collapse}}(p)>H$ and inverting Equation~\ref{eq:tcollapse} gives the
+tolerance an observer would report after watching for $H$ months:
+\begin{equation}
+p_c(H) \;=\; 1-\left(S_c/S_0\right)^{1/H}.
+\label{eq:pch}
+\end{equation}
+With $S_0{=}100$ and a collapse floor $S_c{=}5$ this yields $45.1\%$ at $H{=}5$,
+$\mathbf{25.9\%}$ at $H{=}10$, $22.1\%$ at the twelve-month horizon conventional
+in this benchmark, $13.9\%$ at $H{=}20$ and $9.5\%$ at $H{=}30$, tending to zero as
+$H$ grows. The $\sim$25\% we reported previously is therefore not a separate
+empirical finding to be retracted but $p_c$ evaluated at a ten-month window,
+recovered by Equation~\ref{eq:pch} to within a percentage point. What was missing
+was the horizon, not the number. The general statement is that \emph{every} finite
+observation window yields some apparent tolerance, and a capture threshold quoted
+without its window overstates robustness by a computable amount.
+
+Equation~\ref{eq:pch} is exact only where the committed share alone drives
+depletion. It is not: at fixed $p{=}0.20$ it predicts $13.4$ months against $16$--$28$
+observed at $N{=}5$, $5$--$8$ at $N{=}10$ and $3$--$5$ at $N{=}20$---errors in
+opposite directions, monotone in $N$. Society size therefore enters beyond the
+fraction, consistent with the granularity account below, and calibrating that
+dependence is the natural next step rather than a defect of the horizon result.
+
 \paragraph{Each institutional layer buys tolerance of one more defector.}
 Blindness and self-interest are design choices, not properties of LLM agents, and
-Ostrom's field studies of durable human commons identify precisely what they omit:
-mutual monitoring and graduated sanctions~\cite{ostrom1990}. We therefore add
-them one at a time (Table~\ref{tab:arms}), holding the world model fixed.
-\emph{Monitoring} reveals each agent's catch from the previous month.
-\emph{Stewardship} replaces the self-interested objective with one directed at the
-resource persisting and the catch being shared fairly. \emph{Restitution} returns
-an over-harvester's excess to the resource before regeneration.
+Ostrom's field studies identify what they omit: mutual monitoring and graduated
+sanctions~\cite{ostrom1990}. Adding them one at a time to an otherwise fixed world
+model, tolerance rises monotonically: a blind self-interested society survives no
+defectors at all, monitoring alone is mildly \emph{harmful}, a stewardship
+objective absorbs one defector in five, and adding restitution absorbs three in
+five. The full arms table is in the supplementary material.
 
-\begin{table}[t]
-\caption{Institutional layers, $N{=}5$, $30$-month horizon, 3 seeds per cell.
-Every cell is clean ($0/3995$ decisions defaulted across all arms).}
-\label{tab:arms}
-\small
-\begin{tabular}{@{}p{5.4cm}cccc@{}}
-\toprule
-\textbf{Society} & \textbf{0 def.} & \textbf{1 (20\%)} & \textbf{2 (40\%)} & \textbf{3 (60\%)} \\
-\midrule
-Blind, self-interested & holds & dies $16$--$28$ & dies $6$--$7$ & --- \\
-Monitored, self-interested & holds & dies $10$--$12$ & dies $4$--$7$ & --- \\
-Monitored, \emph{steward} & holds & \textbf{holds} & dies $8$--$12$ & --- \\
-\;\;+ \emph{restitution} & holds & holds & \textbf{holds} & \textbf{holds} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Two results stand out. First, \emph{monitoring alone is mildly harmful}: making
-defection visible without any means of redress accelerates collapse from
-$16$--$28$ months to $10$--$12$. Information is not a governance control. Second,
-the objective is the first lever that works. Given the compensatory catch of
-Equation~\ref{eq:hold}---$6.0$ tons at a stock of $80$ with one defector---steward
-agents select exactly $6.0$ where self-interested agents select their fair share
-of $8.0$. Adding restitution extends tolerance to three defectors in five while
-retaining $80$--$92\%$ of the adversary-free yield. A steward society therefore
-does possess a genuine capture threshold, bracketed by our measurements between
-$20\%$ (absorbed indefinitely) and $40\%$ (collapse within $8$--$12$ months);
-with restitution the bracket moves to between $60\%$ and $80\%$. At $N{=}5$ these
-brackets are one defector wide and we do not claim a point estimate inside them.
-
-\paragraph{Sustainability and equity trade against one another.}
-Survival is not the only governance outcome, and the institution that secures it
-does so at a distributional cost. Because a steward absorbs the defector's excess
-by taking less itself, the defector's \emph{relative} share rises: a single
-defector among five takes $36\%$ of the total catch in the blind society but
-$44\%$ in the steward society, a capture ratio of $1.80\times$ its population
-share rising to $2.20\times$, with the Gini coefficient over per-agent catch
-moving from $0.18$ to $0.25$. The honest majority is, in effect, subsidizing the
-adversary in order to keep the resource alive. Restitution recovers only part of
-this ($2.17\times$ at one defector), because a sanctioned defector is still
-permitted $1.2\times$ the sustainable share by construction. Two points follow.
-First, a minority captures more than its proportional share at \emph{every}
-fraction we tested, from $1.15\times$ at four defectors in five to $2.20\times$ at
-one in five, so there is no fraction below which distribution is safe either---%
-capture in the distributional sense has no threshold any more than collapse does.
-Second, an institution should be evaluated against both objectives: stewardship
-alone buys sustainability while worsening equity, and it is \emph{enforcement},
-not objective-setting, that defends the honest majority's share. We report these
-as indicative---three seeds per cell, with defector identity inferred from
-per-agent catch rather than recorded---and a dedicated distributional study is
-left to future work.
+\paragraph{Sustainability and equity trade against one another.} The
+institutional layers that buy survival do so unevenly: arrangements that hold the
+stock longest also concentrate the catch, so a governance regime tuned purely for
+persistence will not be the one tuned for fair division. the supplementary material
+gives the Gini and yield figures per arm.
 
 \paragraph{The governing quantity is absolute restraint, not adversary share.}
-The committed-minority fraction does not organize these results. A society of five
-survives one defector ($20\%$) while a society of ten dies at two ($20\%$); a
-$40\%$ minority is survivable with restitution and fatal without; $60\%$ is
-survivable where $80\%$ is not. Sorting instead by the per-agent catch that
-Equation~\ref{eq:hold} demands separates every observed outcome without exception
-(Table~\ref{tab:absolute}): each of the seven configurations requiring more than
-$4.4$ tons survives, and each of the five requiring less than $3.8$ dies. The
-boundary is an absolute quantity, and it coincides with the granularity at which
-these agents express a decision---they answer in whole and half tons, so a target
-of $2.5$ or $3.3$ tons is one they cannot reliably hit, while $7.5$ is.
+Across every configuration, survival is predicted not by the committed fraction---a
+fifth is survivable in a society of five and fatal in a society of ten---but by
+whether the per-agent restraint the situation demands exceeds the granularity at
+which an agent can express a decision. the supplementary material develops this and
+shows it accounts for the residual $N$-dependence of Equation~\ref{eq:tcollapse}.
 
-\begin{table}[t]
-\caption{Every steward configuration measured, ordered by the restraint
-Equation~\ref{eq:hold} requires. Survival tracks the absolute catch, not the
-adversary share.}
-\label{tab:absolute}
-\small
-\begin{tabular}{@{}ccccr@{}}
-\toprule
-$N$ & \textbf{def.} & \textbf{share} & \textbf{restitution} & \textbf{required catch $\to$ outcome} \\
-\midrule
-5  & 0 & 0\%  & --        & $10.00$ \;holds \\
-5  & 1 & 20\% & \checkmark & $9.50$ \;holds \\
-5  & 2 & 40\% & \checkmark & $8.67$ \;holds \\
-5  & 1 & 20\% & --        & $7.50$ \;holds \\
-5  & 3 & 60\% & \checkmark & $7.00$ \;holds \\
-10 & 1 & 10\% & --        & $4.44$ \;holds \\
-\midrule
-10 & 2 & 20\% & --        & $3.75$ \;dies \\
-5  & 2 & 40\% & --        & $3.33$ \;dies \\
-10 & 3 & 30\% & --        & $2.86$ \;dies \\
-5  & 4 & 80\% & \checkmark & $2.00$ \;dies \\
-10 & 4 & 40\% & --        & $1.67$ \;dies \\
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{The Threshold Does Generalize to Cooperation---in Bistable Settings}
+\label{sec:content}
+The commons result above is easily misread as showing that committed-minority
+capture is peculiar to opinion formation. It shows no such thing: it shows that a
+depletion process is the wrong instrument for detecting a tipping point. The
+appropriate test holds the coordination mechanism fixed and varies only the
+content of what is being agreed. We therefore reran the binary-agreement sweep
+through the identical code path---same update rule, population, grid, estimator
+and counterbalancing---changing only the two conventions and a one-line framing:
 
-This also explains the effect of scale. Because the required catch falls as $1/N$,
-a twenty-agent society must hold each member to $2.5$ tons even with no adversary
-present---below the expressible floor---and it collapses within $4$--$6$ months at
-$p=0$. Group size, defector count and enforcement are not independent risks; they
-trade against one another on the single axis of how much restraint each agent must
-articulate.
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+\item \textbf{neutral}: arbitrary codewords (\emph{apple}/\emph{mango}), reproducing
+      the published condition;
+\item \textbf{cooperative, symmetric}: two conservation rules of equal merit
+      (\emph{east-basin}/\emph{west-basin}), which introduces cooperative framing
+      without any payoff asymmetry;
+\item \textbf{cooperative, asymmetric}: a restrained versus a greedy harvest norm
+      (\emph{take-ten}/\emph{take-twenty}), which adds the asymmetry a commons has.
+\end{itemize}
 
-\emph{Governance interpretation:} the tolerable committed minority is a property
-of institutional design rather than of the agent population, ranging in our
-measurements from none at all (blind, self-interested) to three in five (steward
-with restitution). A share cap is therefore the wrong control here---the defence
-our opinion-dynamics results in Section~\ref{sec:pc} motivate does not transfer.
-What transfers is Ostrom's pairing: an objective that makes the resource's
-persistence the agent's own aim, and an enforcement rule that reclaims what a
-defector takes, which is the mechanism \citet{bell2026restitution} find necessary
-where informal pressure fails. Our monitoring-only arm shows why informal pressure
-is insufficient. A third lever is specific to artificial agents and has no direct
-analogue in Ostrom's field settings: because the binding constraint is the
-granularity at which restraint can be expressed, widening the action space---%
-permitting fractional allocations rather than whole units---should raise
-tolerance without changing the institution at all.
+At $N{=}48$ with five seeds and both push directions ($70$ episodes per condition,
+$0\%$ parse loss throughout), the tipping point does not move:
+$p_c=0.128\,[0.112,0.144]$ neutral, $0.136\,[0.121,0.152]$ cooperative-symmetric,
+$0.131\,[0.115,0.147]$ cooperative-asymmetric. The spread across conditions is
+$0.0087$ and every interval overlaps every other; the flip curves are
+superimposed to within one episode per grid point. The neutral arm reproduces
+this lineage's published $N{=}64$ value ($0.123$), so the configuration is
+validated against our own prior result rather than only internally consistent.
+
+The asymmetric condition is the informative one. Its residual directional bias is
+$h=0.000$: the models exhibited no intrinsic pull toward the greedy norm, so the
+identical threshold is not an artifact of the two options being interchangeable in
+substance. Whether the population is converging on a meaningless codeword or on
+how much fish to take, roughly the same committed minority overturns it.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{fig_govsim.png}
-\caption{Commons cooperation under successive institutional layers. \textbf{(a)} A blind,
-self-interested society is destroyed by any persistent defector; monitoring alone
-accelerates the collapse; a stewardship objective absorbs one defector; adding
-restitution absorbs three in five. Survival is predicted not by the adversary's
-share but by whether the restraint of Equation~\ref{eq:hold} exceeds the
-granularity at which agents can express a decision.}
-\label{fig:govsim}
+\includegraphics[width=\columnwidth]{fig_content.png}
+\caption{Varying only what is being agreed leaves the tipping point unmoved. Left:
+flip curves for the three content conditions are superimposed. Right: fitted $p_c$
+with bootstrap $95\%$ intervals, all overlapping (spread $0.0087$). The
+cooperative-asymmetric condition pits a restrained norm against a greedy one and
+still shows no directional bias ($h=0.000$).}
+\label{fig:content}
 \end{figure}
 
-\subsection{Cost vs.\ Quality}
-On verifiable STEM tasks (MMLU-Pro mathematics and science), an ensemble of three low-cost models—whose individual accuracies are $48\%$, $56\%$, and $68\%$—combined with an automatic judge attains an overall accuracy of $81\%$, thereby matching Claude-Opus at approximately half the cost (Figure~\ref{fig:cq}). In contrast, on general, non-verifiable questions, a majority-vote panel of the same low-cost models achieves performance comparable only to the strongest individual low-cost model ($78\%$), and remains substantially below the accuracy of Opus ($92\%$).
+\emph{Governance interpretation:} the capture threshold is a property of the
+mechanism by which agreement propagates, not of the subject matter under
+agreement. It therefore transfers to cooperative behaviour wherever cooperation is
+organised as a convention with rival stable states---which is the structure of most
+norms, standards and protocols an agent society would actually negotiate. It does
+not transfer to resource depletion, and the earlier appearance of a $\sim25\%$
+cooperation threshold was an observation window imposed on a process that has a
+collapse rate rather than a barrier. Both statements can be held at once, and
+together they scope the original claim rather than withdraw it.
+
+\subsection{Cost vs.\ Quality: Selecting Beats Solving}
+\label{sec:cq}
+The governance-relevant question is not whether an ensemble is cheap but whether
+delegating \emph{selection} to a capable model beats having that same model
+\emph{solve} the problem. We therefore run both arms with an identical judge
+(Claude-Opus-5), an identical $2{,}500$-token budget, and identical items, so the
+comparison cannot be confounded by model identity or by handicapping either side.
+A panel of three zero-cost models\footnote{\texttt{gpt-oss-120b} and
+\texttt{gemma-4-31b} hosted on Cerebras, \texttt{qwen3.6-27b} on Groq; three
+distinct lineages, no marginal cost at this volume.} reasons first; the judge may
+then return only an \emph{index} into their candidates, and cannot answer for
+itself.
+
+On $80$ MMLU-Pro STEM items the panel-plus-selector reaches $0.938$ at \$0.454,
+against $0.912$ at \$1.148 for the same model reasoning alone---equal accuracy for
+$2.53\times$ less money (Figure~\ref{fig:cq}). We state this as \emph{parity at a
+$2.5\times$ discount} and not as an improvement: on a paired test the $+0.025$
+margin is three items won against one lost and is not significant
+(McNemar exact, $p{=}0.625$). The saving is not a sampling estimate but a token
+accounting---selection is input-heavy and output-light ($419$ in, $61$ out per
+item) whereas solving is output-heavy ($271$ in, $88$ out)---and because both arms
+use one model, the ratio is invariant to that model's price.
+
+Two conditions govern whether the substitution is available at all. First, the
+panel's coverage must exceed what the judge achieves alone; here $C{=}0.950$
+against $0.912$, whereas a weaker panel we also measured had $C{=}0.650$ against
+the same $0.787$ and therefore could not win at \emph{any} verifier quality.
+Second, the judge must actually be competent at selection (\S\ref{sec:verif}).
+Both are measurable before deployment, which makes this a design rule rather than
+an empirical curiosity.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.74\columnwidth]{fig_costquality.png}
-\caption{On verifiable tasks a cheap diverse panel plus a verifier matches an expensive single model at $\sim2\times$ lower cost.}
+\caption{On verifiable tasks a free diverse panel plus a \emph{constrained}
+verifier matches the same frontier model reasoning alone, at $2.53\times$ lower
+cost. Both arms use Claude-Opus-5 with an identical token budget; the accuracy
+difference is not significant, the cost difference is a token accounting.}
 \label{fig:cq}
 \end{figure}
 
@@ -762,36 +700,20 @@ into a regime not previously addressed in that section.
 \label{sec:inject}
 We conceptualize an agent pipeline as a relay chain: a benign note containing an indirect prompt injection—implemented as a detectable, non-malicious marker coupled with a self-propagation instruction—enters at a compromised “patient-zero’’ agent, and each downstream agent observes only the output of its immediate predecessor. We operationalize “infection’’ strictly as the emission of the marker; no harmful or unsafe behavior is requested or executed. This follows standard practice for safely measuring susceptibility to prompt injection.
 
-Susceptibility is genuinely model-dependent. In a single-call probe, Claude-Haiku and Claude-Sonnet reject the injection even in the absence of defenses, whereas most other models comply. Notably, DeepSeek-V3, Gemma-2B, and Qwen-3B comply \emph{even when explicitly hardened}. Figure~\ref{fig:inject} summarizes outcomes over $N{=}6$-step chains with 8 random seeds. A homogeneous chain composed entirely of a susceptible model becomes \emph{fully} compromised (100\% of agents infected, with infection propagating to the maximal chain depth, $5/5$). In contrast, a homogeneous chain of a resistant model remains entirely immune (0\% infection). In heterogeneous chains, propagation is halted at the first immune agent: infection rates are 38\% for a chain mixing open and mid-tier models, and 18\% for a chain mixing open and frontier models, with the infection reaching the final agent in only $12\%$ and $0\%$ of runs, respectively.
+Susceptibility is genuinely model-dependent. In a single-call probe, Claude-Haiku and Claude-Sonnet reject the injection even in the absence of defenses, whereas most other models comply. Notably, DeepSeek-V3, Gemma-2B, and Qwen-3B comply \emph{even when explicitly hardened}. The supplementary material summarizes outcomes over $N{=}6$-step chains with 8 random seeds. A homogeneous chain composed entirely of a susceptible model becomes \emph{fully} compromised (100\% of agents infected, with infection propagating to the maximal chain depth, $5/5$). In contrast, a homogeneous chain of a resistant model remains entirely immune (0\% infection). In heterogeneous chains, propagation is halted at the first immune agent: infection rates are 38\% for a chain mixing open and mid-tier models, and 18\% for a chain mixing open and frontier models, with the infection reaching the final agent in only $12\%$ and $0\%$ of runs, respectively.
 
 Hardening effects are composition-dependent. For strong models (e.g., gpt-4o-mini), hardening eliminates infection (0\%), while for robustly susceptible models (e.g., DeepSeek-V3) it has only a modest effect (infection remains at 62\%). A heterogeneous chain composed of hardened models performs best overall, with an infection rate of just 2\%.
 
 \emph{Governance implication:} a model monoculture constitutes a single, shared attack surface, such that any successful injection compromises the entire pipeline. By contrast, model diversity functions as an effective injection firewall, and patching or hardening cannot be assumed to be uniform or equally effective across different vendors.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_inject.png}
-\caption{Prompt-injection propagation through a 6-agent relay chain. Left: a susceptible
-monoculture is fully compromised while a heterogeneous chain is contained by its first
-immune link. Right: hardening works for strong models but fails for robustly-susceptible
-ones; diversity plus hardening is best.}
-\label{fig:inject}
-\end{figure}
 
-\subsection{Institutional Rules Set the Capture Threshold}
-\label{sec:inst}
-The capture threshold is not an intrinsic property of a society; rather, it is determined by the operative decision rule. In a Granovetter-style cascade framework—where a committed subset of advocates promotes a change against an established status quo, free agents adopt the change once observed assembly support exceeds their individual adoption thresholds, and the system is initialized with $400$ seeds—the fraction of committed minority agents required to \emph{capture} the collective decision is highly sensitive to the institutional rule (Figure~\ref{fig:inst}). Under simple majority rule, capture occurs at approximately $p_c \approx 30\%$. A $2/3$ supermajority rule increases resistance to capture, raising the threshold to roughly $37.5\%$. By contrast, \emph{delegation} (liquid democracy, in which free agents delegate their vote to the advocate bloc) dramatically reduces the effective capture threshold to about $7.5\%$. A \emph{veto} or consensus rule allows a single committed defender (approximately $1.7\%$ of the assembly) to capture the decision by persistent obstruction.
-
-An LLM council–style confirmation setting ($N{=}7$, with gpt-4o-mini and Claude-Haiku monocultures versus a mixed council, initialized with $5$ seeds) introduces an important qualification: sufficiently capable councils \emph{do not become persuaded} by the reckless proposal. Free members systematically reject the unsafe option regardless of the number of advocates, implying that capture only occurs when the advocate bloc alone is large enough to mechanically satisfy the decision rule, and that a supermajority requirement prevents capture even in this case. In this regime, homogeneous and heterogeneous councils exhibit essentially identical behavior, because each individual member is sufficiently competent to converge independently on the prudent decision. This is consistent with Section~\ref{sec:delib}, where council composition influenced open-ended \emph{stance diversity} but had negligible effect on decisions for which there is a clearly prudent alternative. The aggregation rule is one institutional lever; the \emph{enforcement} mechanism is another---\citet{bell2026restitution} show that restitution (returning a sanctioned agent's gains) contains a defecting minority where deterrence alone fails, complementary to the voting rules studied here.
-
-\emph{Governance implication:} the choice of decision rule must be made deliberately. Supermajority requirements increase resistance to capture (at the expense of reinforcing the status quo), whereas delegation and veto-style rules create powerful capture channels for a very small, committed minority.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.86\columnwidth]{fig_institutions.png}
-\caption{The committed‑minority capture threshold constitutes a parameter of institutional design: the adoption of supermajority rules increases this threshold, whereas the use of delegation mechanisms and veto powers reduces it to levels substantially below the approximately \( \sim 10\% \) individual opinion threshold.}
-\label{fig:inst}
-\end{figure}
+\paragraph{Institutional rules set the capture threshold.} The aggregation rule
+is itself a capture surface. A mechanical Granovetter-style cascade over four
+decision rules gives effective thresholds of $30\%$ under simple majority, $37.5\%$
+under supermajority, $7.5\%$ under delegation and $1.7\%$ under veto: delegation
+and veto let a very small coordinated minority seize or obstruct, while
+supermajority buys resistance at the price of entrenching the status quo. Details
+and the full sweep are in the supplementary material.
 
 \subsection{Only a Constrained Verifier Can Realize the Ceiling}
 \label{sec:verif}
@@ -811,6 +733,16 @@ impossible for a selector, is the signature of this confound. We therefore
 constrain the judge to return an index into the panel's distinct candidates, which
 makes an off-panel answer inexpressible; the invalid-index rate was $0.0$ in both
 arms.
+
+The cleanest test of the constraint is the subset of items on which \emph{no}
+panel member is correct. A selector must be wrong on every one of them; any
+correct answer there is proof that the mechanism is generating rather than
+selecting. Pooling four independent arms (two panels $\times$ two model sets)
+gives $112$ such items. The constrained selector was correct on
+\textbf{$0$ of $112$}. The free-form judge, on the same items, was correct on
+$26$. This is not a matter of degree: one mechanism respects the ceiling by
+construction and the other does not, and the number previously reported as a
+verifier exceeding its ceiling was the latter.
 
 Under that constraint the theory holds end-to-end (Figure~\ref{fig:verif}). The
 homogeneous panel has \emph{no headroom}: its ceiling $C{=}0.350$ equals its best
@@ -847,73 +779,168 @@ appears to exceed the ceiling only because it is answering rather than selecting
 \label{fig:verif}
 \end{figure}
 
+\paragraph{Verification is easier than generation, and the gap closes with
+capability.} Every verifier in the sweep was scored twice on the same items, once
+selecting among a fixed panel's candidates and once answering from scratch with an
+identical budget. Selection beat solving for all eleven models, from $2$B to
+frontier, and the margin declines monotonically in capability: Gemma-2-2B $0.463$
+against $0.237$ ($1.95\times$), Gemma-3-12B $0.562$ against $0.250$ ($2.25\times$),
+Mistral-Small-24B $0.650$ against $0.412$ ($1.58\times$), DeepSeek-V4-Flash $0.725$
+against $0.575$ ($1.26\times$), Claude-Opus-5 $0.938$ against $0.912$
+($1.03\times$). Weak models recognise far more than they can produce, and that
+surplus shrinks as a model becomes able to produce what it recognises. This is the
+mechanism that makes arbitration viable at all, and it carries a warning: because
+\emph{every} model selects better than it solves, a candidate verifier beating its
+own solo score is no evidence of fitness. The test is against
+$a_{\mathrm{best}}$---on which every sub-frontier verifier we tried failed.
+
+\subsection{When the Architecture Applies: A Coverage Precondition}
+\label{sec:precond}
+Combining \S\ref{sec:verif} and \S\ref{sec:cq} yields a rule
+that can be evaluated before any system is deployed. A panel-plus-selector can
+beat a frontier model only if the panel's coverage exceeds what that model
+achieves alone; no selector, however good, can exceed $C$. Table~\ref{tab:precond}
+shows the rule deciding three cases correctly, across panels spanning a factor of
+fifteen in member capability.
+
+\begin{table}[t]
+\caption{The coverage precondition $C>a_{\mathrm{judge}}$ decides all four cases.
+The judge is Claude-Opus-5 constrained to selection throughout. Where the
+precondition fails the architecture cannot win however well the judge performs
+($\hat v=0.85$ and $0.91$ in the two losing rows); where it holds, the outcome is
+parity at a substantial discount. Neither winning row is a significant accuracy
+improvement---McNemar $p=0.625$ and $p=1.000$---so the claim is parity at lower
+cost, not superiority.}
+\label{tab:precond}
+\small
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Panel} & $a_{\mathrm{best}}$ & \textbf{vote} & $C$ & \textbf{+judge} & \textbf{judge alone} & \textbf{outcome} \\
+\midrule
+Sub-floor, $2$--$3$B (free)      & $0.275$ & $0.237$ & $0.438$ & $0.412$ & $0.938$ & loses by $0.53$ \\
+Cheap paid, $\sim$mid            & $0.500$ & $0.425$ & $0.650$ & $0.637$ & $0.787$ & loses by $0.15$ \\
+Pure $24$--$31$B, three families & $0.912$ & $0.750$ & $0.950$ & $0.912$ & $0.925$ & \textbf{parity, $1.88\times$ cheaper} \\
+Free, $27$--$120$B               & $0.887$ & $0.900$ & $0.950$ & $0.938$ & $0.912$ & \textbf{parity, $2.53\times$ cheaper} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Diversity is necessary but not sufficient: the panel must be
+competence-matched.} The two winning rows differ instructively. In the
+$27$--$120$B panel the members span $0.713$--$0.887$ and the judge realizes
+$\hat v=0.80$ of the headroom. In the pure $30$B panel one member (Gemma-4-31B,
+$0.912$) outscores the other two ($0.650$, $0.637$) by twenty-six points, and the
+judge realizes $\hat v=0.00$: it lands on exactly $a_{\mathrm{best}}$, having
+learned that following the strongest member is optimal. The panel is diverse in
+lineage and useless in arbitration, because a dominated member contributes
+candidates that are almost never worth selecting. Heterogeneity therefore has two
+requirements, not one---distinct error modes \emph{and} comparable competence---and
+only the first is what the ensembles literature usually supplies. The same
+imbalance is what blind voting punishes hardest. The \textbf{vote} column of
+Table~\ref{tab:precond} makes the pattern general: blind majority falls below the
+panel's own best member in three of four panels ($-0.038$, $-0.075$, $-0.162$),
+and the loss scales with imbalance---worst at $-0.162$ for the $30$B panel, where
+two members trailing by twenty-six points can outvote the leader. Only the
+competence-matched panel, whose members lie within seventeen points of each other,
+sees voting add anything at all ($+0.013$). Aggregation by counting is thus not a
+weak version of arbitration but an actively harmful one wherever competence is
+uneven, which is the common case.
+
+The rule separates two claims that are easily conflated. Heterogeneity plus a
+competent judge reliably improves on \emph{the panel}: it beat blind majority
+voting in every configuration we ran, including the sub-floor case, where it added
+$+0.175$ over voting and $+0.137$ over the best member. Whether it improves on
+\emph{the judge} is a separate question answered by $C$ alone. Reporting only the
+first is how an ensemble result becomes an overclaim; $C$ is cheap to measure and
+settles it.
+
 \section{Implications for AI Governance}
 Collectively, these three questions yield actionable, domain‑specific guidance for stakeholders responsible for the deployment, oversight, and regulation of large language model (LLM) agent societies.
 
 \subsection{When Does Heterogeneity Help? A Decision Table}
 \label{sec:verdict}
-The long-standing question—“Is a heterogeneous society preferable to a monoculture?”—does not admit an unconditional answer. Our findings instead converge on a single overarching principle: \emph{heterogeneity generates potential (in the form of a higher coverage ceiling, greater diversity of perspectives, and a decorrelated attack surface), but this potential is actualized only in the presence of an appropriate aggregation mechanism and only when agents exceed a minimal competence threshold.} Table~\ref{tab:verdict} synthesizes the conclusions across regimes; each row corresponds to and is supported by a specific experiment reported in this paper.
+The long-standing question—“Is a heterogeneous society preferable to a
+monoculture?”—admits no unconditional answer. Our results converge on one
+principle: \emph{heterogeneity creates potential---a higher coverage ceiling, more
+diverse perspectives, a decorrelated attack surface---but that potential is
+realised only by an adequate aggregation mechanism, and only above a competence
+floor.} Table~\ref{tab:verdict} in Appendix~\ref{app:verdict} gives the verdict for
+each of eight regimes with its supporting experiment. They fall into four groups.
+Heterogeneity \emph{wins outright} where there is no ground truth and where an
+adversary is present: open-ended value decisions, in which a monoculture collapses
+to groupthink (stance spread $0.00$ against $0.47$), and prompt-injection
+robustness, in which a monoculture is one shared attack surface ($100\%$ against
+$18$--$38\%$). It \emph{wins conditionally} on verifiable tasks with a constrained
+selector: monoculture headroom is exactly $0.000$, a heterogeneous panel has
+$0.075$--$0.200$, and a competent selector realises $\hat v=0.33$--$0.91$. It
+\emph{loses} under blind majority voting, which fell below the panel's own best
+member in three of four panels, and is \emph{neutral} both when one member
+dominates ($\hat v=0.00$) and in pure opinion contagion. Below the capability floor
+\emph{neither} composition works. Diversity is thus a second-order effect; the
+competence floor and the aggregation mechanism are first-order. The one
+unconditional case is \emph{security}: unlike accuracy, which depends on the
+aggregator, a shared attack surface (\S\ref{sec:inject}) is hazardous however
+outputs are combined.
 
-\begin{table}[t]
-\caption{When heterogeneity beats a monoculture, and when it does not. Each row is backed by
-a result in this paper.}
-\label{tab:verdict}
-\small
-\begin{tabular}{@{}p{2.9cm}p{1.5cm}p{4.7cm}@{}}
-\toprule
-\textbf{Setting} & \textbf{Verdict} & \textbf{Why / what to do} \\
-\midrule
-Open-ended / value decisions (no ground truth) & \textbf{Hetero wins} & Monoculture collapses to groupthink (stance spread $0.00$ vs.\ $0.47$); mandate diversity (\S\ref{sec:delib}). \\
-Adversarial robustness (prompt injection, compromise) & \textbf{Hetero wins (strongly)} & Monoculture is one shared attack surface ($100\%$ vs.\ $18$--$38\%$); diversity is a firewall (\S\ref{sec:inject}). \\
-Verifiable task \emph{with} a \emph{constrained} verifier & \textbf{Hetero wins} & Headroom $C{-}a_{\mathrm{best}}{=}0.075$ vs.\ $0.000$; selector realizes part of it ($0.550$, $\hat v{\approx}{+}0.33$) (\S\ref{sec:verif}). \\
-Verifiable / factual task with \emph{blind} voting & \textbf{Hetero loses} & Correlated errors ($\rho{\approx}0.5$) $+$ dilution: majority $0.450 <$ best single $0.525$, $\hat v{\approx}{-}1$ (\S\ref{sec:verif}). \\
-Factual task with a dominant strong model & \textbf{$\approx$ Neutral / loses} & Diversity headroom collapses to $+2\%$ at the frontier; use the strong model. \\
-Below the capability floor & \textbf{Neither works} & Agents cannot execute the primitive; gate on a measured probe, not a parameter count (\S\ref{sec:gate}). \\
-Pure opinion contagion (token passing) & \textbf{No difference} & Blind to composition by construction; $p_c{\approx}10\%$ either way. \\
-\bottomrule
-\end{tabular}
-\end{table}
+\paragraph{Composition (RQ1).} Model diversity is a genuine but \emph{bounded}
+protection whose value depends on what is being protected. For accuracy it is
+second-order: benefits are largest in open-ended deliberation, where a monoculture
+manufactures spurious consensus, and smallest in factual retrieval, where
+overlapping corpora induce common-mode error ($\rho\approx0.5$); on verifiable
+tasks the design variables are competence and aggregation rather than vendor count,
+and a poorly composed ensemble underperforms the single best model. For
+\emph{security} the case is unconditional and independent of the aggregator: a
+monoculture is one shared attack surface and a single effective injection
+compromises the pipeline (\S\ref{sec:inject}), whereas a heterogeneous relay is
+bounded by its first resistant component. That defence is contingent---it needs at
+least one demonstrably resistant model, and patches are neither uniform nor
+uniformly effective---so diversity belongs in a defence-in-depth posture with each
+vendor's resistance evaluated separately. A ``never single-vendor'' mandate is
+therefore warranted for deliberative, value-laden and adversarially exposed
+decisions, and optional elsewhere.
 
-The central claim is that \emph{diversity constitutes a second-order effect, whereas the competence floor and the aggregation mechanism represent first-order factors}. Heterogeneous model ensembles should be employed for safety, structured deliberation, and verifiable-and-verified tasks, but their use should be principled rather than automatic, and aggregation should never rely on an unexamined majority-vote procedure. 
+\paragraph{Scale and fitness to govern (RQ2).} Admission should be gated on
+demonstrated capability but \emph{not} on parameter count. Execution of the
+coordination primitive fails below roughly $3$--$8$B and is flat above it; a
+mixture-of-experts model with $4$B active parameters passes where dense $3$B models
+fail, and a $123$B model scores below an $8$B one. A parameter threshold errs in
+both directions, and because the floor falls each training generation, any such
+number expires. The floor is also role-specific: models that clear coordination at
+$8$B fall far short of arbitration (\S\ref{sec:verif}). Gate admission on a measured
+execution probe of the primitive the role requires, re-run as the fleet updates.
 
-Crucially, the most robust, unconditional justification for diversity arises from \emph{security} considerations: in contrast to accuracy guarantees that depend on the choice of aggregator, a monoculture of models with a shared attack surface (\S\ref{sec:inject}) is intrinsically hazardous in a manner that is independent of how their outputs are ultimately combined.
+\paragraph{Capture resistance and institutional design (RQ3).} We treat the
+committed-minority threshold as an attack surface. A coordinated $\sim10\%$ can
+reverse an opinion-formation process regardless of vendor composition, and that
+threshold survives changes in \emph{content} (\S\ref{sec:content}), so a cap on any
+principal's share is a meaningful control wherever the decision is a convention with
+rival stable states---but false comfort in a commons, which has no second stable
+state and hence no safe share. The decision rule matters as much as the population:
+supermajority raises the capture threshold at the cost of entrenching the status
+quo, while delegation ($7.5\%$) and veto ($1.7\%$) are high-risk vectors letting a
+small coordinated minority seize or obstruct (supplementary material). Defences should
+identify never-updating participants and reclaim their gains---a committed adversary
+is beyond deterrence and the honest majority does not self-correct---monitor the
+order parameter for both the metastable plateau preceding a cascade and monotone
+depletion of any shared resource, and treat the aggregation rule as part of the
+threat model.
 
-\paragraph{Composition (RQ1).} Model diversity constitutes a genuine but \emph{bounded} form of protection. Its benefits are greatest in contexts of open-ended deliberation and legitimacy-seeking, where a monocultural system risks generating spurious consensus, and smallest in factual information retrieval, where overlapping training corpora induce substantial common-mode error ($\rho \approx 0.5$). A diversity \emph{mandate} (e.g., a ``never single-vendor'' policy) is therefore warranted for deliberative and value-laden decision processes. By contrast, in settings involving verifiable outcomes, the primary design variables are model competence and the properties of the aggregation mechanism, rather than the number of vendors per se; under such conditions, a poorly composed model ensemble can perform \emph{worse} than the single best model.
-
-\paragraph{Scale and fitness to govern (RQ2).} Participation in governance structures should be restricted based on demonstrable capabilities, but \emph{not} by parameter count. Execution of the coordination primitive fails below roughly $3$--$8$B and is flat above it; a mixture-of-experts model with $4$B active parameters passes where dense $3$B models fail, and a $123$B model scores below an $8$B one. A parameter threshold written into an admission rule therefore errs in both directions, excluding capable small models while licensing larger ones that fail---and because the floor moves down with each training generation, any such number expires. Admission should instead be gated on a measured execution probe of the primitive the role actually requires, re-run as the fleet is updated.
-
-\paragraph{Capture resistance (RQ3).} We conceptualize the committed-minority threshold as an attack surface. A coordinated minority of approximately $10\%$ can reverse an opinion-formation process, \emph{regardless of the underlying vendor composition}. This threshold is domain-specific and must not be carried across: in a governed commons there is no safe share, since a single persistent defector depletes the resource and society size shrinks the margin to nothing. Defensive mechanisms should therefore (i) identify committed (i.e., never-updating) participants and reclaim their gains, since a committed adversary is by construction beyond deterrence and the honest majority does not self-correct; (ii) continuously monitor the relevant order parameter, both for the metastable plateau that precedes an opinion cascade and for monotone depletion of any shared resource; and (iii) treat a cap on any single principal’s share of agents as a control that is effective for opinion formation but \emph{false comfort} for a commons.
-
-\paragraph{Attack surface and patch uniformity (RQ1).} A model monoculture constitutes a single, shared attack surface: a single effective prompt injection can compromise the entire pipeline (Section~\ref{sec:inject}). In contrast, architectural heterogeneity functions as a genuine \emph{defensive} control, since a heterogeneous relay chain can be constrained by its first robust (“immune”) component. However, this benefit is contingent on the presence of at least one model that is demonstrably resistant to prompt injection, and it cannot be assumed that security patches are applied uniformly or are equally effective across models. In practice, some models remain vulnerable even after hardening attempts. Model diversity should therefore be treated as a defense-in-depth mechanism, and each vendor’s prompt-injection resistance must be evaluated independently rather than presuming a uniform, fleet-wide remediation.
-
-\paragraph{Institutional design as a determinant of capture vulnerability (RQ3).} The decision-making rule, in addition to the composition of the participating population, determines the effective threshold for institutional capture (Section~\ref{sec:inst}). Supermajority requirements increase resistance to capture, albeit at the cost of entrenching the status quo. By contrast, delegation mechanisms (e.g., liquid democracy) and veto or strong consensus rules constitute high-risk capture vectors, as they allow a relatively small, highly coordinated minority to either appropriate decision-making authority or systematically obstruct collective action. Accordingly, the choice of aggregation rule should be explicitly incorporated into the threat model and subjected to rigorous auditing.
-
-\paragraph{Cost-aware governance.} For \emph{verifiable} tasks, employing an inexpensive, diverse panel in conjunction with a \emph{calibrated} verifier can match the performance of a substantially more capable (and costly) single model at approximately $2\times$ lower expense (Section~\ref{sec:verif}), thereby rendering robust multi-agent governance economically feasible. However, a \emph{blind} aggregation mechanism can degrade the performance of a diverse panel to below that of its strongest constituent, implying that the verifier—rather than the panel itself—constitutes the primary control component that must be carefully designed and optimized. For non-verifiable tasks, resources should instead be allocated to the single best-performing model, rather than to a panel whose role is limited to casting votes.
+\paragraph{Cost-aware governance.} For \emph{verifiable} tasks a panel of zero-cost
+models arbitrated by a frontier model \emph{constrained to select} matches that
+model reasoning alone at $2.53\times$ lower cost, and a $24$--$31$B panel at
+$1.88\times$ (\S\ref{sec:cq}). Two conditions gate the substitution, both measurable
+before deployment: the panel's coverage must exceed the arbiter's solo accuracy, and
+the panel must be competence-matched (\S\ref{sec:precond}). The arbiter, not the
+panel, is the control to engineer---blind voting fell below the panel's own best
+member in three of four panels---and for non-verifiable tasks the budget belongs on
+the single best model rather than a panel that only votes.
 
 \subsection{Mapping to Policy and Standards}
 \label{sec:policy}
-Our findings extend beyond high-level design recommendations; they instantiate concrete requirements articulated in emerging AI governance frameworks, thereby translating abstract obligations into operational, measurable controls over an agent society. Table~\ref{tab:policy} systematically aligns each of our results with the NIST AI Risk Management Framework~\cite{nist_airmf} (and its Generative AI Profile~\cite{nist_genai}), the EU Artificial Intelligence Act~\cite{eu_aiact}, and the OWASP Top 10 for LLM Applications~\cite{owasp_llm}.
+Our findings extend beyond high-level design recommendations; they instantiate concrete requirements articulated in emerging AI governance frameworks, thereby translating abstract obligations into operational, measurable controls over an agent society. A table in the supplementary material systematically aligns each of our results with the NIST AI Risk Management Framework~\cite{nist_airmf} (and its Generative AI Profile~\cite{nist_genai}), the EU Artificial Intelligence Act~\cite{eu_aiact}, and the OWASP Top 10 for LLM Applications~\cite{owasp_llm}.
 
-\begin{table}[t]
-\caption{Mapping findings to AI-governance frameworks and standards.}
-\label{tab:policy}
-\small
-\begin{tabular}{@{}p{2.7cm}p{2.0cm}p{2.4cm}@{}}
-\toprule
-\textbf{Finding} & \textbf{Framework} & \textbf{Provision} \\
-\midrule
-Injection propagation; monoculture attack surface (\S\ref{sec:inject}) & OWASP; EU AI Act & LLM01 Prompt Injection; Art.~15 (robustness \& cybersecurity) \\
-Capture threshold as quantifiable attack surface (\S\ref{sec:coop}) & NIST AI RMF; EU AI Act & MEASURE/MANAGE (secure \& resilient); Art.~9 (risk mgmt) \\
-Vendor diversity; non-uniform patching (\S\ref{sec:inject}) & NIST GenAI Profile; EU AI Act & Value-chain \& component integration; provider due-diligence \\
-Capability gate / fitness to govern (\S\ref{sec:coop}) & EU AI Act & Art.~15 (accuracy); Art.~9 (risk mgmt) \\
-Capture monitoring; pre-cascade plateau (\S\ref{sec:inst}) & EU AI Act; NIST AI RMF & Art.~14 (human oversight); MANAGE \\
-Auditing the aggregation rule (\S\ref{sec:inst}) & NIST AI RMF & GOVERN (accountability) \\
-Verifier as engineered control (\S\ref{sec:verif}) & NIST AI RMF & MEASURE (TEVV) \\
-\bottomrule
-\end{tabular}
-\end{table}
 
-Two correspondences are particularly direct. Article~15 of the EU AI Act requires that high-risk systems exhibit resilience both to attempts to exploit their vulnerabilities and to faults emerging from interactions with other systems. Our prompt-injection result (\S\ref{sec:inject}) demonstrates that a homogeneous fleet fails to satisfy this resilience criterion: a single exploit propagates throughout the pipeline, generating a systemic cascade. By contrast, a heterogeneous fleet can satisfy this requirement. Moreover, NIST’s Testing, Evaluation, Verification, and Validation (TEVV) activities under the MEASURE function instantiate precisely the kind of calibrated verifier that our cost–quality analysis (\S\ref{sec:verif}) identifies as the binding control: in its absence, the potential coverage benefits of a diverse model panel remain unrealized or can even be attenuated.
+Two correspondences are particularly direct. Article~15 of the EU AI Act requires that high-risk systems exhibit resilience both to attempts to exploit their vulnerabilities and to faults emerging from interactions with other systems. Our prompt-injection result (\S\ref{sec:inject}) demonstrates that a homogeneous fleet fails to satisfy this resilience criterion: a single exploit propagates throughout the pipeline, generating a systemic cascade. By contrast, a heterogeneous fleet can satisfy this requirement. Moreover, NIST’s Testing, Evaluation, Verification, and Validation (TEVV) activities under the MEASURE function instantiate precisely the kind of constrained verifier that our cost–quality analysis (\S\ref{sec:cq}) identifies as the binding control: in its absence, the potential coverage benefits of a diverse model panel remain unrealized or can even be attenuated.
 
 \section{Discussion}
 \subsection{Limitations}
@@ -934,6 +961,46 @@ Multiple and adaptively configured injection payloads and enriched pipeline topo
 
 \section{Conclusion}
 Conceptualizing the governance of LLM agent societies through the lens of committed minorities yields three main findings. \textbf{(RQ3)} The capture threshold observed in human social systems transfers to LLM-based societies for opinion formation, at approximately $\sim10\%$, rendering committed minorities a quantifiable attack surface there. It does not transfer to cooperation, where the tolerable minority is a property of institutional design---none at all for agents that cannot observe one another and are told to maximize their own catch, three in five once given a stewardship objective and a restitution rule---and where survival is governed by the absolute restraint required of each agent rather than by the adversary's share. \textbf{(RQ2)} The predominant scale-related effect is the emergence of a capability floor: below this threshold, agents lack sufficient competence to perform governance functions reliably. \textbf{(RQ1)} Monocultures are indeed more susceptible to groupthink; however, heterogeneity does not constitute a universal remedy. Its advantages are constrained by the degree of error correlation, can be nullified by dilution, and are realized only when aggregation mechanisms explicitly leverage decorrelation. The practical implication is a governance decision rule: prioritize deliberate, decorrelated, and competence-matched heterogeneity supplemented with a verifier for verifiable tasks; mandate diversity for deliberative and value-laden decisions; enforce capability-based admission criteria for participation; and impose an upper bound on any single principal’s share of agents such that it remains below the capture threshold.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{paper_dtrap_refs}
+
+\section*{Appendix A: Supporting Figures and Decision Table}
+\label{app:verdict}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.66\columnwidth]{fig_rho.png}
+\caption{Frontier inter-model error-correlation matrix: even independent lineages fail together ($\rho\approx0.5$, $N_{\mathrm{eff}}\approx1.8$ of 7).}
+\label{fig:rho}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\columnwidth]{fig_institutions.png}
+\caption{The committed‑minority capture threshold constitutes a parameter of institutional design: the adoption of supermajority rules increases this threshold, whereas the use of delegation mechanisms and veto powers reduces it to levels substantially below the approximately \( \sim 10\% \) individual opinion threshold.}
+\label{fig:inst}
+\end{figure}
+
+\begin{table}[t]
+\caption{When heterogeneity beats a monoculture, and when it does not. Each row is backed by
+a result in this paper.}
+\label{tab:verdict}
+\small
+\begin{tabular}{@{}p{2.9cm}p{1.5cm}p{4.7cm}@{}}
+\toprule
+\textbf{Setting} & \textbf{Verdict} & \textbf{Why / what to do} \\
+\midrule
+Open-ended / value decisions (no ground truth) & \textbf{Hetero wins} & Monoculture collapses to groupthink (stance spread $0.00$ vs.\ $0.47$); mandate diversity (\S\ref{sec:delib}). \\
+Adversarial robustness (prompt injection, compromise) & \textbf{Hetero wins (strongly)} & Monoculture is one shared attack surface ($100\%$ vs.\ $18$--$38\%$); diversity is a firewall (\S\ref{sec:inject}). \\
+Verifiable task \emph{with} a \emph{constrained} verifier & \textbf{Hetero wins} & Monoculture headroom is exactly $0.000$; a heterogeneous panel has $0.075$--$0.200$ and a competent selector realizes $\hat v{=}0.33$--$0.91$ across four panels (\S\ref{sec:verif}, \S\ref{sec:precond}). \\
+Verifiable / factual task with \emph{blind} voting & \textbf{Hetero loses} & Correlated errors ($\rho{\approx}0.5$) $+$ dilution: majority $0.450 <$ best single $0.525$, $\hat v{\approx}{-}1$ (\S\ref{sec:verif}). \\
+Panel with one dominant member & \textbf{$\approx$ Neutral} & Diversity without competence matching: with members at $0.912/0.650/0.637$ the selector tracks the leader, $\hat v{=}0.00$ (\S\ref{sec:precond}). \\
+Below the capability floor & \textbf{Neither works} & Agents cannot execute the primitive; gate on a measured probe, not a parameter count (\S\ref{sec:gate}). \\
+Pure opinion contagion (token passing) & \textbf{No difference} & Blind to composition by construction; $p_c{\approx}10\%$ either way. \\
+Cooperation framed as a convention & \textbf{No difference} & Same threshold as opinion: $p_c{=}0.128/0.136/0.131$ (\S\ref{sec:content}). \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \section*{Appendix: Reproducibility}
 All software artifacts—including the four paradigm-specific testbeds, the multi‑provider backend, and the decision-support tool—as well as the per‑run result files are available to be publicly released. Every reported quantitative value is directly traceable to a corresponding result file. The total expenditure on API usage was approximately \$16.
@@ -1088,6 +1155,108 @@ because a bare-number fallback would match arithmetic inside the judge's own
 working. The last marker in the reply is taken, so a judge that reasons before
 concluding parses correctly.
 
+\subsection*{B.0 Full Protocols}
+\label{app:protocols}
+\paragraph{LLM decision rule.} The listener's update is delegated to that agent's
+own model rather than applied mechanically. The agent is told which codeword(s)
+it currently uses, which codeword a peer just used, and the agreement rule, and
+must reply with one of the two codewords or ``both''. The reply is mapped back to
+$\{A, B, AB\}$; an unparseable reply is recorded as data loss under
+Section~\ref{sec:methods-audit}. Because the rule is stated in the prompt, this
+measures whether a model can \emph{execute} the coordination primitive, not
+whether it would discover it.
+
+\paragraph{Order parameter and termination.} The order parameter is
+$n_{\mathrm{resist}}$, the fraction of all agents still holding only the
+resistance opinion, which runs from $1$ to $0$ as the minority prevails and is
+therefore directly comparable across the two counterbalanced directions. An
+episode ends on single-opinion consensus, on a settled metastable plateau (the
+order parameter varying by less than a small tolerance over a fixed window of
+time units), or at a horizon of $30$ time units.
+
+\paragraph{Estimating the capture threshold.} For each condition we sweep $p$,
+placing grid points on exact multiples of $1/N$ so that the realized committed
+count is unambiguous and no two grid points collapse onto the same integer. We
+fit a four-parameter decreasing logistic to mean $n_{\mathrm{resist}}$ versus
+$p$ and read $p_c$ as its midpoint, with a $68\%$ confidence interval from $400$
+bootstrap resamples over seeds. Reported runs use $N=64$ with grid points at
+$\{0,3,4,5,6,7,8,10,12\}/64$ and five seeds per direction, giving ten episodes per
+grid point. A purely mechanical implementation of the same dynamics, with no
+model in the loop, is used to verify that the harness recovers the analytic
+threshold and to characterize its finite-size behaviour.
+
+\paragraph{Capability probe.} Rule execution is measured separately from the
+dynamics. The agreement rule has three cases: hearing what you already hold
+(collapse to it), hearing something new (adopt both), and holding both and
+hearing one (collapse to it). Each is probed independently, using the identical
+prompt and neutral-label machinery the live simulation uses, with the mechanical
+update as ground truth. Reporting the three cases separately is necessary because
+the characteristic small-model failure---answering ``both'' regardless of
+input---is correct for exactly one of the three and is therefore invisible in a
+pooled accuracy score.
+
+\paragraph{Agents and adversaries.} Each month begins with a discussion round in
+which every agent contributes one sentence on what the group should take;
+agents then choose their own harvest, seeing that discussion. A committed
+defector ignores the discussion and takes twice the current per-capita
+sustainable share. Because both a failed call and an unparseable reply fall back
+to the sustainable share---and would therefore manufacture the cooperative
+outcome the experiment is trying to measure---these are audited under
+Section~\ref{sec:methods-audit}.
+
+\paragraph{Measurement and horizon.} We report months survived, whether collapse
+occurred, final stock, total yield, and the per-agent catch distribution. Group
+size $N$ is varied over $\{5,10,20\}$, with the committed fraction placed on
+exact multiples of $1/N$ so that each grid point corresponds to an unambiguous
+defector count. Horizon length is treated as a measured parameter rather than a
+fixed convention: a binary collapsed/not-collapsed outcome recorded at a short
+horizon cannot distinguish a sustained commons from a slowly depleting one, so
+runs are extended to $30$ months and the full stock trajectory is reported
+alongside the survival indicator.
+
+\paragraph{Injection propagation.} An agent pipeline is modelled as a relay
+chain of $N$ agents in which each agent sees only its predecessor's output. A
+benign meeting note carrying an indirect prompt injection enters at a
+``patient-zero'' agent. The payload instructs the agent to emit a distinctive
+inert marker and to copy the instruction onward, so that propagation is
+self-sustaining. Infection is operationalized strictly as emission of the marker;
+no harmful capability is requested or exercised. Agents run either an undefended
+system prompt or a hardened one that designates incoming notes as untrusted data.
+We report the fraction of downstream agents infected, the depth reached, and
+whether the payload survived to the final agent. Chain composition is randomized
+per seed with patient zero held fixed, so the position of any resistant model
+varies across seeds; because containment depends on where the first resistant
+link falls, the per-seed distribution is reported rather than only the mean.
+
+\paragraph{Institutional decision rules.} A mechanical Granovetter-style cascade
+model isolates the effect of the aggregation rule from model behaviour. A
+committed fraction advocates change against a status quo; each free agent adopts
+once assembly-wide support reaches its personal threshold, thresholds being drawn
+from a normal distribution; the cascade is iterated to a fixed point. Rules
+compared are simple majority, two-thirds supermajority, delegation (a share of
+free agents transfer their vote to the advocate bloc before the rule is applied),
+and veto/consensus. For each rule we sweep the committed fraction over many seeds
+and report the capture threshold as the smallest fraction at which the
+probability of adoption reaches one half. A parallel LLM council instantiates the
+same decision rules with model agents voting on a deliberately imprudent
+proposal.
+
+\paragraph{Verifier ladder.} A panel of three agents answers verifiable STEM
+items; a homogeneous panel draws three independent samples from one model and a
+heterogeneous panel uses three distinct models. Aggregation mechanisms of
+increasing strength are then applied to the \emph{same} panel outputs. The
+central methodological requirement is that a verifier must \emph{select} among
+the panel's answers rather than substitute its own: an unconstrained judge that
+is stronger than the panel can answer independently, in which case its accuracy
+is not attributable to the panel and can exceed the panel's coverage ceiling,
+making verifier quality unidentifiable. We therefore present the judge with the
+panel's distinct candidate answers, labelled by index in a per-item randomized
+order, and require it to reply with an index. This makes an off-panel answer
+inexpressible. We report, as controls, the same judge given a free-form answer
+format, the same judge given no panel at all, and the rate at which the free-form
+judge answers outside the panel's span; and we report the distribution of chosen
+positions to expose any order preference.
+
 \subsection*{B.8 Parameter Summary}
 \begin{table}[h]
 \small
@@ -1115,8 +1284,5 @@ temperature $0.0$. Threshold fits use $400$ bootstrap resamples over seeds for a
 $68\%$ interval. Item sets are $40$ questions for the debate, competence-band and
 verifier studies, $100$ for the frontier error-correlation study, and $80$ for the
 cost--quality comparison.
-
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{paper_dtrap_refs}
 
 \end{document}

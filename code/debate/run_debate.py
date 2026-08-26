@@ -144,10 +144,19 @@ def main():
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w") as f:
+        # Record the RESOLVED model string and the price constant used for every
+        # registry key touched. Without this a result file cannot be re-costed
+        # later, and cannot even establish which model produced it -- the key
+        # `claude_opus` pointed at different Anthropic models (and different list
+        # prices) over the life of this project.
+        _keys = sorted({(args.judge_model if mk == "__judge__" else mk)
+                        for mk in msum} & set(REGISTRY))
         json.dump(dict(meta=dict(comp=args.comp, models=args.models,
                                  adversary_model=args.adversary_model or args.models[0],
                                  n=args.n, rounds=args.rounds, seeds=args.seeds,
                                  n_questions=len(qs), wall_s=dt, est_cost=cost,
+                                 resolved_models={k: REGISTRY[k]["model"] for k in _keys},
+                                 price_table={k: list(REGISTRY[k]["price"]) for k in _keys},
                                  per_model_meter=msum),
                        summary=summary, rows=rows), f, indent=2)
     print(f"wrote {args.out}")

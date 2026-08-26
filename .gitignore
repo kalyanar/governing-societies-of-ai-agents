@@ -61,3 +61,18 @@ PROPOSAL_ONEPAGER.*
 paper/methods_section.tex
 paper/methods_appendix.tex
 paper/section_coop*.tex
+
+# local result backups
+code/results_backup_*/
+
+# local working copies and backups -- not part of the release
+backup_*/
+paper_v3/
+paper_v3_rev/
+*.pre-refresh
+*.pre-length
+*.pre-biborder
+*.pre20
+*.md.v1
+*.png.old
+code/results/.*_done

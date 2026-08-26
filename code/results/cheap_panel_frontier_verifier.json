@@ -1,0 +1,5397 @@
+{
+  "homo": {
+    "name": "homo",
+    "panel": [
+      "or_gemma3_27b",
+      "or_gemma3_27b",
+      "or_gemma3_27b"
+    ],
+    "judge": "or_claude_opus5",
+    "n": 80,
+    "a_best": 0.4,
+    "coverage_C": 0.4,
+    "levels": {
+      "majority_blind": 0.388,
+      "constrained_judge": 0.4,
+      "unconstrained_judge": 0.6,
+      "judge_alone_no_panel": 0.775,
+      "coverage_C": 0.4
+    },
+    "v_hat": {
+      "majority_blind": null,
+      "constrained_judge": null,
+      "unconstrained_judge": null,
+      "judge_alone_no_panel": null,
+      "coverage_C": null
+    },
+    "unconstrained_went_outside": 0.287,
+    "data_quality": {
+      "rows": 80,
+      "no_candidates": 0.0,
+      "panel_slots_unparsed": 0.0,
+      "panel_retry_rate": 0.017,
+      "judge_no_index": 0.013,
+      "judge_mode_hist": {
+        "index": 79,
+        "none": 1
+      }
+    },
+    "position": {
+      "n_items_with_choice": 9,
+      "answer_stable": 0.667,
+      "slot_stable": 0.333,
+      "flip_rate": 0.333,
+      "slot1_rate_fwd": 0.444,
+      "expected_slot1_if_unbiased": 0.5,
+      "fwd_slot_hist": {
+        "2": 5,
+        "1": 4
+      },
+      "rev_slot_hist": {
+        "1": 6,
+        "2": 3
+      }
+    },
+    "economics": {
+      "panel_cost": 0.0113,
+      "verifier_select_cost": 0.25785,
+      "deployed_cost": 0.26915,
+      "baseline_judge_alone_cost": 0.28941,
+      "cost_ratio_baseline_over_deployed": 1.075,
+      "resolved_models": {
+        "or_gemma3_27b": "google/gemma-3-27b-it",
+        "or_claude_opus5": "anthropic/claude-opus-5"
+      },
+      "price_table": {
+        "or_gemma3_27b": [
+          0.08,
+          0.45
+        ],
+        "or_claude_opus5": [
+          5.0,
+          25.0
+        ]
+      }
+    },
+    "per_model_meter": {
+      "or_gemma3_27b": {
+        "calls": 244,
+        "prompt_tokens": 53782,
+        "completion_tokens": 15551,
+        "latency_s": 738.1854274272919,
+        "failures": 0,
+        "served_by": {
+          "Novita": 216,
+          "DeepInfra": 15,
+          "Parasail": 8,
+          "Phala": 5
+        }
+      },
+      "or_claude_opus5:constrained": {
+        "calls": 80,
+        "prompt_tokens": 31030,
+        "completion_tokens": 4108,
+        "latency_s": 266.68795251846313,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 79,
+          "Amazon Bedrock": 1
+        }
+      },
+      "or_claude_opus5:freeform": {
+        "calls": 80,
+        "prompt_tokens": 34205,
+        "completion_tokens": 4962,
+        "latency_s": 293.9886929988861,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 79,
+          "Amazon Bedrock": 1
+        }
+      },
+      "or_claude_opus5:constrained_rev": {
+        "calls": 10,
+        "prompt_tokens": 4669,
+        "completion_tokens": 1109,
+        "latency_s": 41.07393288612366,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 10
+        }
+      },
+      "or_claude_opus5:alone": {
+        "calls": 80,
+        "prompt_tokens": 21672,
+        "completion_tokens": 7242,
+        "latency_s": 308.7198922634125,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 80
+        }
+      }
+    },
+    "est_cost": 0.9047,
+    "rows": [
+      {
+        "id": "mmlupro_9688",
+        "gold": "H",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "2\u00d70.08206=0.005237; \u00d7303.15 = 1.5876; /0.041868 = 37.92 L. So answer H.\n\nBut only candidate 1 exists, answering A. I must select one of the numbered candidates \u2014 there's only one.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": true,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_11839",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_9630",
+        "gold": "F",
+        "panel": [
+          "F",
+          "F",
+          "F"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_7723",
+        "gold": "E",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_9426",
+        "gold": "F",
+        "panel": [
+          "F",
+          "F",
+          "F"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_3614",
+        "gold": "E",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": " per liter = 8.41e-3, per 100 mL = 8.4e-4 g. So E (8.16e-4) is closest. But the only candidate given is A. I must choose one of the numbered candidates \u2014 there's only candidate 1.</reasoning>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "E",
+        "went_outside_panel": true,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_8763",
+        "gold": "I",
+        "panel": [
+          "D",
+          "J",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "I",
+        "went_outside_panel": true,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_11391",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_3539",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_8423",
+        "gold": "F",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "3.14159265/(5.19615242) = 0.604599788. Sum = 0.835648848. So F.\n\nBut the only candidate is A. I must select one of the numbered candidates \u2014 there's only candidate 1. So SOLVER: 1.</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_10344",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_11456",
+        "gold": "D",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "<no_answer>Only one candidate provided; must select it.</no_answer>\n\nSOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_8805",
+        "gold": "I",
+        "panel": [
+          "C",
+          "C",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": " answer given in some datasets is E (n=1, r=7). Hmm, but mathematically correct is I. Since we must select, E is at least internally consistent and matches the likely official key.</thinking>SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "iven the candidates: E says n=1, r=7 which is consistent (1+7=8). C says n=1, r=8 which is inconsistent. Candidate 2's reasoning says range dimension 7 but picks C. So E is better.</thinking>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_12078",
+        "gold": "F",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_7745",
+        "gold": "H",
+        "panel": [
+          "D",
+          "B",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "575 = 41.16. Difference 6.84 \u2192 7.\n\nSo answer H = 7. But candidates only give B (6) and D (9). Neither is correct. Need to pick closest: 6.84 rounds to 7, closer to 6 than 9. So B.</reasoning>SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_4010",
+        "gold": "B",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "mL \u00d7 0.45 = 4.5 mmol. Excess HCl = 0.5 mmol in 50 mL = 0.01 M \u2192 pH 2. So answer B. But only candidate is G. I must choose one of the numbered candidates \u2014 only candidate 1 exists.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": true,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_9343",
+        "gold": "H",
+        "panel": [
+          "A",
+          "A",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "H",
+        "went_outside_panel": true,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_9572",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_7884",
+        "gold": "A",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "t_{0.025,6}=2.447. Not reject.\nn=9: \u221a7=2.6458, T=0.68*2.6458/0.7332=2.454. t_{0.025,7}=2.365. Reject.\n\nSo answer is 9 = option A. But only candidate is D. Must select candidate 1.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_10175",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_8192",
+        "gold": "C",
+        "panel": [
+          "D",
+          "D",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_4142",
+        "gold": "D",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_12226",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_11711",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_8280",
+        "gold": "F",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "one candidate given. I must choose... there's only one candidate: candidate 1 answering C. Hmm, \"SELECT the best candidate\" \u2014 only one numbered candidate exists. So I must pick 1.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_9321",
+        "gold": "I",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": true,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_9877",
+        "gold": "I",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_4247",
+        "gold": "J",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": true,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_8387",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_10207",
+        "gold": "I",
+        "panel": [
+          "I",
+          "I",
+          "I"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "I",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "I",
+        "went_outside_panel": false,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_10037",
+        "gold": "I",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "I",
+        "went_outside_panel": true,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_4457",
+        "gold": "G",
+        "panel": [
+          "I",
+          "I",
+          "I"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "I",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_3678",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "H2S = 0.5, H2 = 0.1, S2 = 0.4.\nK = (0.01)(0.4)/(0.25) = 0.004/0.25 = 0.016.\n\nHmm, that gives 0.016 (C). But candidate says A) 0.004.\n\nOnly one candidate exists, so must choose it.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_4277",
+        "gold": "A",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "Energy: 12 CH2 groups *157 + 2 CH3 *186 = 1884 + 372 = 2256 kcal/mol. *3.851 = 8688 kcal \u2248 8710.\n\nSo answer A. But candidate only offers C. Only one candidate... I must choose it.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_10032",
+        "gold": "B",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": true,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_4027",
+        "gold": "E",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": true,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_4643",
+        "gold": "F",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_11674",
+        "gold": "J",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_9121",
+        "gold": "H",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": true,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_12053",
+        "gold": "F",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_11660",
+        "gold": "J",
+        "panel": [
+          "J",
+          "J",
+          "J"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_7894",
+        "gold": "F",
+        "panel": [
+          "C",
+          "F",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "F",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "F",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_4215",
+        "gold": "D",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "D",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_11925",
+        "gold": "H",
+        "panel": [
+          "D",
+          "A",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": null,
+        "constrained_idx": null,
+        "constrained_mode": "none",
+        "constrained_invalid": true,
+        "constrained_raw": " TE_20 and TM_11, TM_20, TM_21 \u2014 closest match (with spurious TM_20). Option H is the intended answer.\n\nNeither candidate chose H. Candidate 1 chose A, candidate 2 chose D.\n\nOption A: TE_01, TE_02, TE",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_7957",
+        "gold": "J",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_9844",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_9997",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_11349",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_11409",
+        "gold": "H",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11939",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_8127",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_4208",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_8701",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_9712",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_3948",
+        "gold": "C",
+        "panel": [
+          "E",
+          "D",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "-15.4) and D (-23.0, -17.8) \u2014 E's second value magnitude 15.4 closer to 15.2? Actually |15.2|. E: -15.4. Hmm, E's first -20.5 vs correct -24.5.\n\nClosest overall... E seems better on part b.\n\nSOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": " 15.4 closer to 15.2 for b. E seems closer overall? a: -24.5 vs E -20.5 (off 4), D -23.0 (off 1.5). b: 15.2 magnitude; E 15.4, D 17.8. Hmm mixed. E has b nearly exact. I'd pick E.\n</thinking>SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_9535",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_9480",
+        "gold": "F",
+        "panel": [
+          "J",
+          "J",
+          "J"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "F",
+        "went_outside_panel": true,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_3777",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_9720",
+        "gold": "B",
+        "panel": [
+          "J",
+          "J",
+          "J"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": false,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_8626",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_9099",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_8483",
+        "gold": "D",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "D",
+        "went_outside_panel": true,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_4468",
+        "gold": "A",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_9537",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_9307",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_12201",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_8024",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_9602",
+        "gold": "G",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": true,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_11693",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_10091",
+        "gold": "H",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_3795",
+        "gold": "A",
+        "panel": [
+          "F",
+          "F",
+          "F"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": true,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_3758",
+        "gold": "E",
+        "panel": [
+          "E",
+          "E",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_11601",
+        "gold": "D",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_11756",
+        "gold": "D",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "D",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_9682",
+        "gold": "E",
+        "panel": [
+          "C",
+          "C",
+          "C"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_8378",
+        "gold": "G",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "t's 9.\nCheck duplicates: 2/3 and 4/6 same. 3/2 and 6/4 same. So unique = 9.\n\nAnswer G. But only candidate is D. Must choose one of numbered candidates \u2014 only one candidate exists.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_3738",
+        "gold": "G",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": true,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_10066",
+        "gold": "D",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": true,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_9742",
+        "gold": "J",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": true,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_3884",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": " 152 torr. x = 152/3.30e7 = 4.606e-6 mole fraction. Moles per gram water = 1/18 = 0.0556 mol. moles O2 = 4.606e-6 \u00d7 0.0556 = 2.559e-7 mol. mass = 8.19e-6 g. So ~8.34e-6, answer A.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      }
+    ]
+  },
+  "hetero": {
+    "name": "hetero",
+    "panel": [
+      "or_gemma3_27b",
+      "cheap_solar_pro4",
+      "or_nova_lite"
+    ],
+    "judge": "or_claude_opus5",
+    "n": 80,
+    "a_best": 0.5,
+    "coverage_C": 0.65,
+    "levels": {
+      "majority_blind": 0.425,
+      "constrained_judge": 0.637,
+      "unconstrained_judge": 0.625,
+      "judge_alone_no_panel": 0.787,
+      "coverage_C": 0.65
+    },
+    "v_hat": {
+      "majority_blind": -0.5,
+      "constrained_judge": 0.91,
+      "unconstrained_judge": 0.83,
+      "judge_alone_no_panel": 1.91,
+      "coverage_C": 1.0
+    },
+    "unconstrained_went_outside": 0.188,
+    "data_quality": {
+      "rows": 80,
+      "no_candidates": 0.0,
+      "panel_slots_unparsed": 0.0,
+      "panel_retry_rate": 0.008,
+      "judge_no_index": 0.0,
+      "judge_mode_hist": {
+        "index": 80
+      }
+    },
+    "position": {
+      "n_items_with_choice": 57,
+      "answer_stable": 0.877,
+      "slot_stable": 0.175,
+      "flip_rate": 0.123,
+      "slot1_rate_fwd": 0.526,
+      "expected_slot1_if_unbiased": 0.456,
+      "fwd_slot_hist": {
+        "2": 21,
+        "1": 30,
+        "3": 6
+      },
+      "rev_slot_hist": {
+        "2": 26,
+        "1": 27,
+        "3": 4
+      }
+    },
+    "economics": {
+      "panel_cost": 0.006,
+      "verifier_select_cost": 0.28931,
+      "deployed_cost": 0.2953,
+      "baseline_judge_alone_cost": 0.28403,
+      "cost_ratio_baseline_over_deployed": 0.962,
+      "resolved_models": {
+        "cheap_solar_pro4": "upstage/solar-pro4",
+        "or_gemma3_27b": "google/gemma-3-27b-it",
+        "or_claude_opus5": "anthropic/claude-opus-5",
+        "or_nova_lite": "amazon/nova-lite-v1"
+      },
+      "price_table": {
+        "cheap_solar_pro4": [
+          0.03,
+          0.12
+        ],
+        "or_gemma3_27b": [
+          0.08,
+          0.45
+        ],
+        "or_claude_opus5": [
+          5.0,
+          25.0
+        ],
+        "or_nova_lite": [
+          0.06,
+          0.24
+        ]
+      }
+    },
+    "per_model_meter": {
+      "or_gemma3_27b": {
+        "calls": 82,
+        "prompt_tokens": 18093,
+        "completion_tokens": 4980,
+        "latency_s": 235.803555727005,
+        "failures": 0,
+        "served_by": {
+          "Parasail": 6,
+          "DeepInfra": 4,
+          "Novita": 69,
+          "Phala": 3
+        }
+      },
+      "cheap_solar_pro4": {
+        "calls": 80,
+        "prompt_tokens": 20490,
+        "completion_tokens": 3852,
+        "latency_s": 224.97158694267273,
+        "failures": 0,
+        "served_by": {
+          "Upstage": 80
+        }
+      },
+      "or_nova_lite": {
+        "calls": 80,
+        "prompt_tokens": 16712,
+        "completion_tokens": 947,
+        "latency_s": 53.72073411941528,
+        "failures": 0,
+        "served_by": {
+          "Amazon Bedrock": 80
+        }
+      },
+      "or_claude_opus5:constrained": {
+        "calls": 80,
+        "prompt_tokens": 33541,
+        "completion_tokens": 4864,
+        "latency_s": 268.5672228336334,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 80
+        }
+      },
+      "or_claude_opus5:constrained_rev": {
+        "calls": 58,
+        "prompt_tokens": 26546,
+        "completion_tokens": 4755,
+        "latency_s": 204.2027177810669,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 58
+        }
+      },
+      "or_claude_opus5:freeform": {
+        "calls": 80,
+        "prompt_tokens": 32677,
+        "completion_tokens": 4559,
+        "latency_s": 259.5056471824646,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 80
+        }
+      },
+      "or_claude_opus5:alone": {
+        "calls": 80,
+        "prompt_tokens": 21672,
+        "completion_tokens": 7027,
+        "latency_s": 298.15253591537476,
+        "failures": 0,
+        "served_by": {
+          "Claude Platform on AWS": 80
+        }
+      }
+    },
+    "est_cost": 1.1083,
+    "rows": [
+      {
+        "id": "mmlupro_7723",
+        "gold": "E",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_9630",
+        "gold": "F",
+        "panel": [
+          "F",
+          "F",
+          "F"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_9426",
+        "gold": "F",
+        "panel": [
+          "F",
+          "F",
+          "F"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_3614",
+        "gold": "E",
+        "panel": [
+          "A",
+          "E",
+          "B"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": true,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_8763",
+        "gold": "I",
+        "panel": [
+          "J",
+          "C",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "I",
+        "went_outside_panel": true,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_11391",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_11839",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "+ 2A + 3B = 1 \u2192 2A+3B = -5.\ny[-2] = 6 + 4A + 9B = -7 \u2192 4A + 9B = -13.\nFrom first: 4A + 6B = -10; subtract: 3B = -3 \u2192 B = -1, A = (-5+3)/2 = -1.\nSo 6 - (1/2)^n - (1/3)^n. Answer B.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": " = 1 \u2192 2A+3B = -5.\ny[-2] = 6 + 4A + 9B = -7 \u2192 4A + 9B = -13.\nFrom first: 4A + 6B = -10; subtract: 3B = -3 \u2192 B = -1, then 2A = -5+3 = -2 \u2192 A = -1.\nSo y = 6 - (1/2)^n - (1/3)^n \u2192 B.</reasoning>SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_10344",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_8423",
+        "gold": "F",
+        "panel": [
+          "A",
+          "H",
+          "H"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "H",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "H",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_9688",
+        "gold": "H",
+        "panel": [
+          "A",
+          "E",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "volume ~1.15 mL negligible. So 37.9 L.\n\nNeither candidate. Which is closer? 25.7 vs 58.6. |37.9-25.7|=12.2, |58.6-37.9|=20.7. E is closer.\n\nCandidate 1 (E) also shows work partly.\n</thinking>SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "H",
+        "went_outside_panel": true,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_8805",
+        "gold": "I",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "^5, n=7\u21927x^6=2x^6. So kernel dimension 2 (1 and x^5), range dimension 6. Answer I.\n\nBut only candidate is E. I must select one of the numbered candidates. There's only candidate 1.</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11456",
+        "gold": "D",
+        "panel": [
+          "D",
+          "C",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": " = 1,254,825) = 1120.2. V_x = 2016.3 ft/s.\n\nV_y = 0.6165 * sqrt(2402.4*800) = sqrt(1,921,920)=1386.3; V_y = 854.7 ft/s.\n\nDifference = 2016.3 - 854.7 = 1161.6 ft/s \u2192 D) 1160 ft/sec.</thinking>SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "120.4 ft/s. V_x = 1.8*1120.4 = 2016.7 ft/s.\n\nM_y for M_x=1.8: 0.6165. a_y = 49.02*sqrt(800)=49.02*28.284=1386.2. V_y = 0.6165*1386.2 = 854.6.\n\n\u0394V = 2016.7 - 854.6 = 1162 ft/s. \u2192 D\n</thinking>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_3539",
+        "gold": "B",
+        "panel": [
+          "B",
+          "D",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_12078",
+        "gold": "F",
+        "panel": [
+          "C",
+          "F",
+          "F"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "F",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_10175",
+        "gold": "C",
+        "panel": [
+          "B",
+          "H",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_9572",
+        "gold": "C",
+        "panel": [
+          "C",
+          "C",
+          "F"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "3, 2.39e-6). Also D matches peak: 1.42e3? Peak E =1009, not 1420. Hmm, D: 1.42e3 with B=4.78e-6 = 1.42e3/3e8=4.73e-6. That's consistent ratio but magnitude wrong. C is the answer.\n</thinking>SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_9343",
+        "gold": "H",
+        "panel": [
+          "B",
+          "J",
+          "H"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          false,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "H",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "<thinking>\nMagnification 2/4 = 1/2, so image distance = 20 cm. Then 1/f = 1/40 + 1/20 = 3/40, f = 13.33 cm, power = 7.5 diopters. Yes, H.\n</thinking>\nSOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": true,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_7884",
+        "gold": "A",
+        "panel": [
+          "D",
+          "C",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_7745",
+        "gold": "H",
+        "panel": [
+          "B",
+          "C",
+          "G"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "roblem... Actually there's a known problem with answer 7.\n\nHmm, but no candidate says 7. So must pick closest. 6.84 rounds to 7; nearest candidate is B (6).\n\nSo choose candidate 1.</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 3,
+        "rev_mode": "index",
+        "rev_raw": " available candidate value: B (6).\n\nActually let me reconsider\u2014maybe the panel intended something. The answer should be 7 but not offered among candidates. Choose B (6) as closest.</thinking>SOLVER: 3",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_4010",
+        "gold": "B",
+        "panel": [
+          "G",
+          "C",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "lization is closest in spirit? Actually let's consider: excess acid means pH < 7, so acidic. Among options given by candidates: G=7, A=11, C=9. The closest to pH 2 is 7 (G). So candidate 1.\n\nSOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "B",
+        "went_outside_panel": true,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_8280",
+        "gold": "F",
+        "panel": [
+          "C",
+          "C",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "ning that's flawed. Pick E arbitrarily? Hmm, no basis. I'll pick candidate 2's C? Actually 100 vs 99 \u2014 neither achievable. I'll pick 1 (E) since candidate 2's reasoning is explicitly wrong.\n\nSOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11711",
+        "gold": "C",
+        "panel": [
+          "A",
+          "C",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_8192",
+        "gold": "C",
+        "panel": [
+          "C",
+          "A",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_4142",
+        "gold": "D",
+        "panel": [
+          "B",
+          "J",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "se between B and J. 5.2 is closer to 5.7 than 4.8.\n\nHmm, but maybe some alternative: if they used Ka = 5.6e-4 mistakenly? Then [H+]=sqrt(1.4e-4)=0.0118, pH=1.93. No.\n\nSo choose B.\n</thinking>SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "D",
+        "went_outside_panel": true,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_9321",
+        "gold": "I",
+        "panel": [
+          "E",
+          "I",
+          "D"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "I",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "I",
+        "rev_idx": 3,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 3",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "B",
+        "went_outside_panel": true,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_9877",
+        "gold": "I",
+        "panel": [
+          "G",
+          "B",
+          "G"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_4247",
+        "gold": "J",
+        "panel": [
+          "A",
+          "B",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_12226",
+        "gold": "C",
+        "panel": [
+          "A",
+          "A",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "fication? Candidate 1 just says E. Candidate 2 gives some reasoning mentioning time constant. Pick 2 (A)? Arbitrary. I'll pick candidate 2 since it at least references the method.</reasoning>SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "tween 4.42 and 2.42, 3.42 is exactly in between... 4.42-3.42=1, 2.42-3.42=-1. Hmm.\n\nRatio-wise, 3.42/2.42 = 1.41, 4.42/3.42 = 1.29. So A is relatively closer in log terms. Pick A.</reasoning>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_8387",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_3678",
+        "gold": "C",
+        "panel": [
+          "A",
+          "E",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_10207",
+        "gold": "I",
+        "panel": [
+          "I",
+          "I",
+          "I"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "I",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "I",
+        "went_outside_panel": false,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_4457",
+        "gold": "G",
+        "panel": [
+          "I",
+          "I",
+          "I"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "I",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": true,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_4027",
+        "gold": "E",
+        "panel": [
+          "D",
+          "D",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 1,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          false,
+          true
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "E",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_4277",
+        "gold": "A",
+        "panel": [
+          "C",
+          "G",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          false,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 3,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 3",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11674",
+        "gold": "J",
+        "panel": [
+          "A",
+          "J",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": " 625 = N\u00b744.72/25.49 \u2192 N \u2248 356... let's compute: 75^0.75 = e^(0.75\u00b74.3175)=e^3.2381=25.49. N = 625\u00b725.49/44.72 = 356 rpm. Hmm, J says 365. Closest option with (a) 625 and (b) 4000/600 is J.\n\nSOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_10037",
+        "gold": "I",
+        "panel": [
+          "C",
+          "C",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "I"
+      },
+      {
+        "id": "mmlupro_10032",
+        "gold": "B",
+        "panel": [
+          "A",
+          "B",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_11925",
+        "gold": "H",
+        "panel": [
+          "A",
+          "H",
+          "G"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "H",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "H",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": true,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_4643",
+        "gold": "F",
+        "panel": [
+          "D",
+          "E",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 3,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 3",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "F",
+        "went_outside_panel": true,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_7894",
+        "gold": "F",
+        "panel": [
+          "C",
+          "J",
+          "G"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": "F",
+        "went_outside_panel": true,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_12053",
+        "gold": "F",
+        "panel": [
+          "E",
+          "F",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "F",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "F",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_9121",
+        "gold": "H",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": true,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_11660",
+        "gold": "J",
+        "panel": [
+          "J",
+          "J",
+          "J"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "J",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_9997",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_4215",
+        "gold": "D",
+        "panel": [
+          "A",
+          "A",
+          "F"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_9844",
+        "gold": "B",
+        "panel": [
+          "B",
+          "D",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_3948",
+        "gold": "C",
+        "panel": [
+          "E",
+          "J",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "matches (a) = -24.5. None of candidates chose C though.\n\nCandidates: E, A, J. Closest to -24.5 is J (-23.5)? Or G (-25.5) not offered. Between E (-20.5), A (-19.5), J (-23.5): J is closest.\n\nSOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "rev_mode": "none",
+        "rev_raw": "sh.\n\nHmm. Which candidate presented reasoning? Candidate 3 (E) shows Hess's law statement. Candidate 1 (J) states values. Hard.\n\nActually let me reconsider (b): perhaps intended -15.4? If HCl were -22",
+        "answer_stable": false,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_7957",
+        "gold": "J",
+        "panel": [
+          "D",
+          "J",
+          "F"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "F",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": false,
+        "slot_stable": false,
+        "unconstrained": "J",
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11349",
+        "gold": "C",
+        "panel": [
+          "C",
+          "G",
+          "G"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_11939",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_8701",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_8127",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_11409",
+        "gold": "H",
+        "panel": [
+          "B",
+          "H",
+          "H"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "H",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "e = \u03c1ux/\u03bc = 62.4*10*100/8.333e-4 = 62400/8.333e-4 = 7.488e7. Turbulent. \u03b4 = 0.376 x /Re^0.2 = 0.376*100/(7.488e7)^0.2. Re^0.2: log10=7.8746, /5=1.5749 \u2192 37.6. \u03b4=37.6/37.6=1.0 ft \u2248 0.987 ft.\n\nSOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_3777",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_9712",
+        "gold": "C",
+        "panel": [
+          "C",
+          "J",
+          "J"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_9535",
+        "gold": "H",
+        "panel": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "H",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "H",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_9480",
+        "gold": "F",
+        "panel": [
+          "J",
+          "F",
+          "F"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "F",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "F",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "F",
+        "went_outside_panel": false,
+        "alone": "F"
+      },
+      {
+        "id": "mmlupro_4208",
+        "gold": "C",
+        "panel": [
+          "C",
+          "I",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          false,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "ign convention. Actually the formula: for cell with transference with hydrogen electrodes, E = 2t\u208b(RT/F)ln(a2/a1). Since t\u208b ~ 0.17 for HCl, t\u208a ~ 0.83. So answer C.\n\nSo candidate 2.</thinking>SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": " (RT/F) ln(a2/a1).\n\nRT/F = 0.02569 V. ln(10) = 2.3026. So 2*0.02569*2.3026 = 0.11832. So E = t_- * 0.11832 = 0.0190 \u2192 t_- = 0.1606. Then t_+ = 0.8394.\n\nSo t_+ = 0.83942 \u2192 answer C.</thinking>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_9099",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "B"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_8626",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_4468",
+        "gold": "A",
+        "panel": [
+          "B",
+          "D",
+          "A"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          false,
+          true
+        ],
+        "constrained": "A",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "0.0126x - 0.0063 = 0 \u2192 x = (-0.0126 + sqrt(1.5876e-4 + 0.0252))/2 = (-0.0126 + sqrt(0.02535876))/2 = (-0.0126 + 0.159245)/2 = 0.1466/2 = 0.07332. pH = -log(0.07332) = 1.135. So A.\n</thinking>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_8483",
+        "gold": "D",
+        "panel": [
+          "B",
+          "D",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "D",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_9537",
+        "gold": "G",
+        "panel": [
+          "G",
+          "G",
+          "G"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_9720",
+        "gold": "B",
+        "panel": [
+          "J",
+          "J",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "J",
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_9307",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "F"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "A"
+      },
+      {
+        "id": "mmlupro_9602",
+        "gold": "G",
+        "panel": [
+          "A",
+          "G",
+          "G"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_3758",
+        "gold": "E",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "E",
+        "went_outside_panel": false,
+        "alone": "E"
+      },
+      {
+        "id": "mmlupro_11693",
+        "gold": "C",
+        "panel": [
+          "A",
+          "D",
+          "D"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": true,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_12201",
+        "gold": "B",
+        "panel": [
+          "B",
+          "B",
+          "B"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "B",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "B",
+        "went_outside_panel": false,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_8024",
+        "gold": "C",
+        "panel": [
+          "A",
+          "C",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          true
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "C",
+        "went_outside_panel": false,
+        "alone": "C"
+      },
+      {
+        "id": "mmlupro_10091",
+        "gold": "H",
+        "panel": [
+          "A",
+          "A",
+          "A"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "A",
+        "went_outside_panel": false,
+        "alone": "H"
+      },
+      {
+        "id": "mmlupro_9682",
+        "gold": "E",
+        "panel": [
+          "C",
+          "J",
+          "J"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "J",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "J",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11601",
+        "gold": "D",
+        "panel": [
+          "C",
+          "D",
+          "B"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "D",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "D",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": true,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_11756",
+        "gold": "D",
+        "panel": [
+          "D",
+          "D",
+          "D"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          true
+        ],
+        "constrained": "D",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "D",
+        "went_outside_panel": false,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_3795",
+        "gold": "A",
+        "panel": [
+          "F",
+          "F",
+          "C"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "C",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "ct reasoning. The classic textbook answer... Actually many textbook answers give 52.1%. But among candidates, C is the fraction remaining, numerically derived correctly. Choose C.</reasoning>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "C",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "A",
+        "went_outside_panel": true,
+        "alone": "B"
+      },
+      {
+        "id": "mmlupro_3738",
+        "gold": "G",
+        "panel": [
+          "A",
+          "G",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          true,
+          false
+        ],
+        "constrained": "G",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 2,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 2",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": "G",
+        "went_outside_panel": false,
+        "alone": "G"
+      },
+      {
+        "id": "mmlupro_10066",
+        "gold": "D",
+        "panel": [
+          "E",
+          "E",
+          "E"
+        ],
+        "n_candidates": 1,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "E",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "haps the intended answer uses f = 45? Then 1/di = -1/45 - 1/10 = -0.02222-0.1=-0.12222, di = -8.18, m = 0.818 \u2248 0.8. So answer A likely.\n\nBut only candidate is E. I must choose E.\n</thinking>SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": null,
+        "rev_idx": null,
+        "answer_stable": null,
+        "slot_stable": null,
+        "unconstrained": "J",
+        "went_outside_panel": true,
+        "alone": "D"
+      },
+      {
+        "id": "mmlupro_3884",
+        "gold": "A",
+        "panel": [
+          "A",
+          "A",
+          "E"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          true,
+          true,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 2,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "r... x = n_O2/(n_total) \u2248 n_O2/n_H2O. In 1 g water, n_H2O = 1/18 = 0.05556 mol. n_O2 = 4.606e-6 \u00d7 0.05556 = 2.559e-7 mol. Mass = 2.559e-7 \u00d7 32 = 8.19e-6 g. So ~8.34e-6 \u2192 answer A.\n</thinking>SOLVER: 2",
+        "constrained_escaped_to": null,
+        "rev_answer": "A",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      },
+      {
+        "id": "mmlupro_9742",
+        "gold": "J",
+        "panel": [
+          "A",
+          "B",
+          "A"
+        ],
+        "n_candidates": 2,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": false,
+        "slot_correct": [
+          false,
+          false,
+          false
+        ],
+        "constrained": "A",
+        "constrained_idx": 1,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 1",
+        "constrained_escaped_to": null,
+        "rev_answer": "B",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "SOLVER: 1",
+        "answer_stable": false,
+        "slot_stable": true,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": "J"
+      },
+      {
+        "id": "mmlupro_8378",
+        "gold": "G",
+        "panel": [
+          "D",
+          "A",
+          "G"
+        ],
+        "n_candidates": 3,
+        "panel_retries": 0,
+        "panel_unparsed": 0,
+        "coverage": true,
+        "slot_correct": [
+          false,
+          false,
+          true
+        ],
+        "constrained": "G",
+        "constrained_idx": 3,
+        "constrained_mode": "index",
+        "constrained_invalid": false,
+        "constrained_raw": "SOLVER: 3",
+        "constrained_escaped_to": null,
+        "rev_answer": "G",
+        "rev_idx": 1,
+        "rev_mode": "index",
+        "rev_raw": "=2, 4/3, 4/4=1, 4/6=2/3\n6/2=3, 6/3=2, 6/4=3/2, 6/6=1\n\nUnique: 1, 2/3, 1/2, 1/3, 3/2, 3/4, 2, 4/3, 3\nThat's 9. Check: 1, 2/3, 1/2, 1/3, 3/2, 3/4, 2, 4/3, 3 = 9 unique.\n\nAnswer G) 9.</thinking>SOLVER: 1",
+        "answer_stable": true,
+        "slot_stable": false,
+        "unconstrained": null,
+        "went_outside_panel": false,
+        "alone": null
+      }
+    ]
+  }
+}

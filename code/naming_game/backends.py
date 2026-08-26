@@ -174,9 +174,14 @@ class AnthropicBackend:
     def generate(self, prompt, system=None, max_tokens=8, temperature=0.7):
         body = {"model": self.model, "max_tokens": max_tokens,
                 "messages": [{"role": "user", "content": prompt}]}
-        # opus-4.7+ (reasoning tier) deprecates `temperature`; sonnet/haiku accept it
+        # Sampling params are REMOVED (hard 400: "`temperature` is deprecated for
+        # this model") on the current reasoning tier -- Opus 4.7/4.8/5, Sonnet 5,
+        # Fable 5, Mythos 5. Opus/Sonnet 4.6 and older still accept them.
+        # Verified against the live API 2026-08-24.
         ml = self.model.lower()
-        if not (ml.startswith("claude-opus-4-7") or ml.startswith("claude-opus-4-8")):
+        _no_temp = ("claude-opus-4-7", "claude-opus-4-8", "claude-opus-5",
+                    "claude-sonnet-5", "claude-fable-5", "claude-mythos-5")
+        if not ml.startswith(_no_temp):
             body["temperature"] = temperature
         if system:
             body["system"] = system

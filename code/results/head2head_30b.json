@@ -1,0 +1,785 @@
+{
+  "meta": {
+    "panel": [
+      "cb_gemma4_31b",
+      "m30_hunyuan",
+      "m30_nemotron"
+    ],
+    "judge": "an_opus5",
+    "n": 80,
+    "max_tokens": 2500,
+    "dataset": "data/questions_stem80.json",
+    "resolved": {
+      "an_opus5": "claude-opus-5",
+      "m30_hunyuan": "tencent/hy-mt2-30b-a3b",
+      "cb_gemma4_31b": "gemma-4-31b",
+      "m30_nemotron": "nvidia/nemotron-3-nano-30b-a3b"
+    },
+    "prices": {
+      "an_opus5": [
+        5.0,
+        25.0
+      ],
+      "m30_hunyuan": [
+        0.074,
+        0.295
+      ],
+      "cb_gemma4_31b": [
+        0,
+        0
+      ],
+      "m30_nemotron": [
+        0.05,
+        0.2
+      ]
+    }
+  },
+  "panel": {
+    "a_best": 0.9125,
+    "coverage_C": 0.95,
+    "majority": 0.75,
+    "cost": 0.01466,
+    "api_loss": 0.0,
+    "per_member": {
+      "cb_gemma4_31b": 0.9125,
+      "m30_hunyuan": 0.65,
+      "m30_nemotron": 0.6375
+    }
+  },
+  "armA": {
+    "name": "cheap panel + judge SELECTS",
+    "acc": 0.9125,
+    "cost": 0.59436,
+    "judge_cost": 0.5797,
+    "api_loss": 0.0,
+    "v_hat": 0.0
+  },
+  "armB": {
+    "name": "same judge REASONS alone",
+    "acc": 0.925,
+    "cost": 1.11686,
+    "api_loss": 0.0
+  },
+  "rows": [
+    {
+      "id": "mmlupro_11391",
+      "gold": "A",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8763",
+      "gold": "I",
+      "n_candidates": 1,
+      "sel": "I",
+      "sel_mode": "index",
+      "solo": "I",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11839",
+      "gold": "B",
+      "n_candidates": 1,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9426",
+      "gold": "F",
+      "n_candidates": 1,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_7723",
+      "gold": "E",
+      "n_candidates": 1,
+      "sel": "E",
+      "sel_mode": "index",
+      "solo": "E",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9688",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3614",
+      "gold": "E",
+      "n_candidates": 1,
+      "sel": "E",
+      "sel_mode": "index",
+      "solo": "E",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9630",
+      "gold": "F",
+      "n_candidates": 1,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11456",
+      "gold": "D",
+      "n_candidates": 3,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8805",
+      "gold": "I",
+      "n_candidates": 2,
+      "sel": "I",
+      "sel_mode": "index",
+      "solo": "I",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10344",
+      "gold": "A",
+      "n_candidates": 1,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8423",
+      "gold": "F",
+      "n_candidates": 3,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_12078",
+      "gold": "F",
+      "n_candidates": 2,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3539",
+      "gold": "B",
+      "n_candidates": 1,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_7745",
+      "gold": "H",
+      "n_candidates": 2,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10175",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9572",
+      "gold": "C",
+      "n_candidates": 2,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_7884",
+      "gold": "A",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9343",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8280",
+      "gold": "F",
+      "n_candidates": 2,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4010",
+      "gold": "B",
+      "n_candidates": 2,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_12226",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8192",
+      "gold": "C",
+      "n_candidates": 2,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4142",
+      "gold": "D",
+      "n_candidates": 1,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11711",
+      "gold": "C",
+      "n_candidates": 3,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9321",
+      "gold": "I",
+      "n_candidates": 1,
+      "sel": "I",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9877",
+      "gold": "I",
+      "n_candidates": 2,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4247",
+      "gold": "J",
+      "n_candidates": 3,
+      "sel": "J",
+      "sel_mode": "index",
+      "solo": "J",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3678",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4027",
+      "gold": "E",
+      "n_candidates": 1,
+      "sel": "E",
+      "sel_mode": "index",
+      "solo": "E",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11674",
+      "gold": "J",
+      "n_candidates": 2,
+      "sel": "J",
+      "sel_mode": "index",
+      "solo": "J",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8387",
+      "gold": "A",
+      "n_candidates": 1,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4277",
+      "gold": "A",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10037",
+      "gold": "I",
+      "n_candidates": 2,
+      "sel": "I",
+      "sel_mode": "index",
+      "solo": "I",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10207",
+      "gold": "I",
+      "n_candidates": 1,
+      "sel": "I",
+      "sel_mode": "index",
+      "solo": "I",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4457",
+      "gold": "G",
+      "n_candidates": 1,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10032",
+      "gold": "B",
+      "n_candidates": 1,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4643",
+      "gold": "F",
+      "n_candidates": 1,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11925",
+      "gold": "H",
+      "n_candidates": 2,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9121",
+      "gold": "H",
+      "n_candidates": 3,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_7894",
+      "gold": "F",
+      "n_candidates": 2,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3948",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_12053",
+      "gold": "F",
+      "n_candidates": 2,
+      "sel": null,
+      "sel_mode": "none",
+      "solo": "E",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_7957",
+      "gold": "J",
+      "n_candidates": 3,
+      "sel": "J",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11660",
+      "gold": "J",
+      "n_candidates": 1,
+      "sel": "J",
+      "sel_mode": "index",
+      "solo": "J",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4215",
+      "gold": "D",
+      "n_candidates": 3,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9844",
+      "gold": "B",
+      "n_candidates": 1,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9997",
+      "gold": "B",
+      "n_candidates": 1,
+      "sel": "B",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11349",
+      "gold": "C",
+      "n_candidates": 2,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11409",
+      "gold": "H",
+      "n_candidates": 3,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9712",
+      "gold": "C",
+      "n_candidates": 2,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11939",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3777",
+      "gold": "G",
+      "n_candidates": 3,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4208",
+      "gold": "C",
+      "n_candidates": 2,
+      "sel": null,
+      "sel_mode": "none",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8127",
+      "gold": "G",
+      "n_candidates": 1,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8701",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9480",
+      "gold": "F",
+      "n_candidates": 1,
+      "sel": "F",
+      "sel_mode": "index",
+      "solo": "F",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9535",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9720",
+      "gold": "B",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "I",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9099",
+      "gold": "A",
+      "n_candidates": 1,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_4468",
+      "gold": "A",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8626",
+      "gold": "G",
+      "n_candidates": 2,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8483",
+      "gold": "D",
+      "n_candidates": 2,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9307",
+      "gold": "A",
+      "n_candidates": 2,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9537",
+      "gold": "G",
+      "n_candidates": 1,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9602",
+      "gold": "G",
+      "n_candidates": 1,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11693",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_12201",
+      "gold": "B",
+      "n_candidates": 3,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "B",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11601",
+      "gold": "D",
+      "n_candidates": 3,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8024",
+      "gold": "C",
+      "n_candidates": 1,
+      "sel": "C",
+      "sel_mode": "index",
+      "solo": "C",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3758",
+      "gold": "E",
+      "n_candidates": 1,
+      "sel": "E",
+      "sel_mode": "index",
+      "solo": "E",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9682",
+      "gold": "E",
+      "n_candidates": 2,
+      "sel": null,
+      "sel_mode": "none",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10091",
+      "gold": "H",
+      "n_candidates": 1,
+      "sel": "H",
+      "sel_mode": "index",
+      "solo": "H",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3795",
+      "gold": "A",
+      "n_candidates": 1,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_11756",
+      "gold": "D",
+      "n_candidates": 1,
+      "sel": "D",
+      "sel_mode": "index",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3738",
+      "gold": "G",
+      "n_candidates": 3,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_8378",
+      "gold": "G",
+      "n_candidates": 1,
+      "sel": "G",
+      "sel_mode": "index",
+      "solo": "G",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_10066",
+      "gold": "D",
+      "n_candidates": 2,
+      "sel": null,
+      "sel_mode": "none",
+      "solo": "D",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_3884",
+      "gold": "A",
+      "n_candidates": 3,
+      "sel": "A",
+      "sel_mode": "index",
+      "solo": "A",
+      "solo_status": "ok"
+    },
+    {
+      "id": "mmlupro_9742",
+      "gold": "J",
+      "n_candidates": 2,
+      "sel": "J",
+      "sel_mode": "index",
+      "solo": "J",
+      "solo_status": "ok"
+    }
+  ]
+}

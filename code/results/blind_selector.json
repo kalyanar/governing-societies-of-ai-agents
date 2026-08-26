@@ -1,0 +1,2549 @@
+{
+  "meta": {
+    "panel": [
+      "or_gemma3_27b",
+      "cheap_solar_pro4",
+      "or_nova_lite"
+    ],
+    "n": 80,
+    "coverage_C": 0.725,
+    "a_best": 0.525,
+    "panel_cost": 0.01486,
+    "avg_rationale_chars": 403.3,
+    "panel_models": {
+      "or_gemma3_27b": "google/gemma-3-27b-it",
+      "cheap_solar_pro4": "upstage/solar-pro4",
+      "or_nova_lite": "amazon/nova-lite-v1"
+    }
+  },
+  "verifiers": [
+    {
+      "verifier": "or_claude_opus5",
+      "model": "anthropic/claude-opus-5",
+      "price": [
+        5.0,
+        25.0
+      ],
+      "n": 80,
+      "sighted_acc": 0.6,
+      "blind_acc": 0.4286,
+      "alone_acc": 1.0,
+      "sighted_loss": 0.875,
+      "blind_loss": 0.912,
+      "alone_loss": 0.9,
+      "unreliable": true,
+      "sighted_cost": 0.03979,
+      "blind_cost": 0.03782,
+      "alone_cost": 0.04579,
+      "sighted_tok": [
+        93.2,
+        1.2
+      ],
+      "blind_tok": [
+        52.7,
+        8.4
+      ],
+      "alone_tok": [
+        37.3,
+        15.4
+      ],
+      "invalid_sighted": 0.875,
+      "invalid_blind": 0.912,
+      "mode_hist_blind": {
+        "none": 1,
+        "index": 7,
+        "api_fail": 72
+      },
+      "rows": [
+        {
+          "id": "mmlupro_11391",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": null,
+          "blind_mode": "none",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_8763",
+          "gold": "I",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "I"
+        },
+        {
+          "id": "mmlupro_11839",
+          "gold": "B",
+          "n_candidates": 3,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9426",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_7723",
+          "gold": "E",
+          "n_candidates": 1,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9688",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_3614",
+          "gold": "E",
+          "n_candidates": 3,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9630",
+          "gold": "F",
+          "n_candidates": 1,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_11456",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_8805",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10344",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8423",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12078",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3539",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7745",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10175",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9572",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9343",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8280",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4010",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12226",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8192",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4142",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11711",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9321",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9877",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4247",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3678",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4027",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11674",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8387",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4277",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10037",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10207",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4457",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10032",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4643",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11925",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9121",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7894",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3948",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12053",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7957",
+          "gold": "J",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11660",
+          "gold": "J",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4215",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9844",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9997",
+          "gold": "B",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11349",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11409",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9712",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11939",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3777",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4208",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8127",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8701",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9480",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9535",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9720",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9099",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4468",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8626",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8483",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9307",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9537",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9602",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11693",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12201",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11601",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8024",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3758",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9682",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10091",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3795",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11756",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3738",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8378",
+          "gold": "G",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10066",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9742",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        }
+      ],
+      "v_hat_sighted": 0.375,
+      "v_hat_blind": -0.482,
+      "deployed_sighted": 0.05465,
+      "deployed_blind": 0.05268
+    },
+    {
+      "verifier": "v_sonnet5",
+      "model": "anthropic/claude-sonnet-5",
+      "price": [
+        2.0,
+        10.0
+      ],
+      "n": 80,
+      "sighted_acc": null,
+      "blind_acc": null,
+      "alone_acc": null,
+      "sighted_loss": 1.0,
+      "blind_loss": 1.0,
+      "alone_loss": 1.0,
+      "unreliable": true,
+      "sighted_cost": 0.0,
+      "blind_cost": 0.0,
+      "alone_cost": 0.0,
+      "sighted_tok": [
+        0.0,
+        0.0
+      ],
+      "blind_tok": [
+        0.0,
+        0.0
+      ],
+      "alone_tok": [
+        0.0,
+        0.0
+      ],
+      "invalid_sighted": 1.0,
+      "invalid_blind": 1.0,
+      "mode_hist_blind": {
+        "api_fail": 80
+      },
+      "rows": [
+        {
+          "id": "mmlupro_11391",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8763",
+          "gold": "I",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11839",
+          "gold": "B",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9426",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7723",
+          "gold": "E",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9688",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3614",
+          "gold": "E",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9630",
+          "gold": "F",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11456",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8805",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10344",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8423",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12078",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3539",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7745",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10175",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9572",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9343",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8280",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4010",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12226",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8192",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4142",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11711",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9321",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9877",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4247",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3678",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4027",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11674",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8387",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4277",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10037",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10207",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4457",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10032",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4643",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11925",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9121",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7894",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3948",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12053",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_7957",
+          "gold": "J",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11660",
+          "gold": "J",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4215",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9844",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9997",
+          "gold": "B",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11349",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11409",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9712",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11939",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3777",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4208",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8127",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8701",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9480",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9535",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9720",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9099",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_4468",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8626",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8483",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9307",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9537",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9602",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11693",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_12201",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11601",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8024",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3758",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9682",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10091",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3795",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_11756",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3738",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_8378",
+          "gold": "G",
+          "n_candidates": 3,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_10066",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_3884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        },
+        {
+          "id": "mmlupro_9742",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "api_fail",
+          "blind": null,
+          "blind_mode": "api_fail",
+          "alone": null
+        }
+      ],
+      "v_hat_sighted": null,
+      "v_hat_blind": null,
+      "deployed_sighted": 0.01486,
+      "deployed_blind": 0.01486
+    },
+    {
+      "verifier": "v_dsv4_flash",
+      "model": "deepseek/deepseek-v4-flash",
+      "price": [
+        0.057,
+        0.115
+      ],
+      "n": 80,
+      "sighted_acc": 0.519,
+      "blind_acc": 0.5,
+      "alone_acc": 0.725,
+      "sighted_loss": 0.013,
+      "blind_loss": 0.0,
+      "alone_loss": 0.0,
+      "unreliable": false,
+      "sighted_cost": 0.00229,
+      "blind_cost": 0.00162,
+      "alone_cost": 0.00143,
+      "sighted_tok": [
+        489.9,
+        5.7
+      ],
+      "blind_tok": [
+        342.7,
+        5.7
+      ],
+      "alone_tok": [
+        189.6,
+        61.2
+      ],
+      "invalid_sighted": 0.013,
+      "invalid_blind": 0.0,
+      "mode_hist_blind": {
+        "index": 80
+      },
+      "rows": [
+        {
+          "id": "mmlupro_11391",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_8763",
+          "gold": "I",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "I"
+        },
+        {
+          "id": "mmlupro_11839",
+          "gold": "B",
+          "n_candidates": 3,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_9426",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_7723",
+          "gold": "E",
+          "n_candidates": 1,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9688",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_3614",
+          "gold": "E",
+          "n_candidates": 3,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9630",
+          "gold": "F",
+          "n_candidates": 1,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_11456",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_8805",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_10344",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_8423",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_12078",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_3539",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_7745",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_10175",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "J",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_9572",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_7884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_9343",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_8280",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_4010",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_12226",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_8192",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_4142",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_11711",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_9321",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9877",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_4247",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_3678",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_4027",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_11674",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_8387",
+          "gold": "A",
+          "n_candidates": 1,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_4277",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_10037",
+          "gold": "I",
+          "n_candidates": 3,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_10207",
+          "gold": "I",
+          "n_candidates": 1,
+          "sighted": "I",
+          "sighted_mode": "letter_repaired",
+          "blind": "I",
+          "blind_mode": "index",
+          "alone": "I"
+        },
+        {
+          "id": "mmlupro_4457",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": "I",
+          "sighted_mode": "index",
+          "blind": "I",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_10032",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_4643",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_11925",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_9121",
+          "gold": "H",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_7894",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_3948",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_12053",
+          "gold": "F",
+          "n_candidates": 3,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_7957",
+          "gold": "J",
+          "n_candidates": 3,
+          "sighted": "I",
+          "sighted_mode": "index",
+          "blind": "I",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_11660",
+          "gold": "J",
+          "n_candidates": 1,
+          "sighted": "J",
+          "sighted_mode": "index",
+          "blind": "J",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_4215",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_9844",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": null,
+          "sighted_mode": "none",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_9997",
+          "gold": "B",
+          "n_candidates": 1,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_11349",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_11409",
+          "gold": "H",
+          "n_candidates": 3,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_9712",
+          "gold": "C",
+          "n_candidates": 3,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_11939",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_3777",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_4208",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_8127",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_8701",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_9480",
+          "gold": "F",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "F",
+          "blind_mode": "index",
+          "alone": "F"
+        },
+        {
+          "id": "mmlupro_9535",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": "H",
+          "sighted_mode": "index",
+          "blind": "H",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_9720",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": "J",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_9099",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_4468",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_8626",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_8483",
+          "gold": "D",
+          "n_candidates": 2,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_9307",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_9537",
+          "gold": "G",
+          "n_candidates": 1,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_9602",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_11693",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_12201",
+          "gold": "B",
+          "n_candidates": 2,
+          "sighted": "B",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "B"
+        },
+        {
+          "id": "mmlupro_11601",
+          "gold": "D",
+          "n_candidates": 3,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_8024",
+          "gold": "C",
+          "n_candidates": 2,
+          "sighted": "C",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "C"
+        },
+        {
+          "id": "mmlupro_3758",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "B",
+          "blind_mode": "index",
+          "alone": "E"
+        },
+        {
+          "id": "mmlupro_9682",
+          "gold": "E",
+          "n_candidates": 2,
+          "sighted": "J",
+          "sighted_mode": "index",
+          "blind": "J",
+          "blind_mode": "index",
+          "alone": "J"
+        },
+        {
+          "id": "mmlupro_10091",
+          "gold": "H",
+          "n_candidates": 1,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "H"
+        },
+        {
+          "id": "mmlupro_3795",
+          "gold": "A",
+          "n_candidates": 3,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "C",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_11756",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": "D",
+          "sighted_mode": "index",
+          "blind": "D",
+          "blind_mode": "index",
+          "alone": "D"
+        },
+        {
+          "id": "mmlupro_3738",
+          "gold": "G",
+          "n_candidates": 2,
+          "sighted": "F",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_8378",
+          "gold": "G",
+          "n_candidates": 3,
+          "sighted": "G",
+          "sighted_mode": "index",
+          "blind": "G",
+          "blind_mode": "index",
+          "alone": "G"
+        },
+        {
+          "id": "mmlupro_10066",
+          "gold": "D",
+          "n_candidates": 1,
+          "sighted": "E",
+          "sighted_mode": "index",
+          "blind": "E",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_3884",
+          "gold": "A",
+          "n_candidates": 2,
+          "sighted": "A",
+          "sighted_mode": "index",
+          "blind": "A",
+          "blind_mode": "index",
+          "alone": "A"
+        },
+        {
+          "id": "mmlupro_9742",
+          "gold": "J",
+          "n_candidates": 2,
+          "sighted": "J",
+          "sighted_mode": "index",
+          "blind": "J",
+          "blind_mode": "index",
+          "alone": "J"
+        }
+      ],
+      "v_hat_sighted": -0.03,
+      "v_hat_blind": -0.125,
+      "deployed_sighted": 0.01715,
+      "deployed_blind": 0.01648
+    }
+  ]
+}
