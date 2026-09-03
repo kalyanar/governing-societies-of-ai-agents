@@ -76,3 +76,6 @@ paper_v3_rev/
 *.md.v1
 *.png.old
 code/results/.*_done
+
+# manuscript source -- kept local while the paper is under review
+paper/

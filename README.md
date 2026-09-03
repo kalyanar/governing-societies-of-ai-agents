@@ -13,7 +13,61 @@ The paper asks three questions about societies of LLM agents:
 | **RQ3** | What fraction of committed agents can capture a collective decision? |
 
 Every number in the paper is produced by a script here and traceable to a JSON
-file in `code/results/`.
+file in `code/results/`. Figures are regenerated from those same files by
+`code/make_figures_refresh.py` into `code/figures/`.
+
+The manuscript source is not included here while the paper is under review; this
+repository is the code, the per-run result files, and the figures.
+
+---
+
+## Reproducing the revision experiments
+
+Each writes a JSON to `code/results/` and records its own API-failure and
+parse-failure rates; any arm above 5% loss is marked unreliable rather than
+reported.
+
+```bash
+cd code/debate
+
+# cheap panel + a constrained arbiter, versus the same model reasoning alone.
+# Both arms use one judge model and an identical token budget.
+../../.venv/bin/python head_to_head.py --limit 80 \
+  --panel cb_gptoss120b cb_gemma4_31b gq_qwen36_27b \
+  --judge an_opus5 --out ../results/head_to_head.json
+
+# eleven verifiers, 2B to frontier, against a fixed panel:
+# select-vs-solve plus a paired order-reversal control
+../../.venv/bin/python verifier_price_ladder.py --limit 80 \
+  --out ../results/verifier_size_ladderA.json
+
+# does the arbiter need the source, or only the candidates?
+../../.venv/bin/python blind_selector.py --limit 80 \
+  --out ../results/blind_selector.json
+
+cd ../naming_game
+# does the tipping point depend on WHAT is agreed? identical mechanism,
+# three content conditions, counterbalanced
+for C in neutral coop_sym coop_asym; do
+  ../../.venv/bin/python run_society.py --comp homo --models or_gpt4o_mini \
+    --n 48 --ps 0.0625 0.0833 0.1042 0.125 0.1667 0.2083 0.25 \
+    --seeds 5 --t_max_units 25 --push both --content $C \
+    --out ../results/norm_content_$C.json
+done
+../../.venv/bin/python analyze_content.py     # p_c per condition, bootstrap CIs
+```
+
+Then, with no API calls:
+
+```bash
+cd code
+../.venv/bin/python make_figures_refresh.py   # figures -> code/figures/
+../.venv/bin/python audit_paper.py --tex /path/to/paper_dtrap.tex
+```
+
+`audit_paper.py` checks every load-bearing number in a manuscript against the
+result file that produced it, and flags figures older than their data, dangling
+cross-references, and superseded claim text.
 
 ---
 

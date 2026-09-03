@@ -40,7 +40,11 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RES = os.path.join(HERE, "results")
-OUT = os.path.join(HERE, "..", "paper")
+# Figures are written inside the repo so they are reproducible from the released
+# result files alone. The manuscript source is not part of this repository while
+# the paper is under review; --out redirects if you have it locally.
+OUT = os.path.join(HERE, "figures")
+os.makedirs(OUT, exist_ok=True)
 
 PURPLE, GREEN, ORANGE, GREY = "#6C5CE7", "#00B894", "#E17055", "#95A5A6"
 
