@@ -69,6 +69,29 @@ cd code
 result file that produced it, and flags figures older than their data, dangling
 cross-references, and superseded claim text.
 
+### Cost
+
+Every run records its own metered spend, so the total is recomputable rather than
+asserted:
+
+```bash
+../.venv/bin/python total_cost.py            # total, plus the ten priciest runs
+../.venv/bin/python total_cost.py --by-file  # every file
+```
+
+**$82.32** across 113 result files (83 with recorded cost), split roughly
+$33 for the original study, $46 for the higher-resolution revision sweeps, and
+$3 for the final round. The two largest single runs are the `N=64` capture-threshold
+sweeps for Claude-Haiku ($11.82) and Llama-70B ($10.71). Runs on local Ollama,
+Cerebras and Groq are priced at zero and contribute nothing.
+
+Two caveats a reader reconciling this against the paper will hit. Provider list
+prices change, so these are the prices recorded at run time rather than today's.
+And superseded runs are retained rather than deleted, so the total includes work
+that no longer backs a claim -- the free-form-judge verifier run replaced by the
+constrained instrument, and runs discarded by the data-quality audit. Keeping them
+is deliberate: it makes the exclusions auditable.
+
 ---
 
 ## Quick start
